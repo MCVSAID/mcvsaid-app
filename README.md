@@ -27,10 +27,13 @@ fetches the app from here; the app does nothing by itself until it is paired wit
                                            │  · feed alignment            │    a tablet, or a phone
                                            │  · AI shot choosing          │    in the crowd
                                            │  · offload of recordings     │
+                                           │  · each camera's own file    │
                                            └──────────────────────────────┘
 ```
 
-* Each phone streams over **SRT** and can record its own full-quality copy at the same time.
+* Each phone streams over **SRT**. It can also record its own full-quality copy at the same time, if it stays cool
+  enough doing both: on some phones it does not, so test it first (see [Recordings](#recordings)). The production
+  PC can instead keep every camera's stream itself.
 * Every picture carries a small **timing strip**, which the manager reads to line all the feeds up to the
   millisecond; OBS never shows it.
 * The control connection is **encrypted and pinned** to the manager's certificate. Phones find the manager by a
@@ -106,8 +109,21 @@ how long it took to settle, and whether a change of mount or picture size helped
 
 ![Recordings: copying recordings off the phones](docs/screenshots/09-recordings.png)
 
-Each phone's own full-quality recording is copied to the PC over the network after the show, verified, and filed by
-camera. Phones' copies are only ever cleared when that is explicitly switched on.
+A videographer often wants every camera's own recording, to cut the show themselves, as well as the directed
+programme. There are two ways to get them.
+
+**On the phones.** Each phone records its own full-quality copy (20 Mb/s) while it streams, and the copies are
+taken to the PC over the network after the show, verified, and filed by camera. Phones' copies are only ever cleared
+when that is explicitly switched on. But recording and streaming together means the phone encodes its picture twice
+and writes it to storage as it goes, and that makes it run hot: in testing it ran the phones too hot to use. **It
+may not be possible on your phones: test it on the intended hardware**, at the intended picture size, for the full
+length of a show, mounted as it will be. A phone that reaches its heat limit stops recording and goes on streaming.
+
+**On the PC.** Where the phones cannot do both, the production PC can keep every camera's stream as it arrives, at
+no cost to the phones, while the programme is directed, recorded and streamed live as usual. Each programme recording
+then comes with one file per camera and the cuts as an edit (EDL) that a videographer can open in their editor and
+re-cut. These files have the stream's quality (7, 12 or 25 Mb/s by picture size), less than the phones' own copies,
+and need room on the PC's disk.
 
 ## Locations
 
@@ -126,10 +142,30 @@ of the manager itself from the dashboard.
 
 ---
 
+## The production PC
+
+Everything but the cameras runs on one Linux PC: OBS, the manager and, if used, the shot-choosing model. It was built
+on an Intel i9-14900HX with 32 GB of memory and an NVIDIA RTX 4090 Laptop GPU, and these figures come from there;
+check them on the PC that will run your show, with every camera streaming at its intended size.
+
+* **Linux** with a systemd user session, Python 3.12 or later, and **OBS Studio** with its WebSocket server on.
+* **An NVIDIA graphics card.** It decodes every camera, and its video decoder is usually the first limit: about 20%
+  of the decoder per 4K camera, 9% per 1440p and 5% per 1080p on the card above. Three 4K and three 1440p cameras ran
+  it at 85%; with six at 4K, some cameras' pictures quietly stopped. The manager warns before a camera's picture size
+  is changed past what the card can take.
+* **32 GB of memory** recommended.
+* **Disk** for the programme (about 6 GB an hour) and, if the PC keeps each camera's stream, about 3, 5 or 11 GB an
+  hour per camera at 1080p, 1440p or 4K.
+* **A wired gigabit network adapter** on the cameras' own network: six 4K cameras are about 150 Mb/s. Phones on
+  USB-C Ethernet adapters are steadier than on Wi-Fi at that rate. A separate connection is needed for streaming out.
+* **The shot-choosing model** (optional) is a vision model on the PC's graphics card, for example Qwen3-VL 8B under
+  llama.cpp: about 7 GB of graphics memory, answering in about a second.
+
 ## The camera app
 
 * Android 8 or later; tested on Pixel 3, 4a and 8, and Galaxy S20 FE.
-* 1080p, 1440p or 4K at 30 fps, H.264 with AAC sound, over SRT; local MP4 recording alongside.
+* 1080p, 1440p or 4K at 30 fps, H.264 with AAC sound, over SRT; local MP4 recording alongside, where the phone
+  stays cool enough (see [Recordings](#recordings)).
 * Runs as the phone's device manager so it can be armed, restarted, updated and have its clock set remotely, with
   the screen lock left on.
 * Each release here is signed with the installation's release key. The checksum of each file is published beside it.
