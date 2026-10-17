@@ -7,6 +7,11 @@ its picture to [OBS](https://obsproject.com/) on a production computer. A manage
 step, watches the health of every phone, matches their colours, and can choose the shots itself with a vision model
 running on the computer's own graphics. Cameras can be mounted out of reach: everything is done from a browser.
 
+It directs **live music, church services, podcasts and talk shows, panels and conferences, and theatre and comedy**,
+each with its own camera roles, pacing and way of choosing shots. And it runs at the level of **AI assistance** a
+production wants: none at all, a vision model on the computer itself, or that model plus recognition of consenting
+performers.
+
 **Linux or Mac.** The production computer can run Linux or macOS. It was built on a Linux workstation and now runs live
 on a **MacBook Pro with an M5 Pro and 48 GB of memory**: OBS, the manager and the shot-choosing model all on the one
 laptop (see [The production computer](#the-production-computer)).
@@ -31,11 +36,12 @@ fetches the app from here; the app does nothing by itself until it is paired wit
  └──────────────┘                          │ MCVSAID manager                  │◀── browser on the
                                            │  · readiness and health          │    computer, a tablet,
                                            │  · feed alignment                │    or a phone
-                                           │  · AI shot choosing and zoom     │
+                                           │  · shot choosing (by hand or AI) │
                                            │  · colour matching               │
                                            │  · recordings                    │
                                            ├──────────────────────────────────┤
-                                           │ vision model (llama.cpp)         │
+                                           │ vision model, person detector    │
+                                           │ (optional, on this computer)     │
                                            └──────────────────────────────────┘
 ```
 
@@ -43,6 +49,8 @@ fetches the app from here; the app does nothing by itself until it is paired wit
   the production computer can instead keep every camera's stream itself, as it arrives.
 * Every picture carries a small **timing strip**, which the manager reads to line all the feeds up to the frame; OBS
   never shows it.
+* The **camera relay**, on by default, holds the look-ahead as compressed video rather than OBS holding it as pictures:
+  six 4K cameras took OBS from 11.0 GB of memory to 2.6 GB. It can also keep each camera's own file of a recording.
 * The control connection is **encrypted and pinned** to the manager's certificate. Phones find the manager by its
   address or by a name on the local network.
 
@@ -62,6 +70,17 @@ camera (connection, clock, power, temperature, Wi-Fi, stream target, picture in 
 needs attention, with what to do about it. Below it: the programme, what is on air, any camera or split screen one press
 away, recording and streaming, starting and stopping every camera at once, and a heat outlook for the length of the
 show.
+
+## Live music, worship, podcasts, panels, theatre
+
+![The kind of event, chosen in the side bar: here a house of worship](docs/screenshots/19-event-worship.png)
+
+The kind of event is chosen at the top of the side bar. Each kind offers its own roles for what a camera shows (a
+pastor, a reader, the choir and the congregation for a service; a host and guests for a podcast; a moderator and
+panelists; a performer and the house for theatre), uses its own words with the shot-choosing model, and keeps its own
+pace. For podcasts, panels and services, with each microphone on its own channel of a mixer, the director **switches to
+whoever is talking**, allowing for bleed between mics, coughs and pauses; laughter and applause bring in the audience
+camera.
 
 ## Every camera, in detail
 
@@ -95,6 +114,23 @@ crowd can call the shots by hand.
 Every phone's temperature is kept from every run, so one show can be set beside another: which camera ran hottest, how
 long it took to settle, and whether a change of mount or picture size helped.
 
+## AI assistance: none, Standard or Plus
+
+![AI assistance: each step of the set-up, checked as it stands](docs/screenshots/17-ai-assistance.png)
+
+How much AI helps is a choice for each installation, so a modest computer can still run a show:
+
+| Level | What it does | What it needs |
+| --- | --- | --- |
+| **No AI** (the default) | Shots by hand, from Stage Shots, by timed rotation, or switched to whoever is talking; the safety rules still cut away from a camera that fails | Nothing extra: no model is downloaded or run |
+| **Standard** | A vision model on the computer rates every camera, zooms in on and follows a performer, listens for the instrument to the fore, and can cut to the camera a performer looks at | About 7 GB of graphics memory: an Apple silicon Mac with 32 GB or more, or an NVIDIA card with 8 GB or more |
+| **Plus** | Standard, and consenting performers recognised: stars given priority on any camera, cameras that follow a named performer, framed ten times a second by a fast person detector | Standard's, and a small person detector (YOLOX-s) |
+
+Choosing a level shows its set-up as steps, each checked live: a button for what the manager can do itself (download
+the model, run it as a service on the computer only, point the director at it, add the detector), and a ready-to-copy
+command for what needs an administrator's password. It also says honestly whether a level fits the computer. Listening
+for instruments has its own steps, down to the OBS settings that let the manager hear the programme.
+
 ## The director
 
 ![Director page: how shots are chosen](docs/screenshots/06-director.png)
@@ -112,6 +148,25 @@ every cut lands cleanly. The director can also:
 * show the **crowd camera** when the crowd is lively and the stage is quiet.
 
 Without a model it can rotate through the cameras on a timer, or leave the choice to a person.
+
+## People: consenting performers, and nobody else
+
+![People page: made-up performers enrolled under a contract, stars and the cameras that follow them](docs/screenshots/18-people.png)
+
+At Plus, performers who have agreed can be enrolled on the day: take a picture from a camera, click the performer the
+detector outlines, and give a name, a role (a **star** gets priority on any camera) and the cameras that **follow
+them**. Reference pictures are taken in what they will perform in.
+
+* **Consent per purpose**: being recognised during the show, and, separately and optionally, helping improve MCVSAID.
+  One tick confirms a performer's signed release, or the production says once that releases are handled by contract.
+* **Nobody else is identified.** The director only ever recognises enrolled performers, and never zooms in on someone it
+  does not recognise.
+* **Kept briefly and encrypted**: a small thumbnail and an appearance descriptor, deleted at the end of the show day
+  unless the production chooses longer, and at once on removal or "Delete all performer data". Logs say "performer 2",
+  never a name. Pictures kept to improve MCVSAID are pseudonymised, with everyone else in them blurred.
+* While recognition is on, every page says so.
+
+The people in this screenshot are made up, and their pictures are drawn figures.
 
 ## Colour that matches from phone to phone
 
@@ -134,10 +189,10 @@ a show.
 
 ![Recordings on the computer: the programme, each camera's own file, the edit and the camera relay](docs/screenshots/09-recordings-pc.png)
 
-**On the computer.** The production computer can keep every camera's stream as it arrives (the camera relay), at no
-cost to the phones. Each programme recording then comes with one file per camera, the cuts as an edit (EDL) a
-videographer can open in Resolve, Premiere or Final Cut and re-cut, and each camera's colour LUT. The relay also holds
-the alignment delay compressed, which saves a great deal of memory in OBS.
+**On the computer.** The production computer can keep every camera's stream as it arrives (camera files, through the
+camera relay), at no cost to the phones. Each programme recording then comes with one file per camera, the cuts as an edit (EDL) a
+videographer can open in Resolve, Premiere or Final Cut and re-cut, and each camera's colour LUT. Camera files are a
+setting of their own, off until chosen, since they take disk space.
 
 ## Adding a phone
 
@@ -170,6 +225,12 @@ Phones mounted out of reach have to keep going on their own:
   brings it back, in step.
 
 ## System and locations
+
+![The camera relay, on by default: what each camera passes to OBS and how long it is held](docs/screenshots/12-relay.png)
+
+System › This PC shows the camera relay at work, the AI assistance level, manager updates and how OBS decodes each
+camera. The relay can be switched off there, under *Advanced: troubleshooting*; without the SRT library it falls back
+by itself to cameras streaming straight to OBS, and says why.
 
 ![System, Network: how the phones find the manager, and the camera Wi-Fi](docs/screenshots/11-system-network.png)
 
@@ -205,6 +266,7 @@ that will run your show, with every camera streaming at its intended size for th
 | --- | --- | --- |
 | **Computer** | MacBook Pro, M5 Pro (18 cores), 48 GB unified memory, macOS 26.6 | Intel i9-14900HX, 32 GB, NVIDIA RTX 4090 Laptop GPU, Linux Mint |
 | **Decoding the cameras** | in hardware (VideoToolbox): six 4K cameras for 27% of one processor core | on the processor: six 4K cameras for about 16% of it (the graphics card's decoder filled up at three 4K and three 1440p) |
+| **AI** | Standard (the Plus detector measured there too) | Standard |
 | **Shot-choosing model** | llama.cpp natively on the Mac's graphics (Metal), Qwen3-VL 8B: about 0.6 s an answer idle, about 2.2 s to rate six cameras during a show | llama.cpp in Docker on the graphics card: about 1 s an answer |
 | **Software** | OBS for macOS, Homebrew (Python 3.13, ffmpeg, SRT), launchd services | OBS (Flatpak), Python 3.12+, systemd user services |
 
@@ -219,9 +281,10 @@ that will run your show, with every camera streaming at its intended size for th
 The processor was 42% busy and the graphics 65%. In use, with five cameras at 4K, the Mac's memory in use has been seen
 to approach 40 GB (that reading includes OBS's canvas and recording and whatever else is open). So:
 
-* **48 GB is recommended for five or six cameras at 4K with the shot-choosing model**, with the camera relay on, which
-  saved about 1.4 GB of memory per 4K camera.
-* **32 GB** is enough for fewer or smaller cameras, or without the model on the same computer.
+* **48 GB is recommended for five or six cameras at 4K with the shot-choosing model**, with the camera relay on (the
+  default), which saved about 1.4 GB of memory per 4K camera.
+* **32 GB** is enough for fewer or smaller cameras, or at No AI. The person detector for Plus adds little: about 11 ms
+  a picture on the M5 Pro.
 * On a Mac the video decoder's load cannot be read, soundcheck by sound needs Linux (PipeWire), and listening for
   instruments needs a loopback sound device such as BlackHole.
 
