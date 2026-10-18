@@ -216,7 +216,7 @@ in front of them, no chart needed. The LUTs go with each recording's camera file
 computer over the network after the show, verified, and filed by camera. Phones' copies are only ever cleared when that
 is explicitly switched on. Recording and streaming together makes a phone work harder and run hotter: in testing it ran
 some phones too hot to use, so **test it on the intended phones**, at the intended picture size, for the full length of
-a show.
+a show. A clamped-on phone cooler changes that: see [Phone coolers](#phone-coolers-experimental).
 
 ![Recordings on the computer: the programme, each camera's own file, the edit and the camera relay](docs/screenshots/09-recordings-pc.png)
 
@@ -254,9 +254,45 @@ Phones mounted out of reach have to keep going on their own:
   microphone could carry into the show, and gets its owner's settings back once disarmed.
 * **Clocks.** A camera whose clock has drifted is shown with a **Fix** button that takes it off air, sets its clock and
   brings it back, in step.
-* **Phone coolers.** A phone with a Black Shark FunCooler 5 Pro clamped on controls it over Bluetooth: the fan mode
-  chosen on the dashboard, its lights kept off so they never show in the shot, and the cooler's temperature and fan
-  speed shown beside the phone's.
+* **Phone coolers.** A clamped-on Black Shark cooler is controlled from the dashboard over Bluetooth: see
+  [Phone coolers](#phone-coolers-experimental).
+
+## Phone coolers (experimental)
+
+Heat is what limits a phone camera: a phone streaming 4K for a whole show can run warm enough that recording its own
+copy at the same time is not safe, and the app stops recording at 47 °C to protect the phone and the file. A
+**clip-on thermoelectric cooler** removes most of that heat.
+
+**What we measured** (one evening each, so treat them as early results):
+
+| | Without a cooler | With a Black Shark MagCooler 5 Pro |
+| --- | --- | --- |
+| Galaxy S23, 4K at 25 Mb/s | streaming only: 43–44 °C within the hour | **streaming and recording together for 2¼ hours: 22–25 °C** |
+| Galaxy S20 FE, 4K at 25 Mb/s | streaming only: up to 50 °C | streaming, and briefly recording too: 5–15 °C |
+
+So with a cooler, **recording on the phone while it streams becomes practical**, for a full-quality copy of every
+camera even when the network or the production computer has a bad moment.
+
+**Recommendations**
+
+* **Smart fan mode** (the default here): the cooler follows the phone's temperature. Use more only if a phone still
+  warms up.
+* **Watch for condensation.** These coolers can chill a phone below the room's temperature (the S20 FE read 5 °C), and
+  water can then form on it, inside it or on the lens, in a humid room especially. Keep it in Smart, and let a cold
+  phone warm up before taking the cooler off.
+* **Power the cooler from its own USB charger**, not from a PoE-to-USB-C adapter on the camera network's switch: one
+  such adapter took a whole camera network down in testing.
+* **Switch its auto shutdown off** in Black Shark's app: when its timer runs out the cooler turns itself off and cannot
+  be woken over Bluetooth until its button is pressed.
+* **Test on your own phones** for the full length of a show, recording and streaming, before relying on it.
+
+**Managed from the dashboard (experimental, in development).** The camera app finds the cooler clamped to its phone
+and controls it over Bluetooth: the fan mode chosen on the phone's card, **its lights kept off** so they never show in
+a shot or a reflection, and the cooler's temperature and fan speed shown beside the phone's own, with the Temperatures
+page listing each cooler and the readiness check warning if one goes missing. It speaks the cooler's own Bluetooth
+commands, which were worked out from Black Shark's app rather than published by Black Shark, so a firmware update could
+change them; only the MagCooler 5 Pro has been tried. Close Black Shark's app while the camera app is in charge: only
+one of them can hold the cooler at a time.
 
 ## System and locations
 
