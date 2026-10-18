@@ -354,4 +354,4 @@ to approach 40 GB (that reading includes OBS's canvas and recording and whatever
 * Set-up codes and USB set-up hand each phone its own pairing; passwords typed for a code are not stored.
 * Nothing is sent from an installation to the project: no usage reporting, crash reporting or footage.
 
-Found a security problem? Please report it privately to **mcvsaid.beta@proton.me**, never in a public issue.
+Found a security problem? Please report it privately to **mcvsaid@proton.me**, never in a public issue.
