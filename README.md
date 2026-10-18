@@ -185,6 +185,18 @@ every cut lands cleanly. The director can also:
 
 Without a model it can rotate through the cameras on a timer, or leave the choice to a person.
 
+### Scene Chat: guiding the director through the show
+
+![Scene Chat beside the Show page: the wishes in force, the show's chat and the director's replies](docs/screenshots/24-scene-chat.png)
+
+Down the right of the Show and Stage Shots pages, **Scene Chat** feels like talking to the director. A **standing
+brief** says what holds all show; during it, type wishes as they come ("more focus on the keyboards", "less on the
+drums") and they go on top of the brief, newest first, for the model's next look. The director answers each at once
+("More on the keyboards.") with a canned reply, so the chat never costs the model any time, and notes what came of it
+("Cut to Keys: rated best by the model."). A newer wish about the same thing replaces the older, four at most are in
+force, each lasts 15 minutes unless cleared, and "clear" goes back to the brief. On a tablet it opens over the page,
+on a phone it is a sheet from the bottom; it needs Standard or Plus AI, and keeps the show's chat until New show.
+
 ## People: consenting performers, and nobody else
 
 ![People page: made-up performers enrolled under a contract, stars and the cameras that follow them](docs/screenshots/18-people.png)
