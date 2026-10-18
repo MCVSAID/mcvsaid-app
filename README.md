@@ -74,12 +74,13 @@ be **spare phones, factory-reset and used for nothing else**: the app becomes ea
 ![Show page: ready for a show, every camera streaming, the programme being recorded](docs/screenshots/01-show.png)
 
 The dashboard is grouped by when things are needed: **Show** (Show, Cameras, Stage Shots, Temperatures), **Set up**
-(Director, Colour), **Library** (Recordings) and **Administration** (System). The show's state (ready, on air, recording)
+(Director, Colour, People), **Library** (Recordings) and **Administration** (System). The show's state (ready, on air, recording)
 stays in view at the foot of the side bar.
 
 One line answers the question that matters before doors open: **is everything ready?** It is worked out continuously
 from the computer (OBS, memory, processor, recording space, the camera network, the relay, the model) and from every
-camera (connection, clock, power, temperature, Wi-Fi, stream target, picture in OBS, colour, sounds), and names what
+camera (connection, clock, power, temperature, Wi-Fi, stream target, picture in OBS, frame rate, colour, sounds, its
+cooler), and names what
 needs attention, with what to do about it. Below it: the programme, what is on air, any camera or split screen one press
 away, recording and streaming, starting and stopping every camera at once, and a heat outlook for the length of the
 show.
@@ -112,11 +113,11 @@ Each camera has a card: online and streaming, a readiness summary, temperature w
 network, free space, and its controls. The rest folds away until needed. **Band profiles** save who stands where, so
 the same band on the same stage is set up in one step.
 
-<img src="docs/screenshots/03-camera-detail.png" alt="A camera card opened out: what it shows, picture and stream, OBS input, maintenance" width="300" align="right">
+<img src="docs/screenshots/03-camera-detail.png" alt="A camera card opened out: what it shows, picture and stream, maintenance" width="300" align="right">
 
 Opened out, a card sets which performers or instruments the camera shows (up to eight), where to zoom during a solo,
-whether the director may use its **telephoto lens**, the stream size and latency, the lens and **sensor zoom**, its OBS
-input, and its app version and maintenance: all from the computer, while the phone stays on its mount. Clocks are set
+whether the director may use its **telephoto lens**, the stream size and latency, the lens and **sensor zoom**, its
+cooler where it has one, and its app version and maintenance: all from the computer, while the phone stays on its mount. Clocks are set
 automatically, and app updates roll out one unarmed camera at a time.
 
 <br clear="right">
@@ -125,9 +126,13 @@ automatically, and app updates roll out one unarmed camera at a time.
 
 ![Stage Shots: the cameras laid out as on the stage](docs/screenshots/04-stage-shots.png)
 
-The cameras laid out as they stand on the stage, by what they show. Press one to put it on air, or pick two for a
-split screen. The page can be offered to phones on the camera network, behind its own passcode, so someone in the
-crowd can call the shots by hand.
+The cameras laid out as they stand on the stage, by what they show, read from the back of the stage to the audience,
+with stage left and right as the performers have them. Press one to put it on air, or pick two for a split screen.
+A tight shot is a narrow button and the whole band a wide one, and a mark on each shows where its camera stands and
+which way it points. **Arrange** moves and sizes the buttons; a **room map** from above places and turns each camera
+and shows the wedge it sees, worked out from its lens and zoom; and, experimentally, **Place from the wide shot**
+finds each camera's picture inside the wide camera's and offers where its button should go. The page can be offered
+to phones on the camera network, behind its own passcode, so someone in the crowd can call the shots by hand.
 
 ## Temperatures, run by run
 
@@ -188,6 +193,8 @@ them**. Reference pictures are taken in what they will perform in.
 * **Kept briefly and encrypted**: a small thumbnail and appearance (and, where agreed, face) descriptors, deleted
   at the end of the show day unless the production chooses longer, and at once on removal or "Delete all performer data". Logs say "performer 2",
   never a name. Pictures kept to improve MCVSAID are pseudonymised, with everyone else in them blurred.
+* **Faces, only with their own consent.** Where a performer's release covers their face, a clear face is used beside
+  how they look, and outweighs a matching costume.
 * While recognition is on, every page says so.
 
 The people in this screenshot are made up, and their pictures are drawn figures.
@@ -361,7 +368,7 @@ to approach 40 GB (that reading includes OBS's canvas and recording and whatever
 
 **Everything else**
 
-* **Disk** for the programme (about 2.5 GB an hour at 1080p) and, if the computer keeps each camera's stream, about 13 GB
+* **Disk** for the programme (about 6 GB an hour) and, if the computer keeps each camera's stream, about 13 GB
   an hour per 4K camera (25 Mb/s), twice that until a recording's files are made. The readiness check works this out
   from the cameras' real rates.
 * **A wired gigabit network adapter** on the cameras' own network: six 4K cameras are about 150 Mb/s. Phones on USB-C
