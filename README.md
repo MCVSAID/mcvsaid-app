@@ -101,6 +101,8 @@ in the pan, the oven while its door is open, the plate at the end, with the kitc
 station. Load a recipe from a web page or pasted text and the director follows its steps, makes sure each step's key
 station is seen, marks the steps in the recording, and can show the recipe, a QR code to it and step captions in OBS.
 
+![A recipe on screen in OBS: the method with the current step picked out, a QR code to the recipe and the step's caption](docs/screenshots/23-recipe-overlay.png)
+
 **Creator Studio** is for one or a few people recording themselves, and nothing in it is preset: build your own
 framings from body regions (head, shoulders, hands, hips, knees, feet), choose how close each camera shoots and when it
 cuts. It needs Plus AI's person detector and a body keypoint model, both run on the computer.
@@ -113,7 +115,7 @@ Each camera has a card: online and streaming, a readiness summary, temperature w
 network, free space, and its controls. The rest folds away until needed. **Band profiles** save who stands where, so
 the same band on the same stage is set up in one step.
 
-<img src="docs/screenshots/03-camera-detail.png" alt="A camera card opened out: what it shows, picture and stream, maintenance" width="300" align="right">
+<img src="docs/screenshots/03-camera-detail.png" alt="A camera card opened out: what it shows, picture and stream, maintenance and its cooler" width="300" align="right">
 
 Opened out, a card sets which performers or instruments the camera shows (up to eight), where to zoom during a solo,
 whether the director may use its **telephoto lens**, the stream size and latency, the lens and **sensor zoom**, its
@@ -134,12 +136,16 @@ and shows the wedge it sees, worked out from its lens and zoom; and, experimenta
 finds each camera's picture inside the wide camera's and offers where its button should go. The page can be offered
 to phones on the camera network, behind its own passcode, so someone in the crowd can call the shots by hand.
 
+![The room map: each camera placed and turned, with the wedge it sees](docs/screenshots/04e-room-map.png)
+
 ## Temperatures, run by run
 
-![Temperatures: one show set beside another](docs/screenshots/05-temperatures.png)
+![Temperatures: one show set beside another, and each phone's cooler](docs/screenshots/05-temperatures.png)
 
 Every phone's temperature is kept from every run, so one show can be set beside another: which camera ran hottest, how
-long it took to settle, and whether a change of mount or picture size helped.
+long it took to settle, and whether a change of mount or picture size helped. Phones with a cooler clamped on have it
+listed beside them: the cooler's own temperature, its fan and its lights. (In the demonstration, Stage Left and Drums
+have one.)
 
 ## AI assistance: none, Standard or Plus
 
@@ -293,6 +299,8 @@ camera even when the network or the production computer has a bad moment.
   be woken over Bluetooth until its button is pressed.
 * **Test on your own phones** for the full length of a show, recording and streaming, before relying on it.
 
+<img src="docs/screenshots/05b-cooler.png" alt="A camera card's Cooler fold: the fan mode, the lights kept off, the cooler's name and firmware" width="300" align="right">
+
 **Managed from the dashboard (experimental, in development).** The camera app finds the cooler clamped to its phone
 and controls it over Bluetooth: the fan mode chosen on the phone's card, **its lights kept off** so they never show in
 a shot or a reflection, and the cooler's temperature and fan speed shown beside the phone's own, with the Temperatures
@@ -300,6 +308,8 @@ page listing each cooler and the readiness check warning if one goes missing. It
 commands, which were worked out from Black Shark's app rather than published by Black Shark, so a firmware update could
 change them; only the MagCooler 5 Pro has been tried. Close Black Shark's app while the camera app is in charge: only
 one of them can hold the cooler at a time.
+
+<br clear="right">
 
 ## System and locations
 
