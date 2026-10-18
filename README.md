@@ -7,8 +7,9 @@ its picture to [OBS](https://obsproject.com/) on a production computer. A manage
 step, watches the health of every phone, matches their colours, and can choose the shots itself with a vision model
 running on the computer's own graphics. Cameras can be mounted out of reach: everything is done from a browser.
 
-It directs **live music, church services, podcasts and talk shows, panels and conferences, and theatre and comedy**,
-each with its own camera roles, pacing and way of choosing shots. And it runs at the level of **AI assistance** a
+It directs **live music, church services, podcasts and talk shows, panels and conferences, theatre and comedy, and
+cooking shows**, each with its own camera roles, pacing and way of choosing shots, and has a **Creator Studio** for
+people recording themselves, where you define the framings yourself. And it runs at the level of **AI assistance** a
 production wants: none at all, a vision model on the computer itself, or that model plus recognition of consenting
 performers.
 
@@ -20,6 +21,18 @@ This repository holds the **signed builds of the camera app**, under [Releases](
 fetches the app from here; the app does nothing by itself until it is paired with an MCVSAID manager.
 
 > The screenshots below are from a demonstration manager with six made-up cameras and drawn pictures, not a real show.
+
+### Join the beta
+
+MCVSAID is in a **private beta**. If you film live events with phones (a church, a theatre, a school, a venue, a band,
+a podcast or a kitchen) and would like to try it, email **mcvsaid.beta@proton.me** with:
+
+* what you film, and how often;
+* the computer you would run it on (Mac or Linux, and its memory);
+* the phones you could set aside for it, and your network.
+
+Testers get the manager from a private repository, a tester guide, and a direct line for feedback. Camera phones must
+be **spare phones, factory-reset and used for nothing else**: the app becomes each phone's device owner.
 
 ---
 
@@ -71,7 +84,7 @@ needs attention, with what to do about it. Below it: the programme, what is on a
 away, recording and streaming, starting and stopping every camera at once, and a heat outlook for the length of the
 show.
 
-## Live music, worship, podcasts, panels, theatre
+## Live music, worship, podcasts, panels, theatre, cooking
 
 ![The kind of event, chosen in the side bar: here a house of worship](docs/screenshots/19-event-worship.png)
 
@@ -81,6 +94,15 @@ panelists; a performer and the house for theatre), uses its own words with the s
 pace. For podcasts, panels and services, with each microphone on its own channel of a mixer, the director **switches to
 whoever is talking**, allowing for bleed between mics, coughs and pauses; laughter and applause bring in the audience
 camera.
+
+**Cooking** treats the food as the star as much as the cook: the board while hands cut, the stovetop while something is
+in the pan, the oven while its door is open, the plate at the end, with the kitchen's own sounds pointing to the busy
+station. Load a recipe from a web page or pasted text and the director follows its steps, makes sure each step's key
+station is seen, marks the steps in the recording, and can show the recipe, a QR code to it and step captions in OBS.
+
+**Creator Studio** is for one or a few people recording themselves, and nothing in it is preset: build your own
+framings from body regions (head, shoulders, hands, hips, knees, feet), choose how close each camera shoots and when it
+cuts. It needs Plus AI's person detector and a body keypoint model, both run on the computer.
 
 ## Every camera, in detail
 
@@ -161,12 +183,21 @@ them**. Reference pictures are taken in what they will perform in.
   One tick confirms a performer's signed release, or the production says once that releases are handled by contract.
 * **Nobody else is identified.** The director only ever recognises enrolled performers, and never zooms in on someone it
   does not recognise.
-* **Kept briefly and encrypted**: a small thumbnail and an appearance descriptor, deleted at the end of the show day
-  unless the production chooses longer, and at once on removal or "Delete all performer data". Logs say "performer 2",
+* **Faces only with their own consent.** Where a performer's release covers their face, a clear face is used beside
+  how they look; otherwise only their appearance is.
+* **Kept briefly and encrypted**: a small thumbnail and appearance (and, where agreed, face) descriptors, deleted
+  at the end of the show day unless the production chooses longer, and at once on removal or "Delete all performer data". Logs say "performer 2",
   never a name. Pictures kept to improve MCVSAID are pseudonymised, with everyone else in them blurred.
 * While recognition is on, every page says so.
 
 The people in this screenshot are made up, and their pictures are drawn figures.
+
+## Face blur (experimental)
+
+Faces can be blurred live, for the whole show or camera by camera: every face, everyone except consenting performers,
+or only chosen performers. It works ahead of the programme, in the look-ahead, so a face is covered before OBS shows it.
+**It is experimental and can miss faces**, especially small, turned or fast-moving ones, so it is hidden and off until
+an administrator switches it on, and it should not be relied on to hide anyone.
 
 ## Colour that matches from phone to phone
 
@@ -223,6 +254,9 @@ Phones mounted out of reach have to keep going on their own:
   microphone could carry into the show, and gets its owner's settings back once disarmed.
 * **Clocks.** A camera whose clock has drifted is shown with a **Fix** button that takes it off air, sets its clock and
   brings it back, in step.
+* **Phone coolers.** A phone with a Black Shark FunCooler 5 Pro clamped on controls it over Bluetooth: the fan mode
+  chosen on the dashboard, its lights kept off so they never show in the shot, and the cooler's temperature and fan
+  speed shown beside the phone's.
 
 ## System and locations
 
@@ -242,7 +276,8 @@ and updates of the manager itself from the dashboard.
 
 A **location** is a set of cameras with its own way of running a show. One computer can move between venues, with
 restore points to go back to an earlier set-up, and a whole location can be exported (encrypted) to set up another
-computer.
+computer. A camera a location does not always use can be set **Not used here**, so it never holds up the readiness
+check or appears in the show, and a camera can be **removed** for good, its pairing revoked.
 
 ## On a phone or tablet
 
@@ -299,13 +334,15 @@ to approach 40 GB (that reading includes OBS's canvas and recording and whatever
 
 ## The camera app
 
-* Android 8 or later; tested on Pixel 3, 4a and 8, and Galaxy S20 FE and S23. The latest release is **0.9.11**.
+* Android 8 or later; tested on Pixel 3, 4a and 8, and Galaxy S20 FE and S23. The latest version is under
+  [Releases](../../releases).
 * 1080p, 1440p or 4K at 30 fps, H.264 with AAC sound, over SRT; local MP4 recording alongside, where the phone stays
   cool enough.
 * Runs as the phone's device manager, so it can be armed, restarted, updated and have its clock set remotely, with the
   screen lock left on.
 * White balance and exposure set from the manager; a frozen picture revived by itself; the camera Wi-Fi rejoined by
-  itself; its battery held short of full while charging; silent while armed.
+  itself; its battery held short of full while charging; silent while armed; a clamped-on cooler controlled over
+  Bluetooth.
 * Each release here is signed with the installation's release key, and the checksum of each file is published beside
   it. New versions are built, signed and published here automatically.
 
@@ -315,3 +352,6 @@ to approach 40 GB (that reading includes OBS's canvas and recording and whatever
   pinned certificate.
 * The dashboard is reachable from the computer itself; from the camera network only with an operator login, over HTTPS.
 * Set-up codes and USB set-up hand each phone its own pairing; passwords typed for a code are not stored.
+* Nothing is sent from an installation to the project: no usage reporting, crash reporting or footage.
+
+Found a security problem? Please report it privately to **mcvsaid.beta@proton.me**, never in a public issue.
