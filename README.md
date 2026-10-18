@@ -1,6 +1,6 @@
 # MCVSAID — MultiCam Video Stream AI Director
 
-**Turn a handful of Android phones into a multi-camera live production, directed automatically.**
+**Turn a handful of Android phones into a multi-camera live production, kept in sync, and directed automatically.**
 
 MCVSAID makes ordinary Android phones into remotely managed cameras for live music and events. Each phone streams
 its picture to [OBS](https://obsproject.com/) on a production computer. A manager on that computer keeps every feed in
@@ -24,8 +24,8 @@ fetches the app from here; the app does nothing by itself until it is paired wit
 
 ### Join the beta
 
-MCVSAID is in a **private beta**. If you film live events with phones (a church, a theatre, a school, a venue, a band,
-a podcast or a kitchen) and would like to try it, email **mcvsaid.beta@proton.me** with:
+MCVSAID is in a **private beta**. If you are interested in filming live events with phones (a church, a theatre, a school, a venue, a band,
+a podcast or a kitchen) and would like to try it, email **mcvsaid@proton.me** with:
 
 * what you film, and how often;
 * the computer you would run it on (Mac or Linux, and its memory);
