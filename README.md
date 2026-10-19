@@ -2,6 +2,9 @@
 
 **Turn a handful of Android phones into a multi-camera live production, kept in sync, and directed automatically.**
 
+**[Why MCVSAID?](WHY-MCVSAID.md)** What it does that other phone multicam tools and auto-directors don't, and how it
+compares. **[Try the demo](https://mcvsaid.github.io/)**: the real dashboard with simulated cameras, in your browser.
+
 MCVSAID makes ordinary Android phones into remotely managed cameras for live music and events. Each phone streams
 its picture to [OBS](https://obsproject.com/) on a production computer. A manager on that computer keeps every feed in
 step, watches the health of every phone, matches their colours, and can choose the shots itself with a vision model
