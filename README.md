@@ -101,8 +101,12 @@ camera.
 
 **Cooking** treats the food as the star as much as the cook: the board while hands cut, the stovetop while something is
 in the pan, the oven while its door is open, the plate at the end, with the kitchen's own sounds pointing to the busy
-station. Load a recipe from a web page or pasted text and the director follows its steps, makes sure each step's key
-station is seen, marks the steps in the recording, and can show the recipe, a QR code to it and step captions in OBS.
+station. Load a recipe from a web page or pasted text on its own **Recipe** page and the director follows its
+preparation and steps, makes sure each step's key station is seen, marks the steps in the recording, and can show the
+recipe, a QR code to it and step captions in OBS. Every step is listed with its time and key shots; go to any step,
+mark it done or skipped, edit and reorder steps during the show, and undo. With spoken cues on (Standard or Plus AI),
+the cook says "let's see that recipe", "right now we're on step two" or names an ingredient, and the recipe, the step
+or the ingredient's line goes on screen; speech is recognised on the production computer and nothing heard is kept.
 
 ![A recipe on screen in OBS: the method with the current step picked out, a QR code to the recipe and the step's caption](docs/screenshots/23-recipe-overlay.png)
 
