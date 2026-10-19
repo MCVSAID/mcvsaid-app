@@ -108,7 +108,13 @@ mark it done or skipped, edit and reorder steps during the show, and undo. With 
 the cook says "let's see that recipe", "right now we're on step two" or names an ingredient, and the recipe, the step
 or the ingredient's line goes on screen; speech is recognised on the production computer and nothing heard is kept.
 
-![A recipe on screen in OBS: the method with the current step picked out, a QR code to the recipe and the step's caption](docs/screenshots/23-recipe-overlay.png)
+![The Recipe page: the step being cooked with Back, Next and Undo, and the preparation done, each step with its time and key shot](docs/screenshots/22-recipe.png)
+
+![A recipe on screen in OBS: the preparation done and folded away, the method with the current step picked out, a QR code to the recipe and the step's caption](docs/screenshots/23-recipe-overlay.png)
+
+![Spoken cues on the Recipe page: what the cook was heard saying, and what each phrase did](docs/screenshots/22c-recipe-voice.png)
+
+![The cook's cues on screen: a step popped up and an ingredient named, as a lower third](docs/screenshots/23b-recipe-cues.png)
 
 **Creator Studio** is for one or a few people recording themselves, and nothing in it is preset: build your own
 framings from body regions (head, shoulders, hands, hips, knees, feet), choose how close each camera shoots and when it
