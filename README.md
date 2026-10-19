@@ -105,8 +105,8 @@ station. Load a recipe from a web page or pasted text on its own **Recipe** page
 preparation and steps, makes sure each step's key station is seen, marks the steps in the recording, and can show the
 recipe, a QR code to it and step captions in OBS. Every step is listed with its time and key shots; go to any step,
 mark it done or skipped, edit and reorder steps during the show, and undo. With spoken cues on (Standard or Plus AI),
-the cook says "let's see that recipe", "right now we're on step two" or names an ingredient, and the recipe, the step
-or the ingredient's line goes on screen; speech is recognised on the production computer and nothing heard is kept.
+the cook says "let's see that recipe", "back to step two" or calls out an ingredient, and the recipe, the step or the
+ingredient's line goes on screen while the AI keeps directing the shots; speech is recognised on the production computer and nothing heard is kept.
 
 ![The Recipe page: the step being cooked with Back, Next and Undo, and the preparation done, each step with its time and key shot](docs/screenshots/22-recipe.png)
 
