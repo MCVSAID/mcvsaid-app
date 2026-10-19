@@ -130,8 +130,8 @@ automatically, and app updates roll out one unarmed camera at a time.
 
 The cameras laid out as they stand on the stage, by what they show, read from the back of the stage to the audience,
 with stage left and right as the performers have them. Press one to put it on air, or pick two for a split screen.
-A tight shot is a narrow button and the whole band a wide one, and a mark on each shows where its camera stands and
-which way it points. **Arrange** moves and sizes the buttons, and a **room map** from above places and turns each
+A tight shot is a narrow button and the whole band a wide one, and a mark on each shows where its camera stands,
+which way it points and how wide it sees, and the room map's wedges are drawn across the stage behind the buttons. **Arrange** moves and sizes the buttons, and a **room map** from above places and turns each
 camera and shows the wedge it sees, worked out from its lens and zoom. **Room view** puts the two together: the buttons
 stand on the map's stage among the cameras that film them. Experimentally, **Place from the wide shot** finds each
 camera's picture inside the wide camera's and offers where its button should go: on the performer it shows, with the
