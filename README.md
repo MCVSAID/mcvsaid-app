@@ -361,7 +361,8 @@ and updates of the manager itself from the dashboard.
 A **location** is a set of cameras with its own way of running a show. One computer can move between venues, with
 restore points to go back to an earlier set-up, and a whole location can be exported (encrypted) to set up another
 computer. A camera a location does not always use can be set **Not used here**, so it never holds up the readiness
-check or appears in the show, and a camera can be **removed** for good, its pairing revoked.
+check or appears in the show, a camera can be **renamed** at any time, and one can be **removed** for good, its
+pairing revoked.
 
 ## On a phone or tablet
 
