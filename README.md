@@ -110,7 +110,7 @@ ingredient's line goes on screen while the AI keeps directing the shots; speech 
 
 ![The Recipe page: the step being cooked with Back, Next and Undo, and the preparation done, each step with its time and key shot](docs/screenshots/22-recipe.png)
 
-![A recipe on screen in OBS: the preparation done and folded away, the method with the current step picked out, a QR code to the recipe and the step's caption](docs/screenshots/23-recipe-overlay.png)
+![A recipe on screen in OBS: the preparation done and folded away, the method with the current step picked out, a QR code to the recipe in the other corner and the step's caption](docs/screenshots/23-recipe-overlay.png)
 
 ![Spoken cues on the Recipe page: what the cook was heard saying, and what each phrase did](docs/screenshots/22c-recipe-voice.png)
 
