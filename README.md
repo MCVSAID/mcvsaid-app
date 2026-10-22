@@ -108,6 +108,12 @@ mark it done or skipped, edit and reorder steps during the show, and undo. With 
 the cook says "let's see that recipe", "back to step two" or calls out an ingredient, and the recipe, the step or the
 ingredient's line goes on screen while the AI keeps directing the shots; speech is recognised on the production computer and nothing heard is kept.
 
+**Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
+stove", "wide shot". The director cuts to that camera at once and holds it before choosing again by itself. Each camera
+answers to its name, what it shows and phrases you give it; a name in passing, a question or "don't cut to the stove"
+does nothing. Off by default where music, a congregation or several talkers could call cameras by mistake, and switched
+on or off for each kind of event on the Director page.
+
 ![The Recipe page: the step being cooked with Back, Next and Undo, and the preparation done, each step with its time and key shot](docs/screenshots/22-recipe.png)
 
 ![A recipe on screen in OBS: the preparation done and folded away, the method with the current step picked out, a QR code to the recipe in the other corner and the step's caption](docs/screenshots/23-recipe-overlay.png)
