@@ -294,7 +294,8 @@ Phones mounted out of reach have to keep going on their own:
 
 * **A frozen picture is revived.** If a phone stops producing pictures while its sound goes on, the app reopens the
   camera, then restarts the capture, by itself; the manager also rebuilds an OBS source that plays with no picture.
-* **The camera Wi-Fi is rejoined** by an armed phone that loses it (a router restarted, say), without anyone touching it.
+* **The camera Wi-Fi is rejoined** by an armed phone that loses it (a router restarted, say), without anyone touching it,
+  and by a phone that is on it but cannot reach the manager (after roaming between a router's access points, say).
 * **Battery protection.** A phone charging all show from its Ethernet hub holds its battery short of full, which keeps
   it cooler, where the phone has a charge limit.
 * **Silence while armed.** An armed phone plays no notification, call, alarm, key click or charging sound that its
@@ -304,7 +305,8 @@ Phones mounted out of reach have to keep going on their own:
 * **Phone coolers.** A clamped-on Black Shark cooler is controlled from the dashboard over Bluetooth: see
   [Phone coolers](#phone-coolers-experimental).
 * **Aiming from the dashboard (experimental).** A phone on a Hohem iSteady X3 or MT3 gimbal can be turned from its
-  camera card: hold an arrow and it turns, let go and it eases to a stop, and it stops by itself if the page or the network goes. It
+  camera card: hold an arrow and it turns, let go and it eases to a stop, and it stops by itself if the page or the network goes.
+  The card also shows when an MT3's own AI tracker is following someone. It
   works hung upside down too, and any phone mounted upside down can have its picture turned round from its card. (In the demonstration, Stage Right is on one; its pictures are drawn, so nothing moves.)
 
 ## Phone coolers (experimental)
