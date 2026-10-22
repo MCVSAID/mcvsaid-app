@@ -303,8 +303,8 @@ Phones mounted out of reach have to keep going on their own:
   brings it back, in step.
 * **Phone coolers.** A clamped-on Black Shark cooler is controlled from the dashboard over Bluetooth: see
   [Phone coolers](#phone-coolers-experimental).
-* **Aiming from the dashboard (experimental).** A phone on a Hohem iSteady X3 gimbal can be turned from its camera
-  card: hold an arrow and it turns, let go and it stops, and it stops by itself if the page or the network goes. It
+* **Aiming from the dashboard (experimental).** A phone on a Hohem iSteady X3 or MT3 gimbal can be turned from its
+  camera card: hold an arrow and it turns, let go and it eases to a stop, and it stops by itself if the page or the network goes. It
   works hung upside down too, and any phone mounted upside down can have its picture turned round from its card. (In the demonstration, Stage Right is on one; its pictures are drawn, so nothing moves.)
 
 ## Phone coolers (experimental)
