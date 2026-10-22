@@ -246,6 +246,9 @@ or only chosen performers. It works ahead of the programme, in the look-ahead, s
 **It is experimental and can miss faces**, especially small, turned or fast-moving ones, so it is hidden and off until
 an administrator switches it on, and it should not be relied on to hide anyone.
 
+Where a camera's picture must never leave it unblurred, every face can be blurred **on the phone itself**, before
+anything is recorded or sent: the stream, OBS and every recording of that camera are then blurred for good.
+
 ## Colour that matches from phone to phone
 
 ![Colour page: white balance and exposure on every phone, and a LUT per camera](docs/screenshots/07-colour.png)
