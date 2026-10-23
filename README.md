@@ -348,6 +348,9 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 * **Follow a performer** (Plus AI): choose a named, consenting performer, and the manager recognises them in that
   camera's picture about once a second and points the phone at them, so the director's zoom on that camera follows
   them too.
+* **If it loses them**, the director takes that camera off air before the audience sees an empty shot (the programme
+  runs a few seconds behind): to the best other camera when the AI rates one, otherwise to the stage shot, and it
+  doesn't cut back until the gimbal is following again.
 * **An MT3's own AI tracker** is shown on the card when it is tracking, and the arrows warn that they would fight it.
 * **Hung upside down** from a bar or truss: one tick turns both arrows round, and **Turn picture 180°** (for any phone
   mounted upside down) turns the picture itself.
