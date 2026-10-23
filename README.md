@@ -348,6 +348,12 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 * **Follow a performer** (Plus AI): choose a named, consenting performer, and the manager recognises them in that
   camera's picture about once a second and points the phone at them, so the director's zoom on that camera follows
   them too.
+* **Solos and guests** (Plus AI): give a gimbal camera a **follow plan**: its performers in order, with **solos taking
+  over** (the sound hears a guitar solo and the gimbal turns to the guitarist, even one this camera doesn't usually
+  follow), optionally **prominent players** too, and **anyone** when none of them is in view, so a guest who walks on
+  from the other side of the stage is followed. It holds each choice a few seconds so it doesn't flit, and says why it is
+  on whom it is.
+* **Home position**: **Set home** where it points now, and **Home** turns it back there.
 * **If it loses them**, the director takes that camera off air before the audience sees an empty shot (the programme
   runs a few seconds behind): to the best other camera when the AI rates one, otherwise to the stage shot, and it
   doesn't cut back until the gimbal is following again.
@@ -363,8 +369,9 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 
 **Steer it with an Xbox controller.** The **Operate** page shows the cameras you choose live, with no look-ahead, for
 the administrator or an operator. The right stick aims the gimbal, the triggers zoom, **A** puts that camera on air,
-**View** goes back to the stage shot and **Y** to the previous shot; the bumpers change camera, and several controllers
-can drive several cameras at once.
+**View** goes back to the stage shot and **Y** to the previous shot, a right-stick press sends the gimbal home; the
+bumpers change camera, and several controllers can drive several cameras at once. Each tile has the same Follow
+control and follow plan as the camera's card, and Home and Set home.
 
 The commands were worked out from Hohem's own app, so a firmware update could change them. (In the demonstration,
 Stage Right is on a gimbal; its pictures are drawn, so nothing moves.)
@@ -431,8 +438,8 @@ and updates of the manager itself from the dashboard.
 A **location** is a set of cameras with its own way of running a show. One computer can move between venues, with
 restore points to go back to an earlier set-up, and a whole location can be exported (encrypted) to set up another
 computer. A camera a location does not always use can be set **Not used here**, so it never holds up the readiness
-check or appears in the show, a camera can be **renamed** at any time, and one can be **removed** for good, its
-pairing revoked.
+check or appears in the show, a camera can be **renamed** at any time (its OBS source and scenes take the new name
+too, without a cut), and one can be **removed** for good, its pairing revoked.
 
 ## On a phone or tablet
 
