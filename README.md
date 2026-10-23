@@ -16,6 +16,12 @@ people recording themselves, where you define the framings yourself. And it runs
 production wants: none at all, a vision model on the computer itself, or that model plus recognition of consenting
 performers.
 
+**New: cameras on gimbals that aim themselves.** Put a phone on a Hohem iSteady X3 or MT3 gimbal and aim it from its
+camera card, or press **Follow** and the phone keeps the most prominent face (or a named, consenting performer) in
+frame by itself: see [Gimbals](#gimbals-aim-a-camera-or-let-it-follow-experimental).
+**Face blur, now on the phones**: a camera can blur every face before anything leaves it, with the production computer
+watching as a backup for any face it misses: see [Face blur](#face-blur-experimental).
+
 **Linux or Mac.** The production computer can run Linux or macOS. It was built on a Linux workstation and now runs live
 on a **MacBook Pro with an M5 Pro and 48 GB of memory**: OBS, the manager and the shot-choosing model all on the one
 laptop (see [The production computer](#the-production-computer)).
@@ -241,16 +247,29 @@ The people in this screenshot are made up, and their pictures are drawn figures.
 
 ## Face blur (experimental)
 
-Faces can be blurred live, for the whole show or camera by camera: every face, everyone except consenting performers,
-or only chosen performers. It works ahead of the programme, in the look-ahead, so a face is covered before OBS shows it.
+<img src="docs/screenshots/25-face-blur.png" alt="Face blur settings: the audience camera blurring every face on its phone, with this computer as a backup, at ten looks a second" width="360" align="right">
+
+**On the phone first.** A camera whose picture must never leave it unblurred can blur every face **on the phone
+itself**, before anything is recorded or sent: its stream, OBS, the computer's copy and the phone's own recording are
+all blurred for good, and no unblurred copy exists anywhere. The phones now find faces with the same detector as the
+computer (YuNet), which finds turned and small faces too: on test scenes it found 78–84% of faces, against 31–38% for
+the phones' earlier detector.
+
+**The computer as a backup.** With *On the phone, with this computer as a backup*, the production computer keeps
+watching that camera a few seconds ahead of the programme and covers in OBS any face the phone left showing: one
+walking in before the phone has looked, or one it lost for a moment. The phone reports where it blurred each frame,
+so the computer knows which faces it already covered and adds only what was missed. If the phone's own looks stop, it
+blurs its whole picture.
+
+**On the computer alone**, faces are blurred live in OBS for the whole show or camera by camera: every face, everyone
+except consenting performers, or only chosen performers, covered before OBS shows them, with a fail-safe that blurs a
+camera whole if its pictures were not all looked at in time. Recordings can be blurred again afterwards, every picture
+looked at more closely.
+
 **It is experimental and can miss faces**, especially small, turned or fast-moving ones, so it is hidden and off until
 an administrator switches it on, and it should not be relied on to hide anyone.
 
-Where a camera's picture must never leave it unblurred, every face can be blurred **on the phone itself**, before
-anything is recorded or sent: the stream, OBS and every recording of that camera are then blurred for good. The phone
-uses the same face detector as the computer, which finds turned and small faces too. The computer can back the phone
-up: it still looks at that camera ahead of the programme and blurs any face the phone left showing, such as one
-walking in before the phone has looked, using the phone's own report of where it blurred each frame.
+<br clear="right">
 
 ## Colour that matches from phone to phone
 
@@ -310,12 +329,35 @@ Phones mounted out of reach have to keep going on their own:
   brings it back, in step.
 * **Phone coolers.** A clamped-on Black Shark cooler is controlled from the dashboard over Bluetooth: see
   [Phone coolers](#phone-coolers-experimental).
-* **Aiming from the dashboard (experimental).** A phone on a Hohem iSteady X3 or MT3 gimbal can be turned from its
-  camera card: hold an arrow and it turns, let go and it eases to a stop, and it stops by itself if the page or the network goes.
-  The card also shows when an MT3's own AI tracker is following someone, and **Follow** has the phone itself find a
-  face in its picture and keep it in frame with the gimbal (and the person, by their body, when they turn away), or a
-  named, consenting performer the manager recognises. It
-  works hung upside down too, and any phone mounted upside down can have its picture turned round from its card. (In the demonstration, Stage Right is on one; its pictures are drawn, so nothing moves.)
+* **Gimbals.** A phone on a Hohem gimbal is aimed, and can follow someone, from the dashboard: see
+  [Gimbals](#gimbals-aim-a-camera-or-let-it-follow-experimental).
+
+## Gimbals: aim a camera, or let it follow (experimental)
+
+<img src="docs/screenshots/05c-gimbal.png" alt="A camera card on a gimbal: hold-to-aim arrows, Follow set to the most prominent face at Normal speed, following" width="300" align="right">
+
+A phone on a **Hohem iSteady X3 or MT3** gimbal becomes a camera you can point from the dashboard. The camera app talks
+to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, and no Hohem app running.
+
+* **Aim it.** Hold an arrow on the camera's card and it turns, at the speed chosen; let go and it eases to a stop. If
+  the page closes or the network drops, it stops by itself within half a second.
+* **Let it follow.** Choose **Follow → the most prominent face** and the phone finds faces in its own picture and keeps
+  that face a little above the middle, turning the gimbal calmly, at a **Calm, Normal or Quick** pace. Someone who turns
+  away or walks too far for their face to be found is still followed **by their body**. Touch an arrow and you have it
+  for three seconds; then following carries on.
+* **Follow a performer** (Plus AI): choose a named, consenting performer, and the manager recognises them in that
+  camera's picture about once a second and points the phone at them, so the director's zoom on that camera follows
+  them too.
+* **An MT3's own AI tracker** is shown on the card when it is tracking, and the arrows warn that they would fight it.
+* **Hung upside down** from a bar or truss: one tick turns both arrows round, and **Turn picture 180°** (for any phone
+  mounted upside down) turns the picture itself.
+* **Pairing from the dashboard.** A phone looks for a gimbal or cooler when asked; one can be moved from one camera to
+  another, and all coolers re-paired at once, each to the phone it is clamped to.
+
+The commands were worked out from Hohem's own app, so a firmware update could change them. (In the demonstration,
+Stage Right is on a gimbal; its pictures are drawn, so nothing moves.)
+
+<br clear="right">
 
 ## Phone coolers (experimental)
 
@@ -435,7 +477,7 @@ to approach 40 GB (that reading includes OBS's canvas and recording and whatever
 
 ## The camera app
 
-* Android 8 or later; tested on Pixel 3, 4a and 8, and Galaxy S20 FE and S23. The latest version is under
+* Android 8 or later; tested on Pixel 3, 4a and 8, and Galaxy S20 FE, S23 and S23+. The latest version is under
   [Releases](../../releases).
 * 1080p, 1440p or 4K at 30 fps, H.264 with AAC sound, over SRT; local MP4 recording alongside, where the phone stays
   cool enough.
@@ -444,6 +486,9 @@ to approach 40 GB (that reading includes OBS's canvas and recording and whatever
 * White balance and exposure set from the manager; a frozen picture revived by itself; the camera Wi-Fi rejoined by
   itself; its battery held short of full while charging; silent while armed; a clamped-on cooler controlled over
   Bluetooth.
+* A Hohem iSteady X3 or MT3 gimbal aimed over Bluetooth, and steered by the phone itself to follow a face or a person.
+* Face blur on the phone (experimental): every face found (YuNet) and blurred before anything is recorded or sent, and
+  where it blurred each frame reported to the computer, which backs it up.
 * Each release here is signed with the installation's release key, and the checksum of each file is published beside
   it. New versions are built, signed and published here automatically.
 
