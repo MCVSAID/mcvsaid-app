@@ -351,11 +351,20 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 * **If it loses them**, the director takes that camera off air before the audience sees an empty shot (the programme
   runs a few seconds behind): to the best other camera when the AI rates one, otherwise to the stage shot, and it
   doesn't cut back until the gimbal is following again.
+* **Aimed from the stage** (Plus AI): with the cameras on the room map, and the gimbal aimed at centre stage and **Set**
+  once, the manager uses the wide shot to turn a gimbal that has lost someone back towards where they are, and one
+  given a performer towards them before the director needs it. The phone's own following takes over once they are in
+  its shot.
 * **An MT3's own AI tracker** is shown on the card when it is tracking, and the arrows warn that they would fight it.
 * **Hung upside down** from a bar or truss: one tick turns both arrows round, and **Turn picture 180°** (for any phone
   mounted upside down) turns the picture itself.
 * **Pairing from the dashboard.** A phone looks for a gimbal or cooler when asked; one can be moved from one camera to
   another, and all coolers re-paired at once, each to the phone it is clamped to.
+
+**Steer it with an Xbox controller.** The **Operate** page shows the cameras you choose live, with no look-ahead, for
+the administrator or an operator. The right stick aims the gimbal, the triggers zoom, **A** puts that camera on air,
+**View** goes back to the stage shot and **Y** to the previous shot; the bumpers change camera, and several controllers
+can drive several cameras at once.
 
 The commands were worked out from Hohem's own app, so a firmware update could change them. (In the demonstration,
 Stage Right is on a gimbal; its pictures are drawn, so nothing moves.)
