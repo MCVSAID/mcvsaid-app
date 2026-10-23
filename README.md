@@ -352,7 +352,8 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
   the page closes or the network drops, it stops by itself within half a second.
 * **Let it follow.** Choose **Follow → the most prominent face** and the phone finds faces in its own picture and keeps
   that face a little above the middle, turning the gimbal calmly, at a **Calm, Normal or Quick** pace. Someone who turns
-  away or walks too far for their face to be found is still followed **by their body**. Touch an arrow and you have it
+  away or walks too far for their face to be found is still followed **by their body**, and someone who walks out of the
+  side of the shot is followed on round that way to meet them coming back in. Zoomed in, the top of the head keeps its room. Touch an arrow and you have it
   for three seconds; then following carries on.
 * **Follow a performer** (Plus AI): choose a named, consenting performer, and the manager recognises them in that
   camera's picture about once a second and points the phone at them, so the director's zoom on that camera follows
@@ -381,7 +382,9 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 **Steer it with an Xbox controller.** The **Operate** page shows the cameras you choose live, with no look-ahead, for
 the administrator or an operator. The right stick aims the gimbal, the triggers zoom, **A** puts that camera on air,
 **View** goes back to the stage shot and **Y** to the previous shot, a right-stick press sends the gimbal home; the
-bumpers change camera, and several controllers can drive several cameras at once. Each tile has the same Follow
+bumpers change camera, and several controllers can drive several cameras at once. Every camera in use is there, gimbal
+or not, each with the same *What it shows* as its card, to change mid-show. Each tile says which lens is making the
+picture (main, telephoto or ultrawide) and the zoom, and its live picture can run at 24 frames a second. Each tile has the same Follow
 control and follow plan as the camera's card, and Home and Set home.
 
 The commands were worked out from Hohem's own app, so a firmware update could change them. (In the demonstration,
