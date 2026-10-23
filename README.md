@@ -114,11 +114,20 @@ mark it done or skipped, edit and reorder steps during the show, and undo. With 
 the cook says "let's see that recipe", "back to step two" or calls out an ingredient, and the recipe, the step or the
 ingredient's line goes on screen while the AI keeps directing the shots; speech is recognised on the production computer and nothing heard is kept.
 
+**Explain the director, on the video.** For demo videos, switch on *Explain the director* and the programme carries
+caption cards saying what the AI did and why: each cut and who made it, a solo heard, a gimbal turning to the soloist, a
+lens change, a voice call, and now and then a feature in use. They are recorded with the programme, so the video shows
+how it was made. Performers are never named.
+
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera at once and holds it before choosing again by itself. Each camera
 answers to its name, what it shows and phrases you give it; a name in passing, a question or "don't cut to the stove"
 does nothing. Off by default where music, a congregation or several talkers could call cameras by mistake, and switched
 on or off for each kind of event on the Director page.
+
+**Voice zoom calls.** "Close up", "zoom in", "pull back": the camera on air zooms, gliding on the phone and handing over to
+its telephoto on the way, and the director holds the shot. A band can give it a cue of its own that nobody sings ("camera,
+close on me") for a performer to call a tighter shot themselves.
 
 ![The Recipe page: the step being cooked with Back, Next and Undo, and the preparation done, each step with its time and key shot](docs/screenshots/22-recipe.png)
 
@@ -353,6 +362,8 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
   follow), optionally **prominent players** too, and **anyone** when none of them is in view, so a guest who walks on
   from the other side of the stage is followed. It holds each choice a few seconds so it doesn't flit, and says why it is
   on whom it is.
+* **The zoom follows the plan**: the director's zoom on that camera frames whom the plan is on, the soloist or a guest,
+  not just a listed performer.
 * **Home position**: **Set home** where it points now, and **Home** turns it back there.
 * **If it loses them**, the director takes that camera off air before the audience sees an empty shot (the programme
   runs a few seconds behind): to the best other camera when the AI rates one, otherwise to the stage shot, and it
