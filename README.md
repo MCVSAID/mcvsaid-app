@@ -127,7 +127,8 @@ on or off for each kind of event on the Director page.
 
 **Voice zoom calls.** "Close up", "zoom in", "pull back": the camera on air zooms, gliding on the phone and handing over to
 its telephoto on the way, and the director holds the shot. A band can give it a cue of its own that nobody sings ("camera,
-close on me") for a performer to call a tighter shot themselves.
+close on me") for a performer to call a tighter shot themselves. Your own phrases are caught by a quick phrase spotter
+the moment you finish saying them, a fifth of a second or so, with Whisper hearing everything else.
 
 ![The Recipe page: the step being cooked with Back, Next and Undo, and the preparation done, each step with its time and key shot](docs/screenshots/22-recipe.png)
 
@@ -382,7 +383,8 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 **Steer it with an Xbox controller.** The **Operate** page shows the cameras you choose live, with no look-ahead, for
 the administrator or an operator. The right stick aims the gimbal, the triggers zoom, **A** puts that camera on air,
 **View** goes back to the stage shot and **Y** to the previous shot, a right-stick press sends the gimbal home; the
-bumpers change camera, and several controllers can drive several cameras at once. Every camera in use is there, gimbal
+bumpers change camera, and several controllers can drive several cameras at once. Each tile arms, streams and records
+its camera (for operators too) and shows its temperature. Every camera in use is there, gimbal
 or not, each with the same *What it shows* as its card, to change mid-show. Each tile says which lens is making the
 picture (main, telephoto or ultrawide) and the zoom, and its live picture can run at 24 frames a second. Each tile has the same Follow
 control and follow plan as the camera's card, and Home and Set home.
