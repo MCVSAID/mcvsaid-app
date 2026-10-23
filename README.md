@@ -247,7 +247,8 @@ or only chosen performers. It works ahead of the programme, in the look-ahead, s
 an administrator switches it on, and it should not be relied on to hide anyone.
 
 Where a camera's picture must never leave it unblurred, every face can be blurred **on the phone itself**, before
-anything is recorded or sent: the stream, OBS and every recording of that camera are then blurred for good.
+anything is recorded or sent: the stream, OBS and every recording of that camera are then blurred for good. The phone
+uses the same face detector as the computer, which finds turned and small faces too.
 
 ## Colour that matches from phone to phone
 
@@ -310,7 +311,8 @@ Phones mounted out of reach have to keep going on their own:
 * **Aiming from the dashboard (experimental).** A phone on a Hohem iSteady X3 or MT3 gimbal can be turned from its
   camera card: hold an arrow and it turns, let go and it eases to a stop, and it stops by itself if the page or the network goes.
   The card also shows when an MT3's own AI tracker is following someone, and **Follow** has the phone itself find a
-  face in its picture and keep it in frame with the gimbal, or a named, consenting performer the manager recognises. It
+  face in its picture and keep it in frame with the gimbal (and the person, by their body, when they turn away), or a
+  named, consenting performer the manager recognises. It
   works hung upside down too, and any phone mounted upside down can have its picture turned round from its card. (In the demonstration, Stage Right is on one; its pictures are drawn, so nothing moves.)
 
 ## Phone coolers (experimental)
