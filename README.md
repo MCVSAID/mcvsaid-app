@@ -115,7 +115,7 @@ the cook says "let's see that recipe", "back to step two" or calls out an ingred
 ingredient's line goes on screen while the AI keeps directing the shots; speech is recognised on the production computer and nothing heard is kept.
 
 **Explain the director, on the video.** For demo videos, switch on *Explain the director* and the programme carries
-caption cards saying what the AI did and why: each cut and who made it, a solo heard, a gimbal turning to the soloist, a
+caption cards saying what the AI did and why: each cut and who made it, a solo heard, a gimbal tracking someone or turning to the soloist, a
 lens change, a voice call, and now and then a feature in use. They are recorded with the programme, so the video shows
 how it was made. Performers are never named.
 
