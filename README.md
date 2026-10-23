@@ -248,7 +248,9 @@ an administrator switches it on, and it should not be relied on to hide anyone.
 
 Where a camera's picture must never leave it unblurred, every face can be blurred **on the phone itself**, before
 anything is recorded or sent: the stream, OBS and every recording of that camera are then blurred for good. The phone
-uses the same face detector as the computer, which finds turned and small faces too.
+uses the same face detector as the computer, which finds turned and small faces too. The computer can back the phone
+up: it still looks at that camera ahead of the programme and blurs any face the phone left showing, such as one
+walking in before the phone has looked, using the phone's own report of where it blurred each frame.
 
 ## Colour that matches from phone to phone
 
