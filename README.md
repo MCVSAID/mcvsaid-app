@@ -123,7 +123,8 @@ how it was made. Performers are never named.
 themselves just by looking into the front camera: a new look ends the called shot's hold.
 
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
-stove", "wide shot". The director cuts to that camera at once and holds it before choosing again by itself. Each camera
+stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
+asked for, and holds it before choosing again by itself. Each camera
 answers to its name, what it shows and phrases you give it; a name in passing, a question or "don't cut to the stove"
 does nothing. Off by default where music, a congregation or several talkers could call cameras by mistake, and switched
 on or off for each kind of event on the Director page.
@@ -357,7 +358,7 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 * **Aim it.** Hold an arrow on the camera's card and it turns, at the speed chosen; let go and it eases to a stop. If
   the page closes or the network drops, it stops by itself within half a second.
 * **Let it follow.** Choose **Follow → the most prominent face** and the phone finds faces in its own picture and keeps
-  that face a little above the middle, turning the gimbal calmly, at a **Calm, Normal or Quick** pace. Someone who turns
+  that face a little above the middle, turning the gimbal calmly, at a **Calm, Normal or Quick** pace, or quicker wide and calmer zoomed in. Someone who turns
   away or walks too far for their face to be found is still followed **by their body**, and someone who walks out of the
   side of the shot is followed on round that way to meet them coming back in. Zoomed in, the top of the head keeps its room. Touch an arrow and you have it
   for three seconds; then following carries on.
