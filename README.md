@@ -119,6 +119,9 @@ caption cards saying what the AI did and why: each cut and who made it, a solo h
 lens change, a voice call, and now and then a feature in use. They are recorded with the programme, so the video shows
 how it was made. Performers are never named.
 
+**Look back to bring the camera back.** With gaze on, a cook who called "cut to the stove" brings the shot back to
+themselves just by looking into the front camera: a new look ends the called shot's hold.
+
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera at once and holds it before choosing again by itself. Each camera
 answers to its name, what it shows and phrases you give it; a name in passing, a question or "don't cut to the stove"
