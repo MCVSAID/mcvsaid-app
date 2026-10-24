@@ -110,7 +110,7 @@ in the pan, the oven while its door is open, the plate at the end, with the kitc
 station. Load a recipe from a web page or pasted text on its own **Recipe** page and the director follows its
 preparation and steps, makes sure each step's key station is seen, marks the steps in the recording, and can show the
 recipe, a QR code to it and step captions in OBS. Every step is listed with its time and key shots; go to any step,
-mark it done or skipped, edit and reorder steps during the show, and undo. With spoken cues on (Standard or Plus AI),
+mark it done or skipped, and undo; **Edit steps** lets you change, add, delete and drag steps into order, before or during the show. With spoken cues on (Standard or Plus AI),
 the cook says "let's see that recipe", "back to step two" or calls out an ingredient, and the recipe, the step or the
 ingredient's line goes on screen while the AI keeps directing the shots; speech is recognised on the production computer and nothing heard is kept.
 
@@ -121,6 +121,9 @@ how it was made. Performers are never named.
 
 **Look back to bring the camera back.** With gaze on, a cook who called "cut to the stove" brings the shot back to
 themselves just by looking into the front camera: a new look ends the called shot's hold, once it has run a few seconds.
+
+**Programme sound from one camera.** Every phone's microphone can be in the programme; choose the one that leads, and
+the others join it only while they are lined up with it, measured from the cameras' own streams, so nothing echoes.
 
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
