@@ -124,6 +124,8 @@ themselves just by looking into the front camera: a new look ends the called sho
 
 **Programme sound from one camera.** Every phone's microphone can be in the programme; choose the one that leads, and
 the others join it only while they are lined up with it, measured from the cameras' own streams, so nothing echoes.
+**Calibrate sync** lines voices up with mouths: a phone or tablet flashes and beeps in front of the cameras, and each
+camera's sound is measured against its own picture and set to match.
 
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
