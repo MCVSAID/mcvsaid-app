@@ -120,7 +120,7 @@ lens change, a voice call, and now and then a feature in use. They are recorded 
 how it was made. Performers are never named.
 
 **Look back to bring the camera back.** With gaze on, a cook who called "cut to the stove" brings the shot back to
-themselves just by looking into the front camera: a new look ends the called shot's hold.
+themselves just by looking into the front camera: a new look ends the called shot's hold, once it has run a few seconds.
 
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
@@ -360,7 +360,8 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 * **Let it follow.** Choose **Follow → the most prominent face** and the phone finds faces in its own picture and keeps
   that face a little above the middle, turning the gimbal calmly, at a **Calm, Normal or Quick** pace, or quicker wide and calmer zoomed in. Someone who turns
   away or walks too far for their face to be found is still followed **by their body**, and someone who walks out of the
-  side of the shot is followed on round that way to meet them coming back in. Zoomed in, the top of the head keeps its room. Touch an arrow and you have it
+  side of the shot is followed on round that way to meet them coming back in; lose them altogether and it **searches**,
+  zooming out and swinging wider each way until it finds them again. Zoomed in, the top of the head keeps its room. Touch an arrow and you have it
   for three seconds; then following carries on.
 * **Follow a performer** (Plus AI): choose a named, consenting performer, and the manager recognises them in that
   camera's picture about once a second and points the phone at them, so the director's zoom on that camera follows
