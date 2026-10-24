@@ -143,7 +143,8 @@ the moment you finish saying them, a fifth of a second or so, with Whisper heari
 
 **Creator Studio** is for one or a few people recording themselves, and nothing in it is preset: build your own
 framings from body regions (head, shoulders, hands, hips, knees, feet), choose how close each camera shoots and when it
-cuts. Switch a camera's framing from its card or the Operate page, or just say it: "give me the hands". It needs
+cuts. Switch a camera's framing from its card or the Operate page, or just say it: "give me the hands"; a camera on a
+gimbal turns to that framing. It needs
 Plus AI's person detector and a body keypoint model, both run on the computer.
 
 ## Every camera, in detail
