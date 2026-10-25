@@ -451,8 +451,8 @@ one of them can hold the cooler at a time.
 
 ![The camera relay, on by default: what each camera passes to OBS and how long it is held](docs/screenshots/12-relay.png)
 
-System › This PC shows the camera relay at work, the AI assistance level, manager updates and how OBS decodes each
-camera. The relay can be switched off there, under *Advanced: troubleshooting*; without the SRT library it falls back
+System › This PC shows the camera relay at work, the AI assistance level and how OBS decodes each camera; System ›
+Updates has the manager's updates and the phones' camera app together. The relay can be switched off there, under *Advanced: troubleshooting*; without the SRT library it falls back
 by itself to cameras streaming straight to OBS, and says why.
 
 ![System, Network: how the phones find the manager, and the camera Wi-Fi](docs/screenshots/11-system-network.png)
