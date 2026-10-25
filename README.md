@@ -109,9 +109,9 @@ camera.
 in the pan, the oven while its door is open, the plate at the end, with the kitchen's own sounds pointing to the busy
 station. Load a recipe from a web page or pasted text on its own **Recipe** page and the director follows its
 preparation and steps, makes sure each step's key station is seen, marks the steps in the recording, and can show the
-recipe, a QR code to it and step captions in OBS. Every step is listed with its time and key shots; go to any step,
-mark it done or skipped, and undo; **Edit steps** lets you change, add, delete and drag steps into order, before or during the show, and **Edit as text** opens the whole recipe, ingredients and equipment too. With spoken cues on (Standard or Plus AI),
-the cook says "let's see that recipe", "back to step two" or calls out an ingredient, and the recipe, the step or the
+recipe, a QR code to it and step captions in OBS: always, at moments (after Record starts, as each step begins, at the end) or only when asked, with each step's details in its pop-up if you like. Every step is listed with its time and key shots; go to any step,
+mark it done or skipped, and undo; **Edit steps** lets you change, add, delete and drag steps into order, before or during the show, and **Edit as text** opens the whole recipe, ingredients and equipment too. **Prep for the show** turns long steps into short ones the cook can call out, one action each ("grind the beans"), keeping the full wording as each step's details, and checks that a camera covers every step. With spoken cues on (Standard or Plus AI),
+the cook says "let's see that recipe" (and "hide the recipe"), "back to step two" or calls out an ingredient, and the recipe, the step or the
 ingredient's line goes on screen while the AI keeps directing the shots; speech is recognised on the production computer and nothing heard is kept.
 
 **Explain the director, on the video.** For demo videos, switch on *Explain the director* and the programme carries
