@@ -16,11 +16,17 @@ people recording themselves, where you define the framings yourself. And it runs
 production wants: none at all, a vision model on the computer itself, or that model plus recognition of consenting
 performers.
 
-**New: cameras on gimbals that aim themselves.** Put a phone on a Hohem iSteady X3 or MT3 gimbal and aim it from its
-camera card, or press **Follow** and the phone keeps the most prominent face (or a named, consenting performer) in
-frame by itself: see [Gimbals](#gimbals-aim-a-camera-or-let-it-follow-experimental).
-**Face blur, now on the phones**: a camera can blur every face before anything leaves it, with the production computer
-watching as a backup for any face it misses: see [Face blur](#face-blur-experimental).
+**New: voices that line up with mouths.** *Calibrate sync* measures each camera's sound against its picture through OBS
+itself, from a phone or tablet that flashes and beeps in front of the cameras, and sets each camera to match: see
+[Live music, worship, podcasts, panels, theatre, cooking](#live-music-worship-podcasts-panels-theatre-cooking).
+**Recipes made for the show:** *Prep for the show* turns a long recipe into short steps the cook can call out, and you
+choose when the recipe card is on screen: always, at key moments, or only when asked ("show the recipe", "hide the
+recipe").
+**A host's back and forth:** when a host looks into their camera the director cuts to them as they turn to it, and
+back to the shot it left when they look away: see [The director](#the-director).
+**Operate from a tablet:** steer gimbal cameras with an Xbox controller (tested from a tablet) or on-screen buttons, at
+the aim and zoom speeds you set, from `https://operate.mcvsaid.local`: see
+[Gimbals](#gimbals-aim-a-camera-or-let-it-follow-experimental).
 
 **Linux or Mac.** The production computer can run Linux or macOS. It was built on a Linux workstation and now runs live
 on a **MacBook Pro with an M5 Pro and 48 GB of memory**: OBS, the manager and the shot-choosing model all on the one
@@ -82,9 +88,9 @@ be **spare phones, factory-reset and used for nothing else**: the app becomes ea
 
 ![Show page: ready for a show, every camera streaming, the programme being recorded](docs/screenshots/01-show.png)
 
-The dashboard is grouped by when things are needed: **Show** (Show, Cameras, Stage Shots, Temperatures), **Set up**
-(Director, Colour, People), **Library** (Recordings) and **Administration** (System). The show's state (ready, on air, recording)
-stays in view at the foot of the side bar.
+The dashboard is grouped by when things are needed: **Show** (Show, Recipe in Cooking, Cameras, Stage Shots, Operate,
+Temperatures), **Set up** (Director, Sound, Colour, People), **Library** (Recordings) and **Administration** (System).
+The show's state (ready, on air, recording) stays in view at the foot of the side bar.
 
 One line answers the question that matters before doors open: **is everything ready?** It is worked out continuously
 from the computer (OBS, memory, processor, recording space, the camera network, the relay, the model) and from every
@@ -109,30 +115,45 @@ camera.
 in the pan, the oven while its door is open, the plate at the end, with the kitchen's own sounds pointing to the busy
 station. Load a recipe from a web page or pasted text on its own **Recipe** page and the director follows its
 preparation and steps, makes sure each step's key station is seen, marks the steps in the recording, and can show the
-recipe, a QR code to it and step captions in OBS: always, at moments (after Record starts, as each step begins, at the end) or only when asked, with each step's details in its pop-up if you like. Every step is listed with its time and key shots; go to any step,
-mark it done or skipped, and undo; **Edit steps** lets you change, add, delete and drag steps into order, before or during the show, and **Edit as text** opens the whole recipe, ingredients and equipment too. **Prep for the show** turns long steps into short ones the cook can call out, one action each ("grind the beans"), keeping the full wording as each step's details, and checks that a camera covers every step. With spoken cues on (Standard or Plus AI),
-the cook says "let's see that recipe" (and "hide the recipe"), "back to step two" or calls out an ingredient, and the recipe, the step or the
-ingredient's line goes on screen while the AI keeps directing the shots; speech is recognised on the production computer and nothing heard is kept.
+recipe, a QR code to it and step captions in OBS: always, at moments (after Record starts, as each step begins, at the
+end) or only when asked, with each step's details in its pop-up if you like, in time with the programme. Every step is
+listed with its time and key shots; go to any step, mark it done or skipped, and undo; **Edit steps** lets you change,
+add, delete and drag steps into order, before or during the show, and **Edit as text** opens the whole recipe,
+ingredients and equipment too. **Prep for the show** turns long steps into short ones the cook can call out, one action
+each ("grind the beans"), keeping the full wording as each step's details, checks that a camera covers every step, and
+lists what to say for each, to rehearse. With spoken cues on (Standard or Plus AI), the cook says "let's see that
+recipe" (and "hide the recipe"), "step two" or a step in its own words, forward or back, or calls out an ingredient,
+and the recipe, the step or the ingredient's line goes on screen while the AI keeps directing the shots; speech is
+recognised on the production computer and nothing heard is kept. Pressing Record starts the recipe afresh, and it
+moves on by itself only while recording.
 
 **Explain the director, on the video.** For demo videos, switch on *Explain the director* and the programme carries
 caption cards saying what the AI did and why: each cut and who made it, a solo heard, a gimbal tracking someone or turning to the soloist, a
 lens change, a voice call, and now and then a feature in use. They are recorded with the programme, so the video shows
 how it was made. Performers are never named.
+Each card comes up as the programme shows the moment it explains, and in Cooking they keep to the corner away from the
+recipe.
 
 **Look back to bring the camera back.** With gaze on, a cook who called "cut to the stove" brings the shot back to
 themselves just by looking into the front camera: a new look ends the called shot's hold, once it has run a few seconds.
+After a short look into a camera, looking away goes back to the shot before. With a host, the gaze is quicker: it cuts
+to them just before they turn to the camera, and a glance away no longer cuts away and straight back. The recipe's own
+key shots wait for the host too.
 
 **Programme sound from one camera.** Every phone's microphone can be in the programme; choose the one that leads, and
-the others join it only while they are lined up with it, measured from the cameras' own streams, so nothing echoes.
-**Calibrate sync** lines voices up with mouths: a phone or tablet flashes and beeps in front of the cameras, and each
-camera's sound is measured against its own picture and set to match.
+the others join it only while they are lined up with it, measured from the cameras' own streams, so nothing echoes. Or
+let it **follow the speaker**, opening only the microphone that hears them best. **Lip sync** moves the sound against
+the picture, and **Calibrate sync** measures it for you: a phone or tablet flashes and beeps in front of the cameras,
+OBS records a few seconds of the programme, and each camera's sound is measured against its own picture and set to
+match, even a second and a half out. They are on the **Sound** page, with the voice calls.
 
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
 asked for, and holds it before choosing again by itself. Each camera
 answers to its name, what it shows and phrases you give it; a name in passing, a question or "don't cut to the stove"
-does nothing. Off by default where music, a congregation or several talkers could call cameras by mistake, and switched
-on or off for each kind of event on the Director page.
+does nothing, a call only a phone heard waits for the computer to hear it too, and two cameras called in one breath
+cut to neither. Off by default where music, a congregation or several talkers could call cameras by mistake, and
+switched on or off for each kind of event on the Sound page.
 
 **Voice zoom calls.** "Close up", "zoom in", "pull back": the camera on air zooms, gliding on the phone and handing over to
 its telephoto on the way, and the director holds the shot. A band can give it a cue of its own that nobody sings ("camera,
@@ -183,7 +204,7 @@ stand on the map's stage among the cameras that film them. Experimentally, **Pla
 camera's picture inside the wide camera's and offers where its button should go: on the performer it shows, with the
 person detector. With a vision model it also suggests who that is, and asks "guitar or bass?" when it cannot tell.
 The page can be offered to phones on the camera network, behind its own passcode, so someone in the crowd can call the
-shots by hand.
+shots by hand, at `https://stageshots.mcvsaid.local` with no port to type.
 
 ![The room map: each camera placed and turned, with the wedge it sees](docs/screenshots/04e-room-map.png)
 
@@ -317,6 +338,8 @@ a show. A clamped-on phone cooler changes that: see [Phone coolers](#phone-coole
 camera relay), at no cost to the phones. Each programme recording then comes with one file per camera, the cuts as an edit (EDL) a
 videographer can open in Resolve, Premiere or Final Cut and re-cut, and each camera's colour LUT. Camera files are a
 setting of their own, off until chosen, since they take disk space.
+**Record** and **Stop** wait for the programme, which runs a few seconds behind, so the file starts and ends with what
+was happening as they were pressed, and recipe steps are marked where the file shows them.
 
 ## Adding a phone
 
@@ -368,6 +391,8 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
   side of the shot is followed on round that way to meet them coming back in; lose them altogether and it **searches**,
   zooming out and swinging wider each way until it finds them again. Zoomed in, the top of the head keeps its room. Touch an arrow and you have it
   for three seconds; then following carries on.
+  Following, it zooms to keep them about waist up, in as they walk away and out as they come nearer, and it turns
+  faster when they are close or walking towards it.
 * **Follow a performer** (Plus AI): choose a named, consenting performer, and the manager recognises them in that
   camera's picture about once a second and points the phone at them, so the director's zoom on that camera follows
   them too.
@@ -393,13 +418,17 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
   another, and all coolers re-paired at once, each to the phone it is clamped to.
 
 **Steer it with an Xbox controller.** The **Operate** page shows the cameras you choose live, with no look-ahead, for
-the administrator or an operator. The right stick aims the gimbal, the triggers zoom, **A** puts that camera on air,
+the administrator or an operator, at the PC or from a tablet on the camera Wi-Fi (an Xbox controller paired to a tablet
+has been tested). The right stick aims the gimbal, the triggers zoom, **A** puts that camera on air,
 **View** goes back to the stage shot and **Y** to the previous shot, a right-stick press sends the gimbal home; the
 bumpers change camera, and several controllers can drive several cameras at once. Each tile arms, streams and records
 its camera (for operators too) and shows its temperature. Every camera in use is there, gimbal
 or not, each with the same *What it shows* as its card, to change mid-show. Each tile says which lens is making the
 picture (main, telephoto or ultrawide) and the zoom, and its live picture can run at 24 frames a second. Each tile has the same Follow
 control and follow plan as the camera's card, and Home and Set home.
+No controller? On-screen arrows and zoom buttons do the same, and **Aim** and **Zoom** sliders set how quick they are.
+All the live pictures come over one connection, so the page keeps up on a tablet, at `https://operate.mcvsaid.local`
+on the camera network.
 
 The commands were worked out from Hohem's own app, so a firmware update could change them. (In the demonstration,
 Stage Right is on a gimbal; its pictures are drawn, so nothing moves.)
@@ -431,8 +460,9 @@ camera even when the network or the production computer has a bad moment.
   phone warm up before taking the cooler off.
 * **Power the cooler from its own USB charger**, not from a PoE-to-USB-C adapter on the camera network's switch: one
   such adapter took a whole camera network down in testing.
-* **Switch its auto shutdown off** in Black Shark's app: when its timer runs out the cooler turns itself off and cannot
-  be woken over Bluetooth until its button is pressed.
+* **Its auto shutdown is kept off** by the camera app: when its timer runs out the cooler turns itself off and cannot
+  be woken over Bluetooth until its button is pressed, so the phone switches it off and checks every half minute that
+  it stays off.
 * **Test on your own phones** for the full length of a show, recording and streaming, before relying on it.
 
 <img src="docs/screenshots/05b-cooler.png" alt="A camera card's Cooler fold: the fan mode, the lights kept off, the cooler's name and firmware" width="300" align="right">

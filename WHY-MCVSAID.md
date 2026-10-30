@@ -21,6 +21,7 @@ be blurred on the phone itself, before any picture leaves it.
 - **Phones on gimbals become robotic cameras:** aimed from the dashboard, or following a face or a named performer
   by themselves.
 - **Faces blurred on the camera itself**, with the computer as a backup that catches the faces a phone misses.
+- **Voices that line up with mouths:** each camera's sound is measured against its picture and set to match.
 - **An AI director that watches every camera before the audience does**, and takes notes in plain English.
 - **Mount the phones once.** Set them up, match their colour, update and fix them from a browser.
 - **Your show, your computer:** no cloud, no subscription, and no footage leaves the building.
@@ -56,8 +57,9 @@ Scene Chat takes wishes such as "less on the drums". Up to four wishes are activ
 the log explains every cut. A host can also **call shots aloud**: say "cut to the overhead" or "show the stove" and the
 director cuts to that camera and holds it. That's on by default in Cooking and Creator Studio, where one person talks
 to their own cameras, and off where music or a congregation could set it off by mistake. Speech is recognised on the
-computer, and nothing heard is sent anywhere or kept. We haven't found another auto-director that takes live
-direction in words.
+computer, and nothing heard is sent anywhere or kept. A call only a phone heard waits for the computer to hear it too,
+and two cameras called in one breath cut to neither, so a misheard word doesn't cut the show. We haven't found
+another auto-director that takes live direction in words.
 
 ![Scene Chat beside the Show page](docs/screenshots/24-scene-chat.png)
 
@@ -65,7 +67,10 @@ direction in words.
 
 Live music, worship, podcasts, panels, theatre and cooking each have their own camera roles and pacing. Talk formats
 cut to whoever is speaking and allow for mic bleed, coughs and pauses. Cooking follows a loaded recipe step by step,
-makes sure each step's station is seen, and can put the recipe, a QR code and captions on screen. Creator Studio lets
+makes sure each step's station is seen, and can put the recipe, a QR code and captions on screen, all the time, at
+key moments or only when asked. **Prep for the show** turns a long recipe into short steps the cook can call out,
+checks that a camera covers each one, and lists what to say to rehearse. During the show the cook says "step two" or
+a step in its own words and the recipe follows, forward or back. Press Record and it starts afresh. Creator Studio lets
 you build your own framings from body regions.
 
 ### 5. Virtual camera operators: zoom, follow, solo, gaze, crowd
@@ -73,7 +78,8 @@ you build your own framings from body regions.
 The director can crop in on a performer and follow them. It won't zoom in on an empty frame, and it never drops below
 a resolution you set, such as 1080p. It switches a phone to its telephoto lens only while that camera is off air. It
 favours the instrument that leads the mix, cuts to whoever a performer is looking at, and shows the crowd only when
-the crowd is lively and the stage is quiet. One fixed phone does the work of an operator with a zoom lens.
+the crowd is lively and the stage is quiet. With a host it works at a host's pace: it cuts to them just before they
+turn to their camera, and after a short look goes back to the shot it left. One fixed phone does the work of an operator with a zoom lens.
 
 ### 6. Robotic cameras for the price of a phone gimbal
 
@@ -81,8 +87,10 @@ Put a camera phone on a **Hohem iSteady X3 or MT3** gimbal, a consumer gimbal co
 and the camera app drives it over Bluetooth, with no extra box or cable. Hold an arrow on the camera's card and it turns;
 let go and it eases to a stop. Press **Follow** and the phone keeps the most prominent face in frame by itself, still
 following someone who turns away by their body, at a Calm, Normal or Quick pace. With performer recognition on, it can
-follow a named, consenting performer instead, so the director's zoom on that camera follows them too. It works hung
-upside down, and the director keeps cutting between this camera and the rest as usual.
+follow a named, consenting performer instead, so the director's zoom on that camera follows them too. Following, it
+zooms to keep the person about waist up as they walk nearer or further, and turns faster when they are close. It works
+hung upside down, and the director keeps cutting between this camera and the rest as usual. An operator can take
+over from a tablet with an Xbox controller or on-screen buttons, with the speed set to taste.
 
 ![A camera on a gimbal, following a face](docs/screenshots/05c-gimbal.png)
 
@@ -99,7 +107,8 @@ experimental, and we say so plainly: it can miss faces.
 ### 8. Heat treated as a first-class problem
 
 MCVSAID tracks each phone's temperature, its trend and a forecast against the planned show length. You can compare
-runs side by side. It also controls clip-on Black Shark coolers over Bluetooth and keeps their lights off. Coolers are paired, moved
+runs side by side. It also controls clip-on Black Shark coolers over Bluetooth, keeps their lights off and keeps their own auto
+shutdown off, so a cooler doesn't switch itself off mid-show. Coolers are paired, moved
 between phones or re-paired all at once from the dashboard, each to the phone it is clamped to. In early tests, a
 Galaxy S23 with a cooler stayed at 22 to 25 °C while streaming and recording 4K for 2¼ hours. Without a cooler, it
 reached 43 to 44 °C streaming alone.
@@ -108,20 +117,25 @@ reached 43 to 44 °C streaming alone.
 
 A single readiness line checks the computer, OBS, the network, the camera relay, the model and every camera, then says
 what needs attention and how to fix it. Stage Shots lays the cameras out as they stand on stage, and a room map shows
-what each lens sees. You can share the page with a phone in the crowd, behind a passcode.
+what each lens sees. You can share the page with a phone in the crowd, behind a passcode, at an easy address
+(`https://stageshots.mcvsaid.local`); the operator's page is at `https://operate.mcvsaid.local`.
 
 ![The room map: each camera placed and turned, with the wedge it sees](docs/screenshots/04e-room-map.png)
 
-### 10. Frame-accurate sync and colour matching across mixed phones
+### 10. Frame-accurate sync, lip sync and colour matching across mixed phones
 
-A hidden timing strip lines every feed up to the frame. One page sets white balance and exposure on every phone and
+A hidden timing strip lines every feed up to the frame. **Calibrate sync** lines the sound up too: hold a phone or
+tablet that flashes and beeps in front of the cameras, press Measure, and each camera's sound is set to match its own
+picture, OBS's own delay included. Programme sound can come from one leading microphone, or follow whoever is
+speaking, so phone microphones never echo. One page sets white balance and exposure on every phone and
 builds a LUT for each camera. The LUT can come from a colour chart or from matching to a reference camera. The camera
 relay cut OBS's memory use from 11.0 GB to 2.6 GB with six 4K cameras.
 
 ### 11. Recordings ready for the edit
 
-Each programme recording comes with a file per camera, the cuts as an EDL for Resolve, Premiere or Final Cut, and each
-camera's LUT. Recordings made on the phones are copied over and verified after the show. You can re-cut the AI's show
+Record and Stop catch the moment you press them, even though the programme runs a few seconds behind. Each programme
+recording comes with a file per camera, the cuts as an EDL for Resolve, Premiere or Final Cut, and each
+camera's LUT; a cooking show's steps come as markers where the file shows them. Recordings made on the phones are copied over and verified after the show. You can re-cut the AI's show
 instead of living with it.
 
 ### 12. Private, local and consent-based
