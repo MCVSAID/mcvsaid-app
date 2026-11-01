@@ -165,6 +165,10 @@ its telephoto on the way, and the director holds the shot. A band can give it a 
 close on me") for a performer to call a tighter shot themselves. Your own phrases are caught by a quick phrase spotter
 the moment you finish saying them, a fifth of a second or so, with Whisper hearing everything else.
 
+**"Show the pot."** Aim a gimbal camera at the pot, zoom in and press **Save as target** on its card. Then "show the pot"
+swings it there and zooms, going on air once it has arrived so the swing isn't seen, and "back to me" puts it back as it
+was, following you again. Each kind of event keeps its own targets, with other words for each if you like.
+
 ![The Recipe page: the step being cooked with Back, Next and Undo, and the preparation done, each step with its time and key shot](docs/screenshots/22-recipe.png)
 
 ![A recipe on screen in OBS: the preparation done and folded away, the method with the current step picked out, a QR code to the recipe in the other corner and the step's caption](docs/screenshots/23-recipe-overlay.png)
@@ -409,6 +413,8 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 * **The zoom follows the plan**: the director's zoom on that camera frames whom the plan is on, the soloist or a guest,
   not just a listed performer.
 * **Home position**: **Set home** where it points now, and **Home** turns it back there.
+* **Saved targets**: aim it at the pot and **Save as target**; "show the pot" turns and zooms it there, "back to me" puts
+  it back as it was. **Go** and **Back** on the card too.
 * **If it loses them**, the director takes that camera off air before the audience sees an empty shot (the programme
   runs a few seconds behind): to the best other camera when the AI rates one, otherwise to the stage shot, and it
   doesn't cut back until the gimbal is following again.
