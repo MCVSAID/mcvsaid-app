@@ -11,12 +11,17 @@ step, watches the health of every phone, matches their colours, and can choose t
 running on the computer's own graphics. Cameras can be mounted out of reach: everything is done from a browser.
 
 It directs **live music, church services, podcasts and talk shows, panels and conferences, theatre and comedy, and
-cooking shows**, each with its own camera roles, pacing and way of choosing shots, and has a **Creator Studio** for
+cooking shows, and karaoke nights**, each with its own camera roles, pacing and way of choosing shots, and has a **Creator Studio** for
 people recording themselves, where you define the framings yourself. And it runs at the level of **AI assistance** a
 production wants: none at all, a vision model on the computer itself, or that model plus recognition of consenting
 performers.
 
-**New: voices that line up with mouths.** *Calibrate sync* measures each camera's sound against its picture through OBS
+**New: karaoke night.** Guests sign up from their phones with a QR code, the host calls up each singer, and the words
+go onto a screen facing them, lit as they are sung: see [Karaoke night](#karaoke-night-sign-up-from-a-phone-sing-to-the-screen).
+**A teleprompter that follows the speaker.** The script on a tablet beside the camera, at
+`https://teleprompter.mcvsaid.local` with a PIN, the word being said lit as it is said, karaoke style; the recipe's
+steps in Cooking, lyrics at a concert, readings at worship: see [Teleprompter](#teleprompter-the-script-on-a-tablet-lit-as-it-is-said).
+**Voices that line up with mouths.** *Calibrate sync* measures each camera's sound against its picture through OBS
 itself, from a phone or tablet that flashes and beeps in front of the cameras, and sets each camera to match: see
 [Live music, worship, podcasts, panels, theatre, cooking](#live-music-worship-podcasts-panels-theatre-cooking).
 **Recipes made for the show:** *Prep for the show* turns a long recipe into short steps the cook can call out, and you
@@ -88,8 +93,8 @@ be **spare phones, factory-reset and used for nothing else**: the app becomes ea
 
 ![Show page: ready for a show, every camera streaming, the programme being recorded](docs/screenshots/01-show.png)
 
-The dashboard is grouped by when things are needed: **Show** (Show, Recipe in Cooking, Cameras, Stage Shots, Operate,
-Temperatures), **Set up** (Director, Sound, Colour, People), **Library** (Recordings) and **Administration** (System).
+The dashboard is grouped by when things are needed: **Show** (Show, Recipe in Cooking, Karaoke at karaoke night, Cameras, Operate, Teleprompter,
+Stage Shots, Temperatures), **Set up** (Director, Sound, Colour, People), **Library** (Recordings) and **Administration** (System).
 The show's state (ready, on air, recording) stays in view at the foot of the side bar.
 
 One line answers the question that matters before doors open: **is everything ready?** It is worked out continuously
@@ -414,6 +419,10 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 * **An MT3's own AI tracker** is shown on the card when it is tracking, and the arrows warn that they would fight it.
 * **Hung upside down** from a bar or truss: one tick turns both arrows round, and **Turn picture 180°** (for any phone
   mounted upside down) turns the picture itself.
+* **Portrait or landscape, from the dashboard** (an X3): one button rolls the phone to portrait or to either
+  landscape, and the camera turns its picture to match (a running camera is stopped for a few seconds and started
+  again). **Recentre**, the gimbal's **mode** (pan and tilt follow, pan follow, all locked, POV) and its **battery** are
+  on the card too.
 * **Pairing from the dashboard.** A phone looks for a gimbal or cooler when asked; one can be moved from one camera to
   another, and all coolers re-paired at once, each to the phone it is clamped to.
 
@@ -488,7 +497,8 @@ by itself to cameras streaming straight to OBS, and says why.
 ![System, Network: how the phones find the manager, and the camera Wi-Fi](docs/screenshots/11-system-network.png)
 
 How the phones find the manager (by its address, or a name announced on the network), the camera Wi-Fi they rejoin,
-an **operator** login for a tablet on the camera network with fewer powers than the administrator, everyone logged in,
+named **users**, each logging in as themselves as an administrator, an operator (who can run a show from a tablet on the
+camera network, with fewer powers than an administrator) or Stage Shots on a phone, everyone logged in,
 and updates of the manager itself from the dashboard.
 
 ![Locations: sets of cameras for different places](docs/screenshots/13-locations.png)
@@ -498,6 +508,36 @@ restore points to go back to an earlier set-up, and a whole location can be expo
 computer. A camera a location does not always use can be set **Not used here**, so it never holds up the readiness
 check or appears in the show, a camera can be **renamed** at any time (its OBS source and scenes take the new name
 too, without a cut), and one can be **removed** for good, its pairing revoked.
+
+## Teleprompter: the script on a tablet, lit as it is said
+
+Write a script on the **Teleprompter** page, a heading for each section, and open it on a tablet beside the camera at
+`https://teleprompter.mcvsaid.local` with its PIN (nothing else of the manager opens with it). The words are large, the
+one being said is lit as it is said, karaoke style, and the script keeps it at the reading line. It listens with the
+speech recognition already on the production computer, so no words leave the building or are kept.
+
+* **Made for the event.** In Cooking the recipe is a script of its own, a section for each step with its concise
+  wording first, and it moves with the recipe (and the recipe with it). At a concert a section is lyrics, lit a line at
+  a time and moved on by hand; worship has readings followed by voice and sermon points as notes; podcasts and panels
+  an opening, ad reads and questions; theatre the MC's links.
+* **By hand too.** Section and line buttons, **Play** at a speed you set, a page-turner pedal (it sends Page Down), or
+  an Xbox controller. **Mirror** for teleprompter glass, and the words as large as you like.
+* **On air at a glance.** The top of the tablet shows REC and the camera on air.
+
+## Karaoke night: sign up from a phone, sing to the screen
+
+Choose **Karaoke night** as the kind of event and the cameras become the singer, a duet partner, the host, the stage and
+the crowd: the director stays on the singer, goes to the crowd as it sings along, and to the stage between singers.
+
+* **Sign up from a phone.** Guests scan the QR code (on the Karaoke page, and on the singer's screen between songs),
+  give a first name and pick a song. No app, no account. The host approves each one, reorders the line and calls up
+  the next singer.
+* **The words on a screen facing the singer**, at `https://karaoke.mcvsaid.local` with the teleprompter's PIN: who is
+  singing and who is next, each line lit as it is sung.
+* **Your music, your words.** The track plays from your own karaoke setup. Songs are written or pasted in by you, so
+  show only words you have the right to show.
+* **Only what the night needs.** A first name and the song, cleared at *New night* or after 18 hours; nothing sung is
+  kept.
 
 ## On a phone or tablet
 

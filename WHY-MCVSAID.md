@@ -22,6 +22,9 @@ be blurred on the phone itself, before any picture leaves it.
   by themselves.
 - **Faces blurred on the camera itself**, with the computer as a backup that catches the faces a phone misses.
 - **Voices that line up with mouths:** each camera's sound is measured against its picture and set to match.
+- **A teleprompter that listens:** the script on a tablet, the word being said lit as it is said.
+- **Karaoke night, run from the dashboard:** guests sign up from their phones, and the words go on a screen facing
+  the singer, lit as they are sung.
 - **An AI director that watches every camera before the audience does**, and takes notes in plain English.
 - **Mount the phones once.** Set them up, match their colour, update and fix them from a browser.
 - **Your show, your computer:** no cloud, no subscription, and no footage leaves the building.
@@ -72,6 +75,11 @@ key moments or only when asked. **Prep for the show** turns a long recipe into s
 checks that a camera covers each one, and lists what to say to rehearse. During the show the cook says "step two" or
 a step in its own words and the recipe follows, forward or back. Press Record and it starts afresh. Creator Studio lets
 you build your own framings from body regions.
+
+A **teleprompter** on a tablet beside the camera, at `https://teleprompter.mcvsaid.local` behind its own PIN, follows the
+speaker word by word, karaoke style, by listening on the computer itself. It too suits the event: the recipe's steps in
+Cooking (and moving with them), lyrics a line at a time at a concert, readings and sermon points at worship, an opening,
+ad reads and questions on a podcast or panel. A page-turner pedal or an Xbox controller moves it on by hand.
 
 ### 5. Virtual camera operators: zoom, follow, solo, gaze, crowd
 
