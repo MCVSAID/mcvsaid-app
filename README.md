@@ -427,8 +427,8 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
   mounted upside down) turns the picture itself.
 * **Portrait or landscape, from the dashboard** (an X3): one button rolls the phone to portrait or to either
   landscape, and the camera turns its picture to match (a running camera is stopped for a few seconds and started
-  again). **Recentre**, the gimbal's **mode** (pan and tilt follow, pan follow, all locked, POV) and its **battery** are
-  on the card too.
+  again). It stays that way while the camera is aimed or follows someone. **Recentre**, the gimbal's **mode** (pan and
+  tilt follow, pan follow, all locked, POV) and its **battery** are on the card too.
 * **Pairing from the dashboard.** A phone looks for a gimbal or cooler when asked; one can be moved from one camera to
   another, and all coolers re-paired at once, each to the phone it is clamped to.
 
