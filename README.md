@@ -490,8 +490,10 @@ commands, which were worked out from Black Shark's app rather than published by 
 change them; only the MagCooler 5 Pro has been tried. Close Black Shark's app while the camera app is in charge: only
 one of them can hold the cooler at a time.
 
-**The charger on a smart plug.** The USB charger hub for coolers and gimbals can sit on a TP-Link Tapo smart plug, switched on
-and off from the dashboard, which also shows whether it is on and whether it answers. The manager reaches the plug directly on
+**Chargers on smart plugs.** The USB charger hubs for coolers and gimbals can sit on TP-Link Tapo smart plugs, switched on
+and off from the dashboard's Power page, which also shows whether each is on and whether it answers, and which gimbals and
+coolers each one charges: which camera each is on now, and a gimbal's battery. Switching one off says what stops charging,
+and warns when a cooler on it is keeping an armed phone cool. The manager reaches the plug directly on
 your network rather than through TP-Link's cloud, though the plug must first be added in the Tapo app and wants that account's login,
 which stays on your computer. Only the buttons switch it: nothing turns it off by itself in the middle of a show.
 
