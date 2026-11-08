@@ -416,7 +416,7 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 * **Saved targets**: aim it at the pot and **Save as target**; "show the pot" turns and zooms it there, "back to me" puts
   it back as it was. **Go** and **Back** on the card too.
 * **Tracking and zoom off, live**: switch the automatic tracking or the automatic zoom off for one camera from its card,
-  or for every camera from the Show page or Stage Shots. The gimbal stops where it points, the zoom holds where it is,
+  or for every camera from the Show page or Stage Shots. The gimbal stops where it points, the zoom in OBS holds where it is (or as you frame it by hand), **Whole picture** undoes a zoom gone wrong,
   and switched on again each takes up from there. Or say "stop tracking" and "tracking on".
 * **If it loses them**, the director takes that camera off air before the audience sees an empty shot (the programme
   runs a few seconds behind): to the best other camera when the AI rates one, otherwise to the stage shot, and it
