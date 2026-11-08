@@ -209,7 +209,11 @@ with stage left and right as the performers have them. Press one to put it on ai
 A tight shot is a narrow button and the whole band a wide one, and a mark on each shows where its camera stands,
 which way it points and how wide it sees, and the room map's wedges are drawn across the stage behind the buttons. **Arrange** moves and sizes the buttons, and a **room map** from above places and turns each
 camera and shows the wedge it sees, worked out from its lens and zoom. **Room view** puts the two together: the buttons
-stand on the map's stage among the cameras that film them. Experimentally, **Place from the wide shot** finds each
+stand on the map's stage among the cameras that film them. Each kind of event can have **a set of its own** under the
+map: take a photo or two of the set with any phone, press four points on the floor round something you know the size
+of, and it is straightened into a map from above, to scale; or give a floor plan (a picture or a PDF), or start from a
+template (a kitchen's counter, stove and prep table, a podcast table with its microphones) and move the shapes.
+Experimentally, **Place from the wide shot** finds each
 camera's picture inside the wide camera's and offers where its button should go: on the performer it shows, with the
 person detector. With a vision model it also suggests who that is, and asks "guitar or bass?" when it cannot tell.
 The page can be offered to phones on the camera network, behind its own passcode, so someone in the crowd can call the
