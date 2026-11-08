@@ -1,6 +1,6 @@
 # Why MCVSAID
 
-**Set up five dedicated phones. Press one button. Every camera starts recording, streaming, or both.**
+**Set up as many dedicated phones as you need. Press one button. Every camera starts recording, streaming, or both.**
 
 MCVSAID turns spare Android phones into a managed, self-healing multi-camera rig. One local computer runs it, and an
 optional AI director can choose the shots by watching each moment before it airs. There is no cloud and no
@@ -16,10 +16,13 @@ be blurred on the phone itself, before any picture leaves it.
 
 ## At a glance
 
-- **Five dedicated phones, one button:** every camera recording or streaming at once.
+- **Multiple dedicated phones, one button:** every camera recording or streaming at once.
 - **No camera operators needed:** a handful of spare phones and one computer make a directed multicam show.
-- **Phones on gimbals become robotic cameras:** aimed from the dashboard, or following a face or a named performer
-  by themselves.
+- **Phones on gimbals become robotic cameras:** aimed from the dashboard, following a face or a named performer by
+  themselves, or sent to a saved spot when the host says "show the pot".
+- **Automation you can switch off mid-show:** tracking and the automatic zoom, for one camera or every camera at once.
+- **A map of any set:** a concert stage, a kitchen or a podcast table, made from a few photos, a floor plan or a
+  template, with the cameras placed against it.
 - **Faces blurred on the camera itself**, with the computer as a backup that catches the faces a phone misses.
 - **Voices that line up with mouths:** each camera's sound is measured against its picture and set to match.
 - **A teleprompter that listens:** the script on a tablet, the word being said lit as it is said.
@@ -27,6 +30,7 @@ be blurred on the phone itself, before any picture leaves it.
   the singer, lit as they are sung.
 - **An AI director that watches every camera before the audience does**, and takes notes in plain English.
 - **Mount the phones once.** Set them up, match their colour, update and fix them from a browser.
+- **Everyone logs in as themselves:** each person has a role, and an administrator can raise, lower or change it.
 - **Your show, your computer:** no cloud, no subscription, and no footage leaves the building.
 - **The AI's cut is a starting point.** Every show comes with each camera's own file and the edit.
 
@@ -34,7 +38,7 @@ be blurred on the phone itself, before any picture leaves it.
 
 ### 1. Dedicated phones, one button: every camera recording or streaming at once
 
-If all you want is five dedicated phones that start recording, streaming, or both at a single button press, MCVSAID is
+If all you want is several dedicated phones that start recording, streaming, or both at a single button press, MCVSAID is
 built for you. The Show page arms, starts and stops every camera together, and one readiness line tells you when all of
 them are good to go.
 
@@ -57,12 +61,13 @@ the fact, and they can't tell an empty or blurry shot from a good one.
 
 A standing brief sets the intent, for example "stay on whoever is singing; the drums for fills". During the show,
 Scene Chat takes wishes such as "less on the drums". Up to four wishes are active at once, each lasts 15 minutes, and
-the log explains every cut. A host can also **call shots aloud**: say "cut to the overhead" or "show the stove" and the
-director cuts to that camera and holds it. That's on by default in Cooking and Creator Studio, where one person talks
-to their own cameras, and off where music or a congregation could set it off by mistake. Speech is recognised on the
-computer, and nothing heard is sent anywhere or kept. A call only a phone heard waits for the computer to hear it too,
-and two cameras called in one breath cut to neither, so a misheard word doesn't cut the show. We haven't found
-another auto-director that takes live direction in words.
+the log explains every cut. A host can also **call shots aloud**: say "cut to the overhead" or "show the stove" and
+the director cuts to that camera and holds it. That's on by default in Cooking and Creator Studio, where one person
+talks to their own cameras, and off where music or a congregation could set it off by mistake. Speech is recognised on
+the computer, and nothing heard is sent anywhere or kept. A call only a phone heard waits for the computer to hear it
+too, and two cameras called in one breath cut to neither, so a misheard word doesn't cut the show. A host can also
+send a gimbal camera to a spot saved for it: "let's look at the pot now" turns and zooms it there, and "back to me"
+puts it back on the host as it was. We haven't found another auto-director that takes live direction in words.
 
 ![Scene Chat beside the Show page](docs/screenshots/24-scene-chat.png)
 
@@ -89,16 +94,24 @@ favours the instrument that leads the mix, cuts to whoever a performer is lookin
 the crowd is lively and the stage is quiet. With a host it works at a host's pace: it cuts to them just before they
 turn to their camera, and after a short look goes back to the shot it left. One fixed phone does the work of an operator with a zoom lens.
 
+None of this is all or nothing. During the show an operator can switch tracking and the automatic zoom off and on, for
+one camera or for every camera at once, from the camera cards, the Show page, Stage Shots or the Operate page on a
+tablet, or by saying "stop tracking" or "auto zoom off". A camera switched off holds its aim and its zoom where they
+are, and **Whole picture** puts back a camera's full frame at once.
+
 ### 6. Robotic cameras for the price of a phone gimbal
 
-Put a camera phone on a **Hohem iSteady X3 or MT3** gimbal, a consumer gimbal costing a small fraction of a PTZ camera,
-and the camera app drives it over Bluetooth, with no extra box or cable. Hold an arrow on the camera's card and it turns;
-let go and it eases to a stop. Press **Follow** and the phone keeps the most prominent face in frame by itself, still
-following someone who turns away by their body, at a Calm, Normal or Quick pace. With performer recognition on, it can
-follow a named, consenting performer instead, so the director's zoom on that camera follows them too. Following, it
-zooms to keep the person about waist up as they walk nearer or further, and turns faster when they are close. It works
-hung upside down, and the director keeps cutting between this camera and the rest as usual. An operator can take
-over from a tablet with an Xbox controller or on-screen buttons, with the speed set to taste.
+Put a camera phone on a **Hohem iSteady X3 or MT3** gimbal, a consumer gimbal costing a small fraction of a PTZ
+camera, and the camera app drives it over Bluetooth, with no extra box or cable. Hold an arrow on the camera's card
+and it turns; let go and it eases to a stop. Press **Follow** and the phone keeps the most prominent face in frame by
+itself, still following someone who turns away by their body, at a Calm, Normal or Quick pace. With performer
+recognition on, it can follow a named, consenting performer instead, so the director's zoom on that camera follows
+them too. Following, it zooms to keep the person about waist up as they walk nearer or further, and turns faster when
+they are close. It works hung upside down, and the director keeps cutting between this camera and the rest as usual.
+An X3 also turns the phone between portrait and either landscape from the camera card, recentres, changes its work
+mode and reports its battery. **Saved targets** keep the aim and zoom for things on the set, such as the pot, the
+chopping board or a guitar on its stand, so a camera can be sent there from the card or by voice and brought back. An
+operator can take over from a tablet with an Xbox controller or on-screen buttons, with the speed set to taste.
 
 ![A camera on a gimbal, following a face](docs/screenshots/05c-gimbal.png)
 
@@ -115,18 +128,23 @@ experimental, and we say so plainly: it can miss faces.
 ### 8. Heat treated as a first-class problem
 
 MCVSAID tracks each phone's temperature, its trend and a forecast against the planned show length. You can compare
-runs side by side. It also controls clip-on Black Shark coolers over Bluetooth, keeps their lights off and keeps their own auto
-shutdown off, so a cooler doesn't switch itself off mid-show. Coolers are paired, moved
-between phones or re-paired all at once from the dashboard, each to the phone it is clamped to. In early tests, a
-Galaxy S23 with a cooler stayed at 22 to 25 °C while streaming and recording 4K for 2¼ hours. Without a cooler, it
-reached 43 to 44 °C streaming alone.
+runs side by side. It also controls clip-on Black Shark coolers over Bluetooth, keeps their lights off and keeps their
+own auto shutdown off, so a cooler doesn't switch itself off mid-show. Coolers are paired, moved between phones or
+re-paired all at once from the dashboard, each to the phone it is clamped to. The USB hubs that charge the gimbals and
+coolers can sit on Tapo smart plugs, switched from a Power page that shows what each plug charges and warns before
+switching off a cooler on an armed camera. In early tests, a Galaxy S23 with a cooler stayed at 22 to 25 °C while
+streaming and recording 4K for 2¼ hours. Without a cooler, it reached 43 to 44 °C streaming alone.
 
 ### 9. One answer to "are we ready?"
 
 A single readiness line checks the computer, OBS, the network, the camera relay, the model and every camera, then says
 what needs attention and how to fix it. Stage Shots lays the cameras out as they stand on stage, and a room map shows
-what each lens sees. You can share the page with a phone in the crowd, behind a passcode, at an easy address
-(`https://stageshots.mcvsaid.local`); the operator's page is at `https://operate.mcvsaid.local`.
+what each lens sees. Each kind of event can have a set of its own: take a few photos of the set with any phone, mark
+four floor points round something of known size, and the photos are straightened into a top-down map to scale, in the
+browser, without the photos ever being uploaded. A floor plan (a picture or a PDF page) or a template for each kind of
+event works too, from a concert stage with a drum riser to a kitchen counter, stove and prep table. You can share the
+page with a phone in the crowd, behind a passcode, at an easy address (`https://stageshots.mcvsaid.local`); the
+operator's page is at `https://operate.mcvsaid.local`.
 
 ![The room map: each camera placed and turned, with the wedge it sees](docs/screenshots/04e-room-map.png)
 
@@ -151,7 +169,9 @@ instead of living with it.
 Everything runs on one Mac or Linux computer, including the model, and nothing is sent to the project. Performer
 recognition identifies only people who have consented, purpose by purpose. Their data is encrypted and deleted after
 the show day, and every page shows when recognition is on. Face blur and voice shot calls run on the phones and the
-computer too, never in a cloud service. AI is optional, so a modest computer can still run a show.
+computer too, never in a cloud service. AI is optional, so a modest computer can still run a show. Each person logs in
+to the dashboard by name, with a role such as administrator, operator or Stage Shots only, and an administrator can
+change anyone's role from the Users page. The audit log names who made each change.
 
 ## How it compares
 
@@ -164,9 +184,9 @@ The comparison below is based on the public pages linked under [References](#ref
 | Automatic shot choice | Vision model and rules | Not stated | No | Auto-director | Mic levels |
 | Sees the shot before it airs | Yes, look-ahead | No | No | Not stated | No |
 | Direction in plain language | Yes, Scene Chat, and shots called aloud | No | No | No | No |
-| Phones on gimbals, aimed and following | Yes, X3 and MT3, from the dashboard | No | No | Not applicable | No |
+| Phones on gimbals, aimed and following | Yes, X3 and MT3, from the dashboard or by voice | No | No | Not applicable | No |
 | Faces blurred on the camera | Yes, with the computer as backup | No | No | No | No |
-| Event-specific modes | 6 modes plus Creator Studio | No | No | Not stated | Talk formats |
+| Event-specific modes | 7 modes, karaoke included, plus Creator Studio | No | No | Not stated | Talk formats |
 | Remote phone management and self-healing | Yes | No | Remote settings | Not applicable | Not applicable |
 | Heat forecasting and cooler control | Yes | No | No | No | No |
 | Per-camera files, EDL and LUTs | Yes | Not stated | Per-phone files | Not stated | No |
@@ -185,7 +205,9 @@ owners. Corrections are welcome at **mcvsaid@proton.me**.
 - **Experimental parts.** Face blur can miss faces (small, turned, fast-moving or partly hidden), so don't rely on it
   to hide anyone yet. Cooler and gimbal control use commands worked out from the makers' own apps, so a firmware
   update could change them; only the Black Shark MagCooler 5 Pro and the Hohem iSteady X3 and MT3 have been tried. An
-  MT3's built-in AI tracker can be seen from the dashboard, but only started and stopped at the gimbal.
+  MT3's built-in AI tracker can be seen from the dashboard, but only started and stopped at the gimbal. Charger plug
+  control works with Tapo plugs through their local login, which TP-Link has changed before; a firmware update could
+  break it. Saved targets are for things that stay put: a camera doesn't follow the pot if it's moved.
 - **Delay.** The programme runs a few seconds behind real life, by design, so the director can see each moment first.
 - **Platforms.** Cameras are Android only, output goes through OBS, and MCVSAID is in private beta.
 
