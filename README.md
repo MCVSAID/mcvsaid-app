@@ -504,6 +504,11 @@ and warns when a cooler on it is keeping an armed phone cool. The manager reache
 your network rather than through TP-Link's cloud, though the plug must first be added in the Tapo app and wants that account's login,
 which stays on your computer. Only the buttons switch it: nothing turns it off by itself in the middle of a show.
 
+**The Mac stays awake through the show.** An unattended laptop running the show won't doze off mid-performance: while OBS
+records or streams, or a camera does, the manager keeps the Mac awake with macOS's own caffeinate, and for a while after,
+between sets. Add the times of your shows to its schedule, weekly or on a date, or keep it awake for the next few hours while
+setting up. It warns when the Mac is on battery or its lid could close, which no program can stop.
+
 <br clear="right">
 
 ## System and locations
