@@ -4,7 +4,8 @@
 
 MCVSAID turns spare Android phones into a managed, self-healing multi-camera rig. One local computer runs it, and an
 optional AI director can choose the shots by watching each moment before it airs. There is no cloud and no
-subscription, and no footage leaves the building.
+subscription: the cameras, the director and the recordings stay on your own computer, and your footage goes only
+where you stream it.
 
 Most phone multicam tools stop once the feeds reach a switcher. Most auto-directors either choose shots from audio
 levels alone or work only with their own cameras. MCVSAID covers the whole chain: setup, health, sync, colour, shot
@@ -31,7 +32,7 @@ be blurred on the phone itself, before any picture leaves it.
 - **An AI director that watches every camera before the audience does**, and takes notes in plain English.
 - **Mount the phones once.** Set them up, match their colour, update and fix them from a browser.
 - **Everyone logs in as themselves:** each person has a role, and an administrator can raise, lower or change it.
-- **Your show, your computer:** no cloud, no subscription, and no footage leaves the building.
+- **Your show, your computer:** no cloud, no subscription, and your footage goes only where you stream it.
 - **The AI's cut is a starting point.** Every show comes with each camera's own file and the edit.
 
 ## What MCVSAID does that others don't
