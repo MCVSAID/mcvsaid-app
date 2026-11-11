@@ -3,7 +3,8 @@
 **Turn a handful of Android phones into a multi-camera live production, kept in sync, and directed automatically.**
 
 **[Why MCVSAID?](WHY-MCVSAID.md)** What it does that other phone multicam tools and auto-directors don't, and how it
-compares. **[Try the demo](https://mcvsaid.github.io/)**: the real dashboard with simulated cameras, in your browser.
+compares. **[Try the demo](https://demo.mcvsaid.com/)**: the real dashboard with simulated cameras, in your browser.
+The project's site is **[mcvsaid.com](https://mcvsaid.com)**.
 
 MCVSAID makes ordinary Android phones into remotely managed cameras for live music and events. Each phone streams
 its picture to [OBS](https://obsproject.com/) on a production computer. A manager on that computer keeps every feed in
@@ -45,7 +46,7 @@ fetches the app from here; the app does nothing by itself until it is paired wit
 ### Join the beta
 
 MCVSAID is in a **private beta**. If you are interested in filming live events with phones (a church, a theatre, a school, a venue, a band,
-a podcast or a kitchen) and would like to try it, email **mcvsaid@proton.me** with:
+a podcast or a kitchen) and would like to try it, email **beta@mcvsaid.com** with:
 
 * what you film, and how often;
 * the computer you would run it on (Mac or Linux, and its memory);
@@ -220,6 +221,8 @@ The page can be offered to phones on the camera network, behind its own passcode
 shots by hand, at `https://stageshots.mcvsaid.local` with no port to type.
 
 ![The room map: each camera placed and turned, with the wedge it sees](docs/screenshots/04e-room-map.png)
+
+![A set for Cooking: a kitchen's floor plan with the template's counter, stove and prep table, the cameras placed round it, and a set made from photos, a floor plan or a template](docs/screenshots/30-set-map.png)
 
 ## Temperatures, run by run
 
@@ -419,6 +422,8 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 * **Home position**: **Set home** where it points now, and **Home** turns it back there.
 * **Saved targets**: aim it at the pot and **Save as target**; "show the pot" turns and zooms it there, "back to me" puts
   it back as it was. **Go** and **Back** on the card too.
+
+  <img src="docs/screenshots/29-gimbal-targets.png" alt="Saved targets on a gimbal camera's card in Cooking: the pot and the chopping board, each one press away">
 * **Tracking and zoom off, live**: switch the automatic tracking or the automatic zoom off for one camera from its card,
   or for every camera from the Show page, Operate or Stage Shots. The gimbal stops where it points, the zoom in OBS holds where it is (or as you frame it by hand), **Whole picture** undoes a zoom gone wrong,
   and switched on again each takes up from there. Or say "stop tracking" and "tracking on".
@@ -451,6 +456,8 @@ control and follow plan as the camera's card, and Home and Set home.
 No controller? On-screen arrows and zoom buttons do the same, and **Aim** and **Zoom** sliders set how quick they are.
 All the live pictures come over one connection, so the page keeps up on a tablet, at `https://operate.mcvsaid.local`
 on the camera network.
+
+![The Operate page: Tracking, Auto zoom and Whole picture for every camera, and the same switches on each camera's tile](docs/screenshots/28-operate.png)
 
 The commands were worked out from Hohem's own app, so a firmware update could change them. (In the demonstration,
 Stage Right is on a gimbal; its pictures are drawn, so nothing moves.)
@@ -511,6 +518,8 @@ setting up. It warns when the Mac is on battery or its lid could close, which no
 
 <br clear="right">
 
+![The Power page: the charger hubs on Tapo plugs, switched on and off, and the gimbal and coolers each one charges](docs/screenshots/27-power.png)
+
 ## System and locations
 
 ![The camera relay, on by default: what each camera passes to OBS and how long it is held](docs/screenshots/12-relay.png)
@@ -525,6 +534,8 @@ How the phones find the manager (by its address, or a name announced on the netw
 named **users**, each logging in as themselves as an administrator, an operator (who can run a show from a tablet on the
 camera network, with fewer powers than an administrator) or Stage Shots on a phone, everyone logged in,
 and updates of the manager itself from the dashboard.
+
+![The Users page: everyone who can log in, by name, each with a role an administrator can change](docs/screenshots/26-users.png)
 
 ![Locations: sets of cameras for different places](docs/screenshots/13-locations.png)
 
@@ -550,6 +561,8 @@ speech recognition already on the production computer, so no words leave the bui
 * **On air at a glance.** The top of the tablet shows REC and the camera on air.
 
 ## Karaoke night: sign up from a phone, sing to the screen
+
+![The Karaoke page: the singer up now, the line of guests waiting, and the code they scan to sign up](docs/screenshots/31-karaoke.png)
 
 Choose **Karaoke night** as the kind of event and the cameras become the singer, a duet partner, the host, the stage and
 the crowd: the director stays on the singer, goes to the crowd as it sings along, and to the stage between singers.
@@ -642,4 +655,4 @@ to approach 40 GB (that reading includes OBS's canvas and recording and whatever
 * Set-up codes and USB set-up hand each phone its own pairing; passwords typed for a code are not stored.
 * Nothing is sent from an installation to the project: no usage reporting, crash reporting or footage.
 
-Found a security problem? Please report it privately to **mcvsaid@proton.me**, never in a public issue.
+Found a security problem? Please report it privately to **security@mcvsaid.com**, never in a public issue.

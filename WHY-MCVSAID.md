@@ -86,6 +86,8 @@ speaker word by word, karaoke style, by listening on the computer itself. It too
 Cooking (and moving with them), lyrics a line at a time at a concert, readings and sermon points at worship, an opening,
 ad reads and questions on a podcast or panel. A page-turner pedal or an Xbox controller moves it on by hand.
 
+![The Karaoke page: the singer up now, the line of guests waiting, and the code they scan to sign up](docs/screenshots/31-karaoke.png)
+
 ### 5. Virtual camera operators: zoom, follow, solo, gaze, crowd
 
 The director can crop in on a performer and follow them. It won't zoom in on an empty frame, and it never drops below
@@ -98,6 +100,8 @@ None of this is all or nothing. During the show an operator can switch tracking 
 one camera or for every camera at once, from the camera cards, the Show page, Stage Shots or the Operate page on a
 tablet, or by saying "stop tracking" or "auto zoom off". A camera switched off holds its aim and its zoom where they
 are, and **Whole picture** puts back a camera's full frame at once.
+
+![The Operate page: Tracking, Auto zoom and Whole picture for every camera, and the same switches on each camera's tile](docs/screenshots/28-operate.png)
 
 ### 6. Robotic cameras for the price of a phone gimbal
 
@@ -114,6 +118,8 @@ chopping board or a guitar on its stand, so a camera can be sent there from the 
 operator can take over from a tablet with an Xbox controller or on-screen buttons, with the speed set to taste.
 
 ![A camera on a gimbal, following a face](docs/screenshots/05c-gimbal.png)
+
+![Saved targets on a gimbal camera's card in Cooking: the pot and the chopping board, each one press away](docs/screenshots/29-gimbal-targets.png)
 
 ### 7. Faces blurred on the camera, before anything leaves it
 
@@ -135,6 +141,8 @@ coolers can sit on Tapo smart plugs, switched from a Power page that shows what 
 switching off a cooler on an armed camera. In early tests, a Galaxy S23 with a cooler stayed at 22 to 25 °C while
 streaming and recording 4K for 2¼ hours. Without a cooler, it reached 43 to 44 °C streaming alone.
 
+![The Power page: the charger hubs on Tapo plugs, switched on and off, and the gimbal and coolers each one charges](docs/screenshots/27-power.png)
+
 ### 9. One answer to "are we ready?"
 
 A single readiness line checks the computer, OBS, the network, the camera relay, the model and every camera, then says
@@ -147,6 +155,8 @@ page with a phone in the crowd, behind a passcode, at an easy address (`https://
 operator's page is at `https://operate.mcvsaid.local`.
 
 ![The room map: each camera placed and turned, with the wedge it sees](docs/screenshots/04e-room-map.png)
+
+![A set for Cooking: a kitchen's floor plan with the template's counter, stove and prep table, the cameras placed round it, and a set made from photos, a floor plan or a template](docs/screenshots/30-set-map.png)
 
 ### 10. Frame-accurate sync, lip sync and colour matching across mixed phones
 
@@ -173,6 +183,8 @@ computer too, never in a cloud service. AI is optional, so a modest computer can
 to the dashboard by name, with a role such as administrator, operator or Stage Shots only, and an administrator can
 change anyone's role from the Users page. The audit log names who made each change.
 
+![The Users page: everyone who can log in, by name, each with a role an administrator can change](docs/screenshots/26-users.png)
+
 ## How it compares
 
 The comparison below is based on the public pages linked under [References](#references), as of October 2026.
@@ -193,7 +205,7 @@ The comparison below is based on the public pages linked under [References](#ref
 | Runs fully local, no subscription | Yes | No, monthly plan | Yes, free | App with a Pro plan | Yes, one-time licence |
 
 "Not stated" means the pages we reviewed don't mention the feature; it may still exist. Product names belong to their
-owners. Corrections are welcome at **mcvsaid@proton.me**.
+owners. Corrections are welcome at **hello@mcvsaid.com**.
 
 ## Requirements and limitations
 
@@ -214,13 +226,13 @@ owners. Corrections are welcome at **mcvsaid@proton.me**.
 ## Try it
 
 - **Demo:** the real dashboard with simulated cameras runs in your browser at
-  [mcvsaid.github.io](https://mcvsaid.github.io/). Nothing is connected, and nothing you press leaves your browser.
-- **Join the beta:** email **mcvsaid@proton.me** with what you film and how often, the computer you'd run it on, and
+  [demo.mcvsaid.com](https://demo.mcvsaid.com/). Nothing is connected, and nothing you press leaves your browser.
+- **Join the beta:** email **beta@mcvsaid.com** with what you film and how often, the computer you'd run it on, and
   the phones and network you have.
 
 ## References
 
-- [MCVSAID demo dashboard](https://mcvsaid.github.io/)
+- [MCVSAID demo dashboard](https://demo.mcvsaid.com/)
 - [Switcher Studio review (Dupple)](https://dupple.com/reviews/switcher-studio)
 - [Blackmagic Camera for Android 2.0 (AlternativeTo)](https://alternativeto.net/news/2025/1/blackmagic-camera-2-0-for-android-adds-multi-phone-control-extended-device-support-and-more)
 - [Mevo Multicam app](https://mevo.com/pages/multi-camera-app)
