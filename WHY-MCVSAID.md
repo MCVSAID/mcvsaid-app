@@ -2,10 +2,10 @@
 
 **Set up as many dedicated phones as you need. Press one button. Every camera starts recording, streaming, or both.**
 
-MCVSAID turns spare Android phones into a managed, self-healing multi-camera rig. One local computer runs it, and an
-optional AI director can choose the shots by watching each moment before it airs. There is no cloud and no
-subscription: the cameras, the director and the recordings stay on your own computer, and your footage goes only
-where you stream it.
+MCVSAID, the MultiCam Video Stream AI Director, turns spare Android phones into a managed, self-healing multi-camera
+rig. One local computer runs it, and an optional AI director can choose the shots by watching each moment before it
+airs. There is no cloud and no subscription: the cameras, the director and the recordings stay on your own computer,
+and your footage goes only where you stream it.
 
 Most phone multicam tools stop once the feeds reach a switcher. Most auto-directors either choose shots from audio
 levels alone or work only with their own cameras. MCVSAID covers the whole chain: setup, health, sync, colour, shot
