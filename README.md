@@ -255,6 +255,9 @@ the model, run it as a service on the computer only, point the director at it, a
 command for what needs an administrator's password. It also says honestly whether a level fits the computer. Listening
 for instruments has its own steps, down to the OBS settings that let the manager hear the programme.
 
+On the Director page this is a single line (for example "Plus AI: 10 of 16 steps done") with a button to continue; the steps
+sit in a fold, closed until you open it. The screenshot above shows the steps unfolded.
+
 ## The director
 
 ![Director page: how shots are chosen](docs/screenshots/06-director.png)
@@ -352,6 +355,8 @@ computer over the network after the show, verified, and filed by camera. Phones'
 is explicitly switched on. Recording and streaming together makes a phone work harder and run hotter: in testing it ran
 some phones too hot to use, so **test it on the intended phones**, at the intended picture size, for the full length of
 a show. A clamped-on phone cooler changes that: see [Phone coolers](#phone-coolers-experimental).
+The page walks through it in four steps (window, copy, check, clean up) with the one to do now marked, and each
+notice at the top carries the button it names.
 
 ![Recordings on the computer: the programme, each camera's own file, the edit and the camera relay](docs/screenshots/09-recordings-pc.png)
 
@@ -532,7 +537,7 @@ setting up. It warns when the Mac is on battery or its lid could close, which no
 
 ![The camera relay, on by default: what each camera passes to OBS and how long it is held](docs/screenshots/12-relay.png)
 
-System › This PC shows the camera relay at work, the AI assistance level and how OBS decodes each camera; System ›
+System › This computer shows the camera relay at work, the AI assistance level and how OBS decodes each camera; System ›
 Updates has the manager's updates and the phones' camera app together. The relay can be switched off there, under *Advanced: troubleshooting*; without the SRT library it falls back
 by itself to cameras streaming straight to OBS, and says why.
 
@@ -549,7 +554,7 @@ and updates of the manager itself from the dashboard.
 
 A **location** is a set of cameras with its own way of running a show. One computer can move between venues, with
 restore points to go back to an earlier set-up, and a whole location can be exported (encrypted) to set up another
-computer. A camera a location does not always use can be set **Not used here**, so it never holds up the readiness
+computer. A camera a location does not always use can be set **Set aside**, so it never holds up the readiness
 check or appears in the show, a camera can be **renamed** at any time (its OBS source and scenes take the new name
 too, without a cut), and one can be **removed** for good, its pairing revoked.
 
@@ -642,7 +647,7 @@ to approach 40 GB (that reading includes OBS's canvas and recording and whatever
 
 * Android 8 or later; tested on Pixel 3, 4a and 8, and Galaxy S20 FE, S23 and S23+. The latest version is under
   [Releases](../../releases).
-* 1080p, 1440p or 4K at 30 fps, H.264 with AAC sound, over SRT; local MP4 recording alongside, where the phone stays
+* 1080p, 1440p or 4K at 30 fps, H.264 with AAC sound, over SRT; recording on the phone alongside, where the phone stays
   cool enough.
 * Runs as the phone's device manager, so it can be armed, restarted, updated and have its clock set remotely, with the
   screen lock left on.
