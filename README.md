@@ -97,7 +97,7 @@ be **dedicated phones, factory-reset and used for nothing else**: the app become
 ![Show page: ready for a show, every camera streaming, the programme being recorded](docs/screenshots/01-show.png)
 
 The dashboard is grouped by when things are needed: **Show** (Show, Recipe in Cooking, Karaoke at karaoke night, Cameras, Operate, Teleprompter,
-Stage Shots, Temperatures), **Set up** (Director, Sound, Colour, People), **Library** (Recordings) and **Administration** (System).
+Stage Shots, Temperatures), **Set up** (Stage layout, Director, Sound, Colour, People), **Library** (Recordings) and **Administration** (System).
 The show's state (ready, on air, recording) stays in view at the foot of the side bar.
 If the manager stops answering, a banner says so and the state is greyed, so the page never passes old news off as current.
 
@@ -213,17 +213,24 @@ automatically, and app updates roll out one unarmed camera at a time.
 The cameras laid out as they stand on the stage, by what they show, read from the back of the stage to the audience,
 with stage left and right as the performers have them. Press one to put it on air, or pick two for a split screen.
 A tight shot is a narrow button and the whole band a wide one, and a mark on each shows where its camera stands,
-which way it points and how wide it sees, and the room map's wedges are drawn across the stage behind the buttons. **Arrange** moves and sizes the buttons, and a **room map** from above places and turns each
-camera and shows the wedge it sees, worked out from its lens and zoom. **Room view** puts the two together: the buttons
-stand on the map's stage among the cameras that film them. Each kind of event can have **a set of its own** under the
+which way it points and how wide it sees, and the room map's wedges are drawn across the stage behind the buttons.
+**Room view** puts the buttons on the room map's stage, among the cameras that film them.
+The page can be offered to phones on the camera network, behind its own passcode, so someone in the crowd can call the
+shots by hand, at `https://stageshots.mcvsaid.local` with no port to type.
+
+## Stage layout
+
+Where the cameras and the performers stand is set up once, on one page under **Set up**, and Stage Shots is laid out
+from it. Start with one button: experimentally, **Place cameras from the wide shot** finds each
+camera's picture inside the wide camera's and offers where its button should go: on the performer it shows, with the
+person detector. With a vision model it also suggests who that is, and asks "guitar or bass?" when it cannot tell.
+It is a first guess to check: nothing changes until you apply it, and you can undo it.
+Below it, a **room map** from above places and turns each
+camera and shows the wedge it sees, worked out from its lens and zoom, and the buttons can be moved and sized by hand.
+Each kind of event can have **a set of its own** under the
 map: take a photo or two of the set with any phone, press four points on the floor round something you know the size
 of, and it is straightened into a map from above, to scale; or give a floor plan (a picture or a PDF), or start from a
 template (a kitchen's counter, stove and prep table, a podcast table with its microphones) and move the shapes.
-Experimentally, **Place from the wide shot** finds each
-camera's picture inside the wide camera's and offers where its button should go: on the performer it shows, with the
-person detector. With a vision model it also suggests who that is, and asks "guitar or bass?" when it cannot tell.
-The page can be offered to phones on the camera network, behind its own passcode, so someone in the crowd can call the
-shots by hand, at `https://stageshots.mcvsaid.local` with no port to type.
 
 ![The room map: each camera placed and turned, with the wedge it sees](docs/screenshots/04e-room-map.png)
 
