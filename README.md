@@ -87,6 +87,8 @@ be **dedicated phones, factory-reset and used for nothing else**: the app become
   six 4K cameras took OBS from 11.0 GB of memory to 2.6 GB. It can also keep each camera's own file of a recording.
 * The control connection is **encrypted and pinned** to the manager's certificate. Phones find the manager by its
   address or by a name on the local network.
+* Each camera's **stream is encrypted** with a passphrase of its own, which the manager hands to its phone over that
+  connection: only the paired phone can send a camera's picture, and nobody else on the network can watch it.
 
 ---
 
