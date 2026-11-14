@@ -168,7 +168,9 @@ the moment you finish saying them, a fifth of a second or so, with Whisper heari
 
 **"Show the pot."** Aim a gimbal camera at the pot, zoom in and press **Save as target** on its card. Then "show the pot"
 swings it there and zooms, going on air once it has arrived so the swing isn't seen, and "back to me" puts it back as it
-was, following you again. Each kind of event keeps its own targets, with other words for each if you like.
+was, following you again. Each kind of event keeps its own targets, with other words for each if you like. Walked
+somewhere else? Say "and remember where we are" first, and "let's bring it back" returns there after the pot instead;
+"let's bring it back home" sends it to the home position you set.
 
 ![The Recipe page: the step being cooked with Back, Next and Undo, and the preparation done, each step with its time and key shot](docs/screenshots/22-recipe.png)
 
