@@ -386,6 +386,9 @@ Phones mounted out of reach have to keep going on their own:
   and by a phone that is on it but cannot reach the manager (after roaming between a router's access points, say).
 * **Battery protection.** A phone charging all show from its Ethernet hub holds its battery short of full, which keeps
   it cooler, where the phone has a charge limit.
+* **Stepping down for heat.** A phone that Android says is getting hot looks for faces less often while following,
+  then sends its stream at a lower bitrate, without a break in the picture, and comes back to full a minute after it
+  has cooled. Its own recording, if it makes one, stops first, as before, so the stream survives.
 * **Silence while armed.** An armed phone plays no notification, call, alarm, key click or charging sound that its
   microphone could carry into the show, and gets its owner's settings back once disarmed.
 * **Clocks.** A camera whose clock has drifted is shown with a **Fix** button that takes it off air, sets its clock and
