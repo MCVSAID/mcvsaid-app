@@ -220,6 +220,8 @@ shots by hand, at `https://stageshots.mcvsaid.local` with no port to type.
 
 ## Stage layout
 
+![Stage layout: place cameras from the wide shot, the room map, the buttons arranged by hand, and the set](docs/screenshots/04b-stage-layout.png)
+
 Where the cameras and the performers stand is set up once, on one page under **Set up**, and Stage Shots is laid out
 from it. Start with one button: experimentally, **Place cameras from the wide shot** finds each
 camera's picture inside the wide camera's and offers where its button should go: on the performer it shows, with the
