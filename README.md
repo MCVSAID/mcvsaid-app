@@ -33,6 +33,9 @@ back to the shot it left when they look away: see [The director](#the-director).
 **Operate from a tablet:** steer gimbal cameras with an Xbox controller (tested from a tablet) or on-screen buttons, at
 the aim and zoom speeds you set, from `https://operate.mcvsaid.local`: see
 [Gimbals](#gimbals-aim-a-camera-or-let-it-follow-experimental).
+**Keys instead of calls:** a remote control on a phone or tablet, at `https://remote.mcvsaid.local`: programmable
+buttons on one page, each with an icon for what it does. One press puts a camera on air, or turns a gimbal camera to a
+saved angle and zoom and then cuts to it.
 
 **Linux or Mac.** The production computer can run Linux or macOS. It was built on a Linux workstation and now runs live
 on a **MacBook Pro with an M5 Pro and 48 GB of memory**: OBS, the manager and the shot-choosing model all on the one
