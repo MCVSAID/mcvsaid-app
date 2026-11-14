@@ -21,7 +21,7 @@ be blurred on the phone itself, before any picture leaves it.
 
 - **Multiple dedicated phones, one button:** every camera recording or streaming at once.
 - **No camera operators needed:** a handful of camera phones and one computer make a directed multicam show.
-- **Flagship cameras at used prices:** a Galaxy S23 with a 3x zoom lens costs about $280 used, and about $350 on a
+- **Flagship cameras at used prices:** a Galaxy S23 with a 3x zoom lens costs about $280 used, and about $400 on a
   gimbal: a fraction of a 4K PTZ camera. See [Camera hardware](#camera-hardware-more-camera-for-the-money).
 - **Phones on gimbals become robotic cameras:** aimed from the dashboard, following a face or a named performer by
   themselves, or sent to a saved spot when the host says "show the pot".
@@ -36,8 +36,10 @@ be blurred on the phone itself, before any picture leaves it.
 - **An AI director that watches every camera before the audience does**, and takes notes in plain English.
 - **Mount the phones once.** Set them up, match their colour, update and fix them from a browser.
 - **Everyone logs in as themselves:** each person has a role, and an administrator can raise, lower or change it.
-- **Your show, your computer:** no cloud, no subscription, and your footage goes only where you stream it.
-- **The AI's cut is a starting point.** Every show comes with each camera's own file and the edit.
+- **Your show, your computer:** no cloud, no subscription, and your footage goes only where you stream it. MCVSAID
+  goes online by itself only to check for updates, from GitHub; otherwise only to fetch what you ask for, such as an
+  AI model or a recipe page.
+- **The AI's cut is a starting point.** Keep each camera's own file and the edit, and re-cut the show yourself.
 
 ## What MCVSAID does that others don't
 
@@ -174,14 +176,17 @@ relay cut OBS's memory use from 11.0 GB to 2.6 GB with six 4K cameras.
 
 ### 11. Recordings ready for the edit
 
-Record and Stop catch the moment you press them, even though the programme runs a few seconds behind. Each programme
-recording comes with a file per camera, the cuts as an EDL for Resolve, Premiere or Final Cut, and each
-camera's LUT; a cooking show's steps come as markers where the file shows them. Recordings made on the phones are copied over and verified after the show. You can re-cut the AI's show
+Record and Stop catch the moment you press them, even though the programme runs a few seconds behind. With camera files
+switched on, each programme recording comes with a file per camera, kept on the computer from the streams as they
+arrive, the cuts as an EDL for Resolve, Premiere or Final Cut, and each camera's LUT; a cooking show's steps come as
+markers where the file shows them. Phones can also record a sharper copy of their own, copied over and verified after
+the show, but recording while streaming runs most phones too hot without a cooler, so try it on your phones first. You can re-cut the AI's show
 instead of living with it.
 
 ### 12. Private, local and consent-based
 
-Everything runs on one Mac or Linux computer, including the model, and nothing is sent to the project. Performer
+Everything runs on one Mac or Linux computer, including the model, and nothing is sent to the project; MCVSAID goes online by itself only
+to check for updates, from GitHub. Performer
 recognition identifies only people who have consented, purpose by purpose. Their data is encrypted and deleted after
 the show day, and every page shows when recognition is on. Face blur and voice shot calls run on the phones and the
 computer too, never in a cloud service. AI is optional, so a modest computer can still run a show. Each person logs in
@@ -193,25 +198,25 @@ change anyone's role from the Users page. The audit log names who made each chan
 ## Camera hardware: more camera for the money
 
 MCVSAID runs on Android phones, so you choose the cameras: the ones that fit the show and the budget, changed as better
-ones get cheaper. A flagship phone from the last few years has a bigger image sensor than most 4K PTZ cameras, shoots
+ones get cheaper. A flagship phone from the last few years has an image sensor about the size of a premium PTZ camera's and bigger than most 4K PTZ cameras', shoots
 sharp 4K, and carries its own zoom lenses, and two or three years after launch it costs a few hundred dollars used.
 
 | Phone | Used, November 2026 | Main camera | Zoom lenses | With MCVSAID |
 | --- | --- | --- | --- | --- |
-| Samsung Galaxy S23 | about $280 | 50 MP | 3x, 10 MP | Tested, its 3x lens included |
+| Samsung Galaxy S23 | about $280 | 50 MP, 1/1.56" sensor | 3x, 10 MP | Tested, its 3x lens included |
 | Samsung Galaxy S23 Ultra | about $490 | 200 MP, 1/1.3" sensor | 3x and 10x, 10 MP each | Not yet tried |
 | Google Pixel 8 Pro | about $330 | 50 MP, 1/1.31" sensor | 5x, 48 MP | Not yet tried |
 | Google Pixel 9 Pro | about $460 | 50 MP, 1/1.31" sensor | 5x, 48 MP | Not yet tried |
 | Google Pixel 8 | about $280 | 50 MP, 1/1.31" sensor | none (12 MP ultrawide) | Tested |
 
 The director uses a phone's zoom lens for tight shots, changing lens only while that camera is off air, and crops in on
-the large main sensor between lenses. Put the phone on a **Hohem iSteady X3** (about $70–130) or **MT3** (about
-$200–330) and it pans and tilts like a PTZ camera, aimed from the dashboard, a tablet or an Xbox controller, or
+the large main sensor between lenses. Put the phone on a **Hohem iSteady X3** (about $100–130; the cheaper X3 SE is a different model, not yet
+tried) or **MT3** (from about $330) and it pans and tilts like a PTZ camera, aimed from the dashboard, a tablet or an Xbox controller, or
 following a face by itself (see [6. Robotic cameras for the price of a phone gimbal](#6-robotic-cameras-for-the-price-of-a-phone-gimbal)).
 
 | Camera | New or used, November 2026 | Sensor | Zoom |
 | --- | --- | --- | --- |
-| Galaxy S23 on a Hohem X3, with MCVSAID | about $350 | 50 MP main | 3x lens and sensor crop |
+| Galaxy S23 on a Hohem iSteady X3, with MCVSAID | about $400 | 1/1.56" (50 MP main) | 3x lens and sensor crop |
 | A 4K PTZ camera with 12x zoom (for example PTZOptics Move 4K, Panasonic AW-UE20) | about $1,400–2,000 | 1/2.5"–1/2.8" | 12x optical, continuous |
 | A 4K AI-tracking PTZ camera (OBSBOT Tail 2) | about $1,200 | 1/1.5" | 5x optical |
 
@@ -248,7 +253,8 @@ owners. Corrections are welcome at **hello@mcvsaid.com**.
   and on a MacBook Pro with an M5 Pro and 48 GB of RAM. Smaller machines haven't been tested yet.
 - **Dedicated phones.** Camera phones must be factory-reset and used only as cameras, because the app becomes each
   phone's device owner.
-- **Heat.** Without a cooler, phone heat still limits recording on the phone during a show.
+- **Heat.** Recording on the phones while they stream ran them too hot to use in our tests without a cooler. Keep
+  each camera's file on the computer instead, or try a cooler and test on your own phones first.
 - **Experimental parts.** Face blur can miss faces (small, turned, fast-moving or partly hidden), so don't rely on it
   to hide anyone yet. Cooler and gimbal control use commands worked out from the makers' own apps, so a firmware
   update could change them; only the Black Shark MagCooler 5 Pro and the Hohem iSteady X3 and MT3 have been tried. An
