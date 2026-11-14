@@ -53,7 +53,7 @@ a podcast or a kitchen) and would like to try it, email **beta@mcvsaid.com** wit
 * the phones you could set aside for it, and your network.
 
 Testers get the manager from a private repository, a tester guide, and a direct line for feedback. Camera phones must
-be **spare phones, factory-reset and used for nothing else**: the app becomes each phone's device owner.
+be **dedicated phones, factory-reset and used for nothing else**: the app becomes each phone's device owner.
 
 ---
 
@@ -97,6 +97,7 @@ be **spare phones, factory-reset and used for nothing else**: the app becomes ea
 The dashboard is grouped by when things are needed: **Show** (Show, Recipe in Cooking, Karaoke at karaoke night, Cameras, Operate, Teleprompter,
 Stage Shots, Temperatures), **Set up** (Director, Sound, Colour, People), **Library** (Recordings) and **Administration** (System).
 The show's state (ready, on air, recording) stays in view at the foot of the side bar.
+If the manager stops answering, a banner says so and the state is greyed, so the page never passes old news off as current.
 
 One line answers the question that matters before doors open: **is everything ready?** It is worked out continuously
 from the computer (OBS, memory, processor, recording space, the camera network, the relay, the model) and from every

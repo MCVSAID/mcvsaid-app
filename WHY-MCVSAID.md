@@ -2,10 +2,12 @@
 
 **Set up as many dedicated phones as you need. Press one button. Every camera starts recording, streaming, or both.**
 
-MCVSAID, the MultiCam Video Stream AI Director, turns spare Android phones into a managed, self-healing multi-camera
-rig. One local computer runs it, and an optional AI director can choose the shots by watching each moment before it
-airs. There is no cloud and no subscription: the cameras, the director and the recordings stay on your own computer,
-and your footage goes only where you stream it.
+MCVSAID, the MultiCam Video Stream AI Director, turns Android camera phones into a managed, self-healing multi-camera
+rig. A flagship phone from the last few years has a large sensor, sharp 4K and its own zoom lenses, for a few hundred
+dollars used: more camera for the money than a dedicated camera at the same price. One local computer runs MCVSAID,
+and an optional AI director can choose the shots by watching each moment before it airs. There is no cloud and no
+subscription: the cameras, the director and the recordings stay on your own computer, and your footage goes only where
+you stream it.
 
 Most phone multicam tools stop once the feeds reach a switcher. Most auto-directors either choose shots from audio
 levels alone or work only with their own cameras. MCVSAID covers the whole chain: setup, health, sync, colour, shot
@@ -18,7 +20,9 @@ be blurred on the phone itself, before any picture leaves it.
 ## At a glance
 
 - **Multiple dedicated phones, one button:** every camera recording or streaming at once.
-- **No camera operators needed:** a handful of spare phones and one computer make a directed multicam show.
+- **No camera operators needed:** a handful of camera phones and one computer make a directed multicam show.
+- **Flagship cameras at used prices:** a Galaxy S23 with a 3x zoom lens costs about $280 used, and about $350 on a
+  gimbal: a fraction of a 4K PTZ camera. See [Camera hardware](#camera-hardware-more-camera-for-the-money).
 - **Phones on gimbals become robotic cameras:** aimed from the dashboard, following a face or a named performer by
   themselves, or sent to a saved spot when the host says "show the pot".
 - **Automation you can switch off mid-show:** tracking and the automatic zoom, for one camera or every camera at once.
@@ -186,6 +190,36 @@ change anyone's role from the Users page. The audit log names who made each chan
 
 ![The Users page: everyone who can log in, by name, each with a role an administrator can change](docs/screenshots/26-users.png)
 
+## Camera hardware: more camera for the money
+
+MCVSAID runs on Android phones, so you choose the cameras: the ones that fit the show and the budget, changed as better
+ones get cheaper. A flagship phone from the last few years has a bigger image sensor than most 4K PTZ cameras, shoots
+sharp 4K, and carries its own zoom lenses, and two or three years after launch it costs a few hundred dollars used.
+
+| Phone | Used, November 2026 | Main camera | Zoom lenses | With MCVSAID |
+| --- | --- | --- | --- | --- |
+| Samsung Galaxy S23 | about $280 | 50 MP | 3x, 10 MP | Tested, its 3x lens included |
+| Samsung Galaxy S23 Ultra | about $490 | 200 MP, 1/1.3" sensor | 3x and 10x, 10 MP each | Not yet tried |
+| Google Pixel 8 Pro | about $330 | 50 MP, 1/1.31" sensor | 5x, 48 MP | Not yet tried |
+| Google Pixel 9 Pro | about $460 | 50 MP, 1/1.31" sensor | 5x, 48 MP | Not yet tried |
+| Google Pixel 8 | about $280 | 50 MP, 1/1.31" sensor | none (12 MP ultrawide) | Tested |
+
+The director uses a phone's zoom lens for tight shots, changing lens only while that camera is off air, and crops in on
+the large main sensor between lenses. Put the phone on a **Hohem iSteady X3** (about $70–130) or **MT3** (about
+$200–330) and it pans and tilts like a PTZ camera, aimed from the dashboard, a tablet or an Xbox controller, or
+following a face by itself (see [6. Robotic cameras for the price of a phone gimbal](#6-robotic-cameras-for-the-price-of-a-phone-gimbal)).
+
+| Camera | New or used, November 2026 | Sensor | Zoom |
+| --- | --- | --- | --- |
+| Galaxy S23 on a Hohem X3, with MCVSAID | about $350 | 50 MP main | 3x lens and sensor crop |
+| A 4K PTZ camera with 12x zoom (for example PTZOptics Move 4K, Panasonic AW-UE20) | about $1,400–2,000 | 1/2.5"–1/2.8" | 12x optical, continuous |
+| A 4K AI-tracking PTZ camera (OBSBOT Tail 2) | about $1,200 | 1/1.5" | 5x optical |
+
+Used phone prices are typical asking prices for unlocked phones on Swappa; gimbal and camera prices are US retail. All
+are in US dollars, as of November 2026, and they change. A PTZ camera's zoom is one continuous lens, where a phone moves
+between fixed lenses and crops in between them. "Not yet tried" means that phone's zoom lenses have not yet been tried
+with the app; the Pixel 8 and Galaxy S23 have.
+
 ## How it compares
 
 The comparison below is based on the public pages linked under [References](#references), as of October 2026.
@@ -212,8 +246,8 @@ owners. Corrections are welcome at **hello@mcvsaid.com**.
 
 - **A capable production computer.** MCVSAID has been tested on a gaming laptop with 32 GB of RAM and 16 GB of VRAM,
   and on a MacBook Pro with an M5 Pro and 48 GB of RAM. Smaller machines haven't been tested yet.
-- **Dedicated phones.** Camera phones must be spare, factory-reset devices, because the app becomes each phone's device
-  owner.
+- **Dedicated phones.** Camera phones must be factory-reset and used only as cameras, because the app becomes each
+  phone's device owner.
 - **Heat.** Without a cooler, phone heat still limits recording on the phone during a show.
 - **Experimental parts.** Face blur can miss faces (small, turned, fast-moving or partly hidden), so don't rely on it
   to hide anyone yet. Cooler and gimbal control use commands worked out from the makers' own apps, so a firmware
@@ -238,3 +272,12 @@ owners. Corrections are welcome at **hello@mcvsaid.com**.
 - [Blackmagic Camera for Android 2.0 (AlternativeTo)](https://alternativeto.net/news/2025/1/blackmagic-camera-2-0-for-android-adds-multi-phone-control-extended-device-support-and-more)
 - [Mevo Multicam app](https://mevo.com/pages/multi-camera-app)
 - [Virtual Video Director](https://www.streamingvalley.nl/product/virtual-video-director-for-vmix-atem-and-tricaster/)
+- Used phone prices: Swappa's price guides for the [Galaxy S23](https://swappa.com/prices/samsung-galaxy-s23),
+  [S23 Ultra](https://swappa.com/prices/samsung-galaxy-s23-ultra), [Pixel 8](https://swappa.com/prices/google-pixel-8),
+  [Pixel 8 Pro](https://swappa.com/prices/google-pixel-8-pro) and [Pixel 9 Pro](https://swappa.com/prices/google-pixel-9-pro),
+  November 2026
+- [Pixel camera specifications (Google)](https://support.google.com/pixelphone/answer/7158570)
+- [Galaxy S23 series specifications (Samsung)](https://samsungmobilepress.com/media-assets/galaxy-s23?tab=specs)
+- [Hohem store](https://store.hohem.com/)
+- [PTZOptics Move 4K](https://ptzoptics.com/ptz-cameras/move-4k-12x)
+- [OBSBOT Tail 2](https://www.obsbot.com/news/obsbot-tail-2-pre-order)
