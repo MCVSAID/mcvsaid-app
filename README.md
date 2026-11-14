@@ -351,7 +351,15 @@ an administrator switches it on, and it should not be relied on to hide anyone.
 Phones of different makes see the same stage differently. From one page, every phone is set to the same **white
 balance** (in kelvin, where the phone allows it, or its nearest preset) and its **exposure locked**, and each camera
 gets a correction **LUT** in OBS: fitted from a colour chart, or by matching every camera to one of them on the scene
-in front of them, no chart needed. The LUTs go with each recording's camera files, for the edit.
+in front of them, no chart needed. The LUTs go with each recording's camera files, for the edit. No chart to hand? Open
+`https://calibrate.mcvsaid.local` on a tablet: its **colour card** shows a 24-patch chart, an 18% grey, a grey scale
+and colour bars, and its **sync flash** is the one Calibrate sync uses.
+
+**One person calibrates from the stage.** Give whoever sets up a **setup tech** account: it opens Set up ›
+**Calibrate** and nothing else. They walk on stage with a phone, log in on the calibrate page and hold it up. **Calibrate
+sound** flashes and beeps while the manager measures every camera's lip sync; **Calibrate colour** shows a chart that
+the manager finds in every camera by itself (no clicking corners), fits each camera's colours and puts the corrections
+in OBS. The Calibrate page at the PC follows along.
 
 ## Recordings
 
