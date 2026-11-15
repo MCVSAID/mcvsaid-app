@@ -232,6 +232,10 @@ person detector. With a vision model it also suggests who that is, and asks "gui
 It is a first guess to check: nothing changes until you apply it, and you can undo it.
 Below it, a **room map** from above places and turns each
 camera and shows the wedge it sees, worked out from its lens and zoom, and the buttons can be moved and sized by hand.
+Expand the map over the whole window and the chosen camera's own picture sits beside it: press the stage's corners in
+the picture and the manager works out where that camera stands, how high, which way it points and how far it tilts,
+offered on the map to take or leave. A camera given a height and a tilt is drawn by what it really sees of the floor,
+with a side view of it against a performer.
 Each kind of event can have **a set of its own** under the
 map: take a photo or two of the set with any phone, press four points on the floor round something you know the size
 of, and it is straightened into a map from above, to scale (or measure the set with a camera phone's AR, which marks
@@ -455,7 +459,8 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 * **The zoom follows the plan**: the director's zoom on that camera frames whom the plan is on, the soloist or a guest,
   not just a listed performer.
 * **Home position**: **Set home** where it points now, and **Home** turns it back there. After the phone restarts, aim
-  it at home and Set home again, and every saved target lines up again.
+  it at home and Set home again, and every saved target lines up again, or press **Find home**: it matches what the
+  camera sees now against the room it saw as its home was set, and finds home and every target by itself.
 * **Saved targets**: aim it at the pot and **Save as target**; "show the pot" turns and zooms it there, "back to me" puts
   it back as it was. **Go** and **Back** on the card too.
 
