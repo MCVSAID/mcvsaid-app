@@ -702,7 +702,9 @@ to approach 40 GB (that reading includes OBS's canvas and recording and whatever
 
 * Phones and manager authenticate each other: a per-camera credential (kept on the computer only as a hash) and a
   pinned certificate.
-* The dashboard is reachable from the computer itself; from the camera network only with an operator login, over HTTPS.
+* The dashboard is reachable from the computer itself; from the camera network over HTTPS, with an operator login, or
+  an administrator's password and a code from an authenticator app (a device can be trusted for 30 days) once that is
+  switched on at the computer. What an administrator at the computer keeps there stays out of reach of the network.
 * Set-up codes and USB set-up hand each phone its own pairing; passwords typed for a code are not stored.
 * Nothing is sent from an installation to the project: no usage reporting, crash reporting or footage.
 
