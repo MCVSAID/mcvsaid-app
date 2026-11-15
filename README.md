@@ -234,7 +234,8 @@ Below it, a **room map** from above places and turns each
 camera and shows the wedge it sees, worked out from its lens and zoom, and the buttons can be moved and sized by hand.
 Each kind of event can have **a set of its own** under the
 map: take a photo or two of the set with any phone, press four points on the floor round something you know the size
-of, and it is straightened into a map from above, to scale; or give a floor plan (a picture or a PDF), or start from a
+of, and it is straightened into a map from above, to scale (or measure the set with a camera phone's AR, which marks
+its corners in metres and needs nothing pressed: new, and not yet tried on the phones); or give a floor plan (a picture or a PDF), or start from a
 template (a kitchen's counter, stove and prep table, a podcast table with its microphones) and move the shapes.
 
 ![The room map: each camera placed and turned, with the wedge it sees](docs/screenshots/04e-room-map.png)
@@ -484,7 +485,8 @@ the administrator or an operator, at the PC or from a tablet on the camera Wi-Fi
 has been tested). The right stick aims the gimbal, the triggers zoom, **A** puts that camera on air,
 **View** goes back to the stage shot and **Y** to the previous shot, a right-stick press sends the gimbal home; the
 bumpers change camera, and several controllers can drive several cameras at once. Each tile arms, streams and records
-its camera (for operators too) and shows its temperature. Every camera in use is there, gimbal
+its camera (for operators too) and shows its temperature, and the bar's **Arm all cameras** and **Start all camera streams**
+get every camera ready at once, asking first with the list. Every camera in use is there, gimbal
 or not, each with the same *What it shows* as its card, to change mid-show. Each tile says which lens is making the
 picture (main, telephoto or ultrawide) and the zoom, and its live picture can run at 24 frames a second. Each tile has the same Follow
 control and follow plan as the camera's card, and Home and Set home.
