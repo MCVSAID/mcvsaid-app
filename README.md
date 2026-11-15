@@ -361,7 +361,7 @@ in front of them, no chart needed. The LUTs go with each recording's camera file
 and colour bars, and its **sync flash** is the one Calibrate sync uses.
 
 **One person calibrates from the stage.** Give whoever sets up a **setup tech** account: it opens Set up ›
-**Calibrate** and nothing else. They walk on stage with a phone, log in on the calibrate page and hold it up. **Calibrate
+**Calibrate**, and the Operate page's gimbal positions, and nothing else. They walk on stage with a phone, log in on the calibrate page and hold it up. **Calibrate
 sound** flashes and beeps while the manager measures every camera's lip sync; **Calibrate colour** shows a chart that
 the manager finds in every camera by itself (no clicking corners), fits each camera's colours and puts the corrections
 in OBS. The Calibrate page at the PC follows along.
@@ -486,6 +486,10 @@ its camera (for operators too) and shows its temperature. Every camera in use is
 or not, each with the same *What it shows* as its card, to change mid-show. Each tile says which lens is making the
 picture (main, telephoto or ultrawide) and the zoom, and its live picture can run at 24 frames a second. Each tile has the same Follow
 control and follow plan as the camera's card, and Home and Set home.
+**Positions are set up here too:** under each gimbal camera's picture, aim and zoom it and press **Save as…**; **Go**
+checks one, **Update to here** fixes it, and Remote's keys and voice calls use the same positions. Hold the
+controller's **Menu** and press A, B, X or Y to go to positions 1 to 4. A **setup tech** can open this page to line the
+shots up from a phone on stage before the show, with nothing that cuts, arms, streams or records.
 No controller? On-screen arrows and zoom buttons do the same, and **Aim** and **Zoom** sliders set how quick they are.
 All the live pictures come over one connection, so the page keeps up on a tablet, at `https://operate.mcvsaid.local`
 on the camera network.
