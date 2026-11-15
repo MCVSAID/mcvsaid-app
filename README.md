@@ -165,7 +165,8 @@ match, even a second and a half out. They are on the **Sound** page, with the vo
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
 asked for, and holds it before choosing again by itself. Each camera
-answers to its name, what it shows and phrases you give it; a name in passing, a question or "don't cut to the stove"
+answers to its name, what it shows and phrases you give it, after a call word ("cut to", "let's take a look at",
+or words of your own for each kind of event); a name in passing, a question or "don't cut to the stove"
 does nothing, a call only a phone heard waits for the computer to hear it too, and two cameras called in one breath
 cut to neither. Off by default where music, a congregation or several talkers could call cameras by mistake, and
 switched on or off for each kind of event on the Sound page.
@@ -704,7 +705,9 @@ to approach 40 GB (that reading includes OBS's canvas and recording and whatever
   pinned certificate.
 * The dashboard is reachable from the computer itself; from the camera network over HTTPS, with an operator login, or
   an administrator's password and a code from an authenticator app (a device can be trusted for 30 days) once that is
-  switched on at the computer. What an administrator at the computer keeps there stays out of reach of the network.
+  switched on at the computer. One login (and one trusted device) serves every easy address of the dashboard
+  (`operate.`, `remote.`, `calibrate.`), never Stage Shots or the teleprompter, which keep their own. What an
+  administrator at the computer keeps there stays out of reach of the network.
 * Set-up codes and USB set-up hand each phone its own pairing; passwords typed for a code are not stored.
 * Nothing is sent from an installation to the project: no usage reporting, crash reporting or footage.
 
