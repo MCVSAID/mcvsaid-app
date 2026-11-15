@@ -464,6 +464,8 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
 * **Home position**: **Set home** where it points now, at the zoom it has, and **Home** turns it back there and zooms it as it was. After the phone restarts, aim
   it at home and Set home again, and every saved target lines up again, or press **Find home**: it matches what the
   camera sees now against the room it saw as its home was set, and finds home and every target by itself.
+* **Checked by what it sees**: after Home or a saved target, the camera's picture is matched against the room it saw
+  when that spot was saved, and a degree or two of drift is turned off before it goes on air.
 * **Saved targets**: aim it at the pot and **Save as target**; "show the pot" turns and zooms it there, "back to me" puts
   it back as it was. **Go** and **Back** on the card too.
 
