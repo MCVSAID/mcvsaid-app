@@ -134,13 +134,14 @@ add, delete and drag steps into order, before or during the show, and **Edit as 
 ingredients and equipment too. **Prep for the show** turns long steps into short ones the cook can call out, one action
 each ("grind the beans"), keeping the full wording as each step's details, checks that a camera covers every step, and
 lists what to say for each, to rehearse. With spoken cues on (Standard or Plus AI), the cook says "let's see that
-recipe" (and "hide the recipe"), "step two" or a step in its own words, forward or back, or calls out an ingredient,
+recipe" (and "hide the recipe"), "step two", or a step in the recipe's words or their own ("let's make the sauce"),
+forward or back, or calls out an ingredient,
 and the recipe, the step or the ingredient's line goes on screen while the AI keeps directing the shots; speech is
 recognised on the production computer and nothing heard is kept. Pressing Record starts the recipe afresh, and it
 moves on by itself only while recording. The host can walk through it from their own tablet on the counter too: at
 `https://recipe.mcvsaid.local`, one step at a time in big type, the ingredients to tick off, timers for the times a step
 names, and Next and Back that move the director along, with buttons to show or hide the recipe on screen and pop the
-step's name up.
+step's name up; or as a prompter, the step alone in the biggest type, following as the host calls the steps out.
 
 **Explain the director, on the video.** For demo videos, switch on *Explain the director* and the programme carries
 caption cards saying what the AI did and why: each cut and who made it, a solo heard, a gimbal tracking someone or turning to the soloist, a
