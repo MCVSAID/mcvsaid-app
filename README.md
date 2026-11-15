@@ -419,7 +419,8 @@ Phones mounted out of reach have to keep going on their own:
 * **Silence while armed.** An armed phone plays no notification, call, alarm, key click or charging sound that its
   microphone could carry into the show, and gets its owner's settings back once disarmed.
 * **Clocks.** A camera whose clock has drifted is shown with a **Fix** button that takes it off air, sets its clock and
-  brings it back, in step.
+  brings it back, in step. A phone that restarted without the time, its clock months out, still reconnects and is set
+  right by itself.
 * **Phone coolers.** A clamped-on Black Shark cooler is controlled from the dashboard over Bluetooth: see
   [Phone coolers](#phone-coolers-experimental).
 * **Gimbals.** A phone on a Hohem gimbal is aimed, and can follow someone, from the dashboard: see
@@ -452,7 +453,8 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
   on whom it is.
 * **The zoom follows the plan**: the director's zoom on that camera frames whom the plan is on, the soloist or a guest,
   not just a listed performer.
-* **Home position**: **Set home** where it points now, and **Home** turns it back there.
+* **Home position**: **Set home** where it points now, and **Home** turns it back there. After the phone restarts, aim
+  it at home and Set home again, and every saved target lines up again.
 * **Saved targets**: aim it at the pot and **Save as target**; "show the pot" turns and zooms it there, "back to me" puts
   it back as it was. **Go** and **Back** on the card too.
 
