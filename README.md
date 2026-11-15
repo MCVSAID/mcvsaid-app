@@ -458,7 +458,7 @@ to the gimbal over Bluetooth, so nothing else is needed: no extra box or cable, 
   on whom it is.
 * **The zoom follows the plan**: the director's zoom on that camera frames whom the plan is on, the soloist or a guest,
   not just a listed performer.
-* **Home position**: **Set home** where it points now, and **Home** turns it back there. After the phone restarts, aim
+* **Home position**: **Set home** where it points now, at the zoom it has, and **Home** turns it back there and zooms it as it was. After the phone restarts, aim
   it at home and Set home again, and every saved target lines up again, or press **Find home**: it matches what the
   camera sees now against the room it saw as its home was set, and finds home and every target by itself.
 * **Saved targets**: aim it at the pot and **Save as target**; "show the pot" turns and zooms it there, "back to me" puts
