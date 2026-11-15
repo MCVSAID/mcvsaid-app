@@ -501,7 +501,8 @@ its camera (for operators too) and shows its temperature, and the bar's **Arm al
 get every camera ready at once, asking first with the list. Every camera in use is there, gimbal
 or not, each with the same *What it shows* as its card, to change mid-show. Each tile says which lens is making the
 picture (main, telephoto or ultrawide) and the zoom, and its live picture can run at 24 frames a second. Each tile has the same Follow
-control and follow plan as the camera's card, and Home and Set home.
+control and follow plan as the camera's card, and Home and Set home: Home stops following while it turns, and a
+camera that was following picks it up again once it is home.
 **Positions are set up here too:** under each gimbal camera's picture, aim and zoom it and press **Save as…**; **Go**
 checks one, **Update to here** fixes it, and Remote's keys and voice calls use the same positions. Hold the
 controller's **Menu** and press A, B, X or Y to go to positions 1 to 4. A **setup tech** can open this page to line the
