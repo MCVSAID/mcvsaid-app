@@ -152,7 +152,8 @@ recipe.
 
 **Look back to bring the camera back.** With gaze on, a cook who called "cut to the stove" brings the shot back to
 themselves just by looking into the front camera: a new look ends the called shot's hold, once it has run a few seconds.
-After a short look into a camera, looking away goes back to the shot before. With a host, the gaze is quicker: it cuts
+After a short look into a camera, looking away goes back to the shot before, unless the camera they looked into is
+still the best picture (they are still talking, or looking down at the work). With a host, the gaze is quicker: it cuts
 to them just before they turn to the camera, and a glance away no longer cuts away and straight back. The recipe's own
 key shots wait for the host too.
 
