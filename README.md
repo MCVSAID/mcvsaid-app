@@ -141,7 +141,8 @@ recognised on the production computer and nothing heard is kept. Pressing Record
 moves on by itself only while recording. The host can walk through it from their own tablet on the counter too: at
 `https://recipe.mcvsaid.local`, one step at a time in big type, the ingredients to tick off, timers for the times a step
 names, and Next and Back that move the director along, with buttons to show or hide the recipe on screen and pop the
-step's name up; or as a prompter, the step alone in the biggest type, following as the host calls the steps out. A red
+step's name up. When recording starts it brings up the ingredients first, ticks each as the host names it, and then
+moves on to the preparation and the first step; or as a prompter, the step alone in the biggest type, following as the host calls the steps out. A red
 REC says the show is being recorded, and an operator can start and stop the recording from there. In the kitchen the
 director puts two cameras side by side only when both show the step being cooked and something is happening in each,
 and never for long: no more half a screen of crackers waiting while the pot boils.
