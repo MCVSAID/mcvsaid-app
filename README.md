@@ -437,6 +437,10 @@ tracking" and "close up" work on it. The catch is that the camera picks its own 
 at, so it cannot be pinned to one named person. Where performers keep to their places, a preset for each stage area
 does the job.
 
+On the Operate page it sits beside the phones: its picture as OBS has it, and the same Xbox controller or on-screen
+buttons to aim and zoom it, stop it and send it home, with its presets as its Positions. If the page closes while it
+is turning, the manager stops it.
+
 ## Cameras that look after themselves
 
 Phones mounted out of reach have to keep going on their own:
