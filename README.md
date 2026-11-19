@@ -418,6 +418,18 @@ camera network and connects. The code carries everything the phone needs; the ma
 
 <br clear="right">
 
+## A network camera beside the phones
+
+A camera that is not a phone, such as a PTZ camera on the network, can be one of the show's cameras. OBS takes its
+picture over **NDI**; the manager knows it by a name, a slot and the NDI source it sends, and lists the NDI sources it
+finds for you to choose from. "Refresh OBS scenes" makes its source and its scenes, its card says whether OBS shows
+its picture, and the director cuts to it like any other camera. It has no timing strip, so the delay that lines it up
+with the phones is set by hand on its card.
+
+Its card shows only what applies: no battery, temperature, lens, recording or app, and none of those counts against
+it. It needs the free NDI runtime and the DistroAV plugin in OBS; without them everything else runs as before and the
+camera says what is missing. Turning and zooming the camera from the dashboard is not built yet.
+
 ## Cameras that look after themselves
 
 Phones mounted out of reach have to keep going on their own:
