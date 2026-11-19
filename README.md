@@ -423,8 +423,10 @@ camera network and connects. The code carries everything the phone needs; the ma
 A camera that is not a phone, such as a PTZ camera on the network, can be one of the show's cameras. OBS takes its
 picture over **NDI**; the manager knows it by a name, a slot and the NDI source it sends, and lists the NDI sources it
 finds for you to choose from. "Refresh OBS scenes" makes its source and its scenes, its card says whether OBS shows
-its picture, and the director cuts to it like any other camera. It has no timing strip, so the delay that lines it up
-with the phones is set by hand on its card.
+its picture, and the director cuts to it like any other camera. It has no timing strip, so the manager lines it up
+with the phones by what the pictures show: when the same things are seen to happen in its picture and a phone's, it
+sets the camera's delay by itself, and keeps doing so through the show. The camera's sound is a second check on
+that, and takes over when the stage is still but the music is not.
 
 Its card shows only what applies: no battery, temperature, lens, recording or app, and none of those counts against
 it. It needs the free NDI runtime and the DistroAV plugin in OBS; without them everything else runs as before and the
