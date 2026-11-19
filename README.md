@@ -428,7 +428,14 @@ with the phones is set by hand on its card.
 
 Its card shows only what applies: no battery, temperature, lens, recording or app, and none of those counts against
 it. It needs the free NDI runtime and the DistroAV plugin in OBS; without them everything else runs as before and the
-camera says what is missing. Turning and zooming the camera from the dashboard is not built yet.
+camera says what is missing.
+
+A network PTZ camera can follow the way the phone cameras do. MCVSAID chooses who it should be following and aims it
+there; the camera's own tracker holds the shot. You set its control address on its card and arm Following, and
+nothing is sent to it until you do. Its named shots are the camera's own presets ("show the pot"), and "stop
+tracking" and "close up" work on it. The catch is that the camera picks its own subject within the area it is aimed
+at, so it cannot be pinned to one named person. Where performers keep to their places, a preset for each stage area
+does the job.
 
 ## Cameras that look after themselves
 
