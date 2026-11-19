@@ -438,7 +438,8 @@ at, so it cannot be pinned to one named person. Where performers keep to their p
 does the job.
 
 On the Operate page it sits beside the phones: its picture as OBS has it, and the same Xbox controller or on-screen
-buttons to aim and zoom it, stop it and send it home, with its presets as its Positions. If the page closes while it
+buttons to aim and zoom it, stop it, set its home and send it back there, and switch its tracker on or off, with its
+presets as its Positions. If the page closes while it
 is turning, the manager stops it.
 
 ## Cameras that look after themselves
