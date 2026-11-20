@@ -313,7 +313,8 @@ drums") and they go on top of the brief, newest first, for the model's next look
 ("More on the keyboards.") with a canned reply, so the chat never costs the model any time, and notes what came of it
 ("Cut to Keys: rated best by the model."). A newer wish about the same thing replaces the older, four at most are in
 force, each lasts 15 minutes unless cleared, and "clear" goes back to the brief. **Again**, under a wish you sent
-earlier, sends it once more without retyping. On a tablet it opens over the page,
+earlier, sends it once more without retyping. And when you want two cameras side by side now, not when the model
+agrees, type "split Keys and Drum Cam": that one is a command, and the split is on air at once. On a tablet it opens over the page,
 on a phone it is a sheet from the bottom; it needs Standard or Plus AI, and keeps the show's chat until New show.
 
 ### Search: find the button, or ask how
