@@ -392,14 +392,15 @@ and colour bars, and its **sync flash** is the one Calibrate sync uses.
 **Calibrate**, and the Operate page's gimbal positions, and nothing else. They walk on stage with a phone, log in on the calibrate page and hold it up. **Calibrate
 sound** flashes and beeps while the manager measures every camera's lip sync; **Calibrate colour** shows a chart that
 the manager finds in every camera by itself (no clicking corners), fits each camera's colours and puts the corrections
-in OBS. With a network camera, **Time the network cameras** flashes while the manager times it against the phones by
+in OBS; a network PTZ camera's own white balance and exposure are brought to the phones' first, on the same chart,
+once that is allowed for it. With a network camera, **Time the network cameras** flashes while the manager times it against the phones by
 the flashes both see. The Calibrate page at the PC follows along.
 
 **Before the show, one list says what is lined up.** The same page gathers what the manager already knows and says of
 each thing that it is ready, needs doing (and what to do) or cannot be told: each camera's lip sync and whether its
 stream has restarted since it was measured, the programme measured since its sound was last changed, the programme
-mix's timing, each network camera timed against a phone and its input volume, the camera relay on the manager's
-release, and any camera that dropped its connection in the last hour, with the reason it gave. On the phone, **Do what
+mix's timing, each network camera timed against a phone and its input volume, each camera's colour match and whether
+its white balance or exposure changed since, the camera relay on the manager's release, and any camera that dropped its connection in the last hour, with the reason it gave. On the phone, **Do what
 is due** then takes you from camera to camera: hold the phone in front of each one and tap, and the manager puts that
 camera on air with its own microphone and sets its lip sync, times the network cameras, and ends by asking where the
 programme's sound should come from: one camera, or every microphone joined in time.
