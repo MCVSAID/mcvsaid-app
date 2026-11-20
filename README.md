@@ -409,7 +409,8 @@ notice at the top carries the button it names.
 
 **On the computer.** The production computer can keep every camera's stream as it arrives (camera files, through the
 camera relay), at no cost to the phones. Each programme recording then comes with one file per camera, the cuts as an edit (EDL) a
-videographer can open in Resolve, Premiere or Final Cut and re-cut, and each camera's colour LUT. Camera files are a
+videographer can open in Resolve, Premiere or Final Cut and re-cut, and each camera's colour LUT. A network camera
+has its file too: the relay keeps the stream the camera itself serves, untouched. Camera files are a
 setting of their own, off until chosen, since they take disk space.
 **Record** and **Stop** wait for the programme, which runs a few seconds behind, so the file starts and ends with what
 was happening as they were pressed, and recipe steps are marked where the file shows them.
@@ -442,6 +443,9 @@ sets the camera's delay by itself, and keeps doing so through the show. The came
 that, and takes over when the stage is still but the music is not. To set it at once, before anything has happened
 on stage, hold the calibrate page up where it and a phone camera both see it: the page flashes, and the delay is set
 from the flashes both saw.
+
+Give its card the address of the camera's own stream and, with camera files on, each programme recording comes with
+the network camera's own file beside the phones', kept as the camera sent it.
 
 Its card shows only what applies: no battery, temperature, lens, recording or app, and none of those counts against
 it. It needs the free NDI runtime and the DistroAV plugin in OBS; without them everything else runs as before and the
