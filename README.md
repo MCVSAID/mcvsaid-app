@@ -379,7 +379,8 @@ and colour bars, and its **sync flash** is the one Calibrate sync uses.
 **Calibrate**, and the Operate page's gimbal positions, and nothing else. They walk on stage with a phone, log in on the calibrate page and hold it up. **Calibrate
 sound** flashes and beeps while the manager measures every camera's lip sync; **Calibrate colour** shows a chart that
 the manager finds in every camera by itself (no clicking corners), fits each camera's colours and puts the corrections
-in OBS. The Calibrate page at the PC follows along.
+in OBS. With a network camera, **Time the network cameras** flashes while the manager times it against the phones by
+the flashes both see. The Calibrate page at the PC follows along.
 
 ## Recordings
 
@@ -423,10 +424,13 @@ camera network and connects. The code carries everything the phone needs; the ma
 A camera that is not a phone, such as a PTZ camera on the network, can be one of the show's cameras. OBS takes its
 picture over **NDI**; the manager knows it by a name, a slot and the NDI source it sends, and lists the NDI sources it
 finds for you to choose from. "Refresh OBS scenes" makes its source and its scenes, its card says whether OBS shows
-its picture, and the director cuts to it like any other camera. It has no timing strip, so the manager lines it up
+its picture, and the director cuts to it like any other camera. In a split screen it fills its half, centred on
+the middle of its shot. It has no timing strip, so the manager lines it up
 with the phones by what the pictures show: when the same things are seen to happen in its picture and a phone's, it
 sets the camera's delay by itself, and keeps doing so through the show. The camera's sound is a second check on
-that, and takes over when the stage is still but the music is not.
+that, and takes over when the stage is still but the music is not. To set it at once, before anything has happened
+on stage, hold the calibrate page up where it and a phone camera both see it: the page flashes, and the delay is set
+from the flashes both saw.
 
 Its card shows only what applies: no battery, temperature, lens, recording or app, and none of those counts against
 it. It needs the free NDI runtime and the DistroAV plugin in OBS; without them everything else runs as before and the
