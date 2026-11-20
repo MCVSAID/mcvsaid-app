@@ -163,7 +163,9 @@ key shots wait for the host too.
 
 **Programme sound from one camera.** Every phone's microphone can be in the programme; choose the one that leads, and
 the others join it only while they are lined up with it, measured from the cameras' own streams, so nothing echoes. Or
-let it **follow the speaker**, opening only the microphone that hears them best. **Lip sync** moves the sound against
+let it **follow the speaker**, opening only the microphone that hears them best. New, and still being tried: the
+**programme mix** keeps every phone's microphone in time with the leading one (each phone's clock runs a little
+fast or slow) and mixes them as one sound. **Lip sync** moves the sound against
 the picture, and **Calibrate sync** measures it for you: a phone or tablet flashes and beeps in front of the cameras,
 OBS records a few seconds of the programme, and each camera's sound is measured against its own picture and set to
 match, even a second and a half out. They are on the **Sound** page, with the voice calls.
