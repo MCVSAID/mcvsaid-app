@@ -457,7 +457,8 @@ on stage, hold the calibrate page up where it and a phone camera both see it: th
 from the flashes both saw.
 
 Give its card the address of the camera's own stream and, with camera files on, each programme recording comes with
-the network camera's own file beside the phones', kept as the camera sent it.
+the network camera's own file beside the phones', kept as the camera sent it. A button on its card stops it being
+kept, and starts it again, as Stop stream does for a phone.
 
 Its card shows only what applies: no battery, temperature, lens, recording or app, and none of those counts against
 it. It needs the free NDI runtime and the DistroAV plugin in OBS; without them everything else runs as before and the
