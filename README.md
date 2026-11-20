@@ -452,6 +452,11 @@ tracking" and "close up" work on it. The catch is that the camera picks its own 
 at, so it cannot be pinned to one named person. Where performers keep to their places, a preset for each stage area
 does the job.
 
+Mount a phone right beside the PTZ camera, showing the whole stage, and the aim gets better: the two look from the
+same place, so wherever someone is in the phone's picture is the way the camera turns, however far back they stand.
+Choose the phone on the camera's card, aim the camera at the middle of that phone's picture and press Set. Not yet
+tried with a real camera and phone side by side.
+
 On the Operate page it sits beside the phones: its picture as OBS has it, and the same Xbox controller or on-screen
 buttons to aim and zoom it, stop it, set its home and send it back there, and switch its tracker on or off, with its
 presets as its Positions. If the page closes while it
