@@ -315,6 +315,15 @@ drums") and they go on top of the brief, newest first, for the model's next look
 force, each lasts 15 minutes unless cleared, and "clear" goes back to the brief. On a tablet it opens over the page,
 on a phone it is a sheet from the bottom; it needs Standard or Plus AI, and keeps the show's chat until New show.
 
+### Search: find the button, or ask how
+
+Nobody remembers where every setting lives. **Search**, at the top of the side bar on every page (or press `/`), takes
+what you are looking for in your own words: "record the programme", "pair a gimbal", "shot length". It opens the page
+the thing is on, scrolls to it and outlines it. It searches the guide too, to read without leaving the page. And with
+Standard or Plus AI you can simply ask ("How do I add a phone?"): the model on your own computer answers from the
+guide, with the parts it used a press away. While the programme is on air the guide's own words are shown instead, so
+the director's model is never kept waiting; nothing asked is kept, and nothing leaves the computer.
+
 ## People: consenting performers, and nobody else
 
 ![People page: made-up performers enrolled under a contract, stars and the cameras that follow them](docs/screenshots/18-people.png)
