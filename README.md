@@ -400,7 +400,7 @@ the flashes both see. The Calibrate page at the PC follows along.
 each thing that it is ready, needs doing (and what to do) or cannot be told: each camera's lip sync and whether its
 stream has restarted since it was measured, the programme measured since its sound was last changed, the programme
 mix's timing, each network camera timed against a phone and its input volume, each camera's colour match and whether
-its white balance or exposure changed since, the camera relay on the manager's release, and any camera that dropped its connection in the last hour, with the reason it gave. On the phone, **Do what
+its white balance or exposure changed since, whether OBS has each camera's sound with its picture, the camera relay on the manager's release, and any camera that dropped its connection in the last hour, with the reason it gave. On the phone, **Do what
 is due** then takes you from camera to camera: hold the phone in front of each one and tap, and the manager puts that
 camera on air with its own microphone and sets its lip sync, times the network cameras, matches the cameras' colours
 from a chart the phone shows when a colour match needs doing, and ends by asking where the
@@ -487,7 +487,8 @@ is turning, the manager stops it.
 Phones mounted out of reach have to keep going on their own:
 
 * **A frozen picture is revived.** If a phone stops producing pictures while its sound goes on, the app reopens the
-  camera, then restarts the capture, by itself; the manager also rebuilds an OBS source that plays with no picture.
+  camera, then restarts the capture, by itself; the manager also rebuilds an OBS source that plays with no picture, and
+  opens again one that plays its picture without its sound.
 * **The camera Wi-Fi is rejoined** by an armed phone that loses it (a router restarted, say), without anyone touching it,
   and by a phone that is on it but cannot reach the manager (after roaming between a router's access points, say).
 * **Battery protection.** A phone charging all show from its Ethernet hub holds its battery short of full, which keeps
