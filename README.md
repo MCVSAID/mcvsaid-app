@@ -402,7 +402,8 @@ stream has restarted since it was measured, the programme measured since its sou
 mix's timing, each network camera timed against a phone and its input volume, each camera's colour match and whether
 its white balance or exposure changed since, the camera relay on the manager's release, and any camera that dropped its connection in the last hour, with the reason it gave. On the phone, **Do what
 is due** then takes you from camera to camera: hold the phone in front of each one and tap, and the manager puts that
-camera on air with its own microphone and sets its lip sync, times the network cameras, and ends by asking where the
+camera on air with its own microphone and sets its lip sync, times the network cameras, matches the cameras' colours
+from a chart the phone shows when a colour match needs doing, and ends by asking where the
 programme's sound should come from: one camera, or every microphone joined in time.
 
 ## Recordings
