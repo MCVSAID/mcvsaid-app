@@ -479,6 +479,11 @@ Give its card the address of the camera's own stream and, with camera files on, 
 the network camera's own file beside the phones', kept as the camera sent it. A button on its card stops it being
 kept, and starts it again, as Stop stream does for a phone.
 
+Where NDI does not keep steady time, as it may not over Wi-Fi, a camera that can send **SRT** can come in the way the
+phones do instead: chosen on its card, the camera calls the manager's camera relay, which passes its stream to OBS,
+holds it in step with the phones and keeps it for its camera file, and its scenes in OBS are changed over for you.
+(New: the camera's stream has been tried on a real camera, the rest not yet.)
+
 Its card shows only what applies: no battery, temperature, lens, recording or app, and none of those counts against
 it. It needs the free NDI runtime and the DistroAV plugin in OBS; without them everything else runs as before and the
 camera says what is missing.
