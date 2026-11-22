@@ -179,6 +179,8 @@ and sets it only when the measure is sure. They are on the **Sound** page, with 
 tried on real cameras: a **stage beacon**, a spare phone left on a stand facing the cameras, lets the manager check
 every camera's lip sync by itself, even during a show: its screen shades softly and it hisses quietly for twenty
 seconds, a gentle "shhh" that swells in and dies away, nothing like a flash or a beep, and nothing goes on air. The
+same soft shading keeps a network (NDI) camera in time with the phones: every quarter of an hour, in a show too, the
+manager finds it in both pictures and holds the network camera so the two show the same moment together. The
 beacon phones are managed from the dashboard: made a beacon or a camera again, tested, and watched for battery and heat.
 Put the beacon on the room map and it can set a camera's lip sync from nothing, too, allowing for how far away it is.
 
