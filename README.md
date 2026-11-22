@@ -403,7 +403,8 @@ mix's timing, each network camera timed against a phone and its input volume, ea
 its white balance or exposure changed since, whether OBS has each camera's sound with its picture, the camera relay on the manager's release, and any camera that dropped its connection in the last hour, with the reason it gave. On the phone, **Do what
 is due** then takes you from camera to camera: hold the phone in front of each one and tap, and the manager puts that
 camera on air with its own microphone and sets its lip sync, then shows that camera a colour chart at the same stop
-when the cameras' colours need matching, so each camera is gone to once; it times the network cameras, and ends by asking where the
+when the cameras' colours need matching, so each camera is gone to once; a network camera with a phone mounted beside
+it is timed and matched at that phone's stop, and any other from one spot; it ends by asking where the
 programme's sound should come from: one camera, or every microphone joined in time.
 
 ## Recordings
