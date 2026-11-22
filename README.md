@@ -1,6 +1,6 @@
 # MCVSAID — MultiCam Video Stream AI Director
 
-**Turn a handful of Android phones into a multi-camera live production, kept in sync, and directed automatically.**
+**Turn a handful of Android phones, and network PTZ cameras that send NDI or SRT, into a multi-camera live production, kept in sync, and directed automatically.**
 
 **[Why MCVSAID?](WHY-MCVSAID.md)** What it does that other phone multicam tools and auto-directors don't, and how it
 compares. **[Try the demo](https://demo.mcvsaid.com/)**: the real dashboard with simulated cameras, in your browser.
@@ -10,6 +10,9 @@ MCVSAID makes ordinary Android phones into remotely managed cameras for live mus
 its picture to [OBS](https://obsproject.com/) on a production computer. A manager on that computer keeps every feed in
 step, watches the health of every phone, matches their colours, and can choose the shots itself with a vision model
 running on the computer's own graphics. Cameras can be mounted out of reach: everything is done from a browser.
+**You choose the cameras:** any recent Android phone, from a used Galaxy S23 to a phone with a 10x lens, phones on
+gimbals, and network PTZ cameras that send NDI or SRT, such as a Tenveo TEVO-X60 with 4K at 60 fps and 30x optical zoom, side
+by side in one show (see [A network camera beside the phones](#a-network-camera-beside-the-phones)).
 
 It directs **live music, church services, podcasts and talk shows, panels and conferences, theatre and comedy, and
 cooking shows, and karaoke nights**, each with its own camera roles, pacing and way of choosing shots, and has a **Creator Studio** for
@@ -17,7 +20,15 @@ people recording themselves, where you define the framings yourself. And it runs
 production wants: none at all, a vision model on the computer itself, or that model plus recognition of consenting
 performers.
 
-**New: karaoke night.** Guests sign up from their phones with a QR code, the host calls up each singer, and the words
+**New: a Director View camera for a PTZ.** A phone fixed right beside a network PTZ camera, showing the whole stage,
+is its **Director View camera**: whoever the director wants is found in that picture, and that is the way the PTZ
+should turn, however far back they stand (checked against simulated cameras, not yet a real pair). The same phone times the PTZ against
+the others and gives it its colour reference: see [A network camera beside the phones](#a-network-camera-beside-the-phones).
+**New: lined up before doors open.** The **Pre-show calibration check** on one phone says what is ready, lets a
+**stage beacon** (a spare phone on a stand, shading softly) settle every camera's lip sync it can, and walks you to the
+rest; colours are matched by what the cameras see, a network PTZ camera's own white balance and exposure included: see
+[Colour that matches from phone to phone](#colour-that-matches-from-phone-to-phone).
+**Karaoke night.** Guests sign up from their phones with a QR code, the host calls up each singer, and the words
 go onto a screen facing them, lit as they are sung: see [Karaoke night](#karaoke-night-sign-up-from-a-phone-sing-to-the-screen).
 **A teleprompter that follows the speaker.** The script on a tablet beside the camera, at
 `https://teleprompter.mcvsaid.local` with a PIN, the word being said lit as it is said, karaoke style; the recipe's
@@ -418,7 +429,7 @@ mix's timing, each network camera timed against a phone and its input volume, ea
 its white balance or exposure changed since, whether OBS has each camera's sound with its picture, the camera relay on the manager's release, and any camera that dropped its connection in the last hour, with the reason it gave. On the phone, the **Pre-show
 calibration check** offers the stage beacon first when one stands ready: it sets each camera's lip sync and times a
 network camera from where it stands, so that you walk only to the cameras it leaves, then takes you from camera to camera: hold the phone in front of each one and tap, and the manager puts that
-camera on air with its own microphone and sets its lip sync; a network camera with a phone mounted beside it is timed
+camera on air with its own microphone and sets its lip sync; a network camera with a Director View camera is timed
 at that phone's stop. When the cameras' colours need matching they are matched by what the cameras see (a network
 camera's own white balance and exposure brought to the phone's first), and each is
 shown on the phone beside the one it is matched to, to keep or leave; it ends by asking where the
@@ -493,12 +504,17 @@ there; the camera's own tracker holds the shot. You set its control address on i
 nothing is sent to it until you do. Its named shots are the camera's own presets ("show the pot"), and "stop
 tracking" and "close up" work on it. The catch is that the camera picks its own subject within the area it is aimed
 at, so it cannot be pinned to one named person. Where performers keep to their places, a preset for each stage area
-does the job.
+does the job. Tried on a real Tenveo TEVO-X60 so far: aiming, zooming, home, presets and its tracker switched by
+hand. The manager aiming it by itself while the camera's own tracker runs has passed its tests against a stand-in
+camera only; in a first try the real camera ignored an aim sent while its tracker was on.
 
-Mount a phone right beside the PTZ camera, showing the whole stage, and the aim gets better: the two look from the
-same place, so wherever someone is in the phone's picture is the way the camera turns, however far back they stand.
-Choose the phone on the camera's card, aim the camera at the middle of that phone's picture and press Set. Not yet
-tried with a real camera and phone side by side.
+**The Director View camera.** Mount a phone right beside the PTZ camera, still (not on a gimbal) and showing the
+whole stage, and it becomes the PTZ's **Director View**: the view the director aims it by. The two look from the same
+place, so wherever someone is in the Director View's picture is the way the PTZ turns, however far back they stand,
+with no room map needed. Choose it as the **Director View camera** on the PTZ camera's card, aim the PTZ at the middle
+of that phone's picture and press Set. The Director View is also the PTZ's stop in the Pre-show calibration check,
+where the PTZ is timed by its flashes and matched by its chart, and it is a camera of the show in its own right: the
+wide shot the director cuts to. Not yet tried with a real camera and phone side by side.
 
 On the Operate page it sits beside the phones: its picture as OBS has it, and the same Xbox controller or on-screen
 buttons to aim and zoom it, stop it, set its home and send it back there, and switch its tracker on or off, with its
