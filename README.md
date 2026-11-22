@@ -22,8 +22,9 @@ go onto a screen facing them, lit as they are sung: see [Karaoke night](#karaoke
 **A teleprompter that follows the speaker.** The script on a tablet beside the camera, at
 `https://teleprompter.mcvsaid.local` with a PIN, the word being said lit as it is said, karaoke style; the recipe's
 steps in Cooking, lyrics at a concert, readings at worship: see [Teleprompter](#teleprompter-the-script-on-a-tablet-lit-as-it-is-said).
-**Voices that line up with mouths.** *Calibrate sync* measures each camera's sound against its picture through OBS
-itself, from a phone or tablet that flashes and beeps in front of the cameras, and sets each camera to match: see
+**Voices that line up with mouths.** The manager keeps each camera's sound in step with its picture by itself, measured
+from whatever is heard in the room while OBS is neither recording nor streaming (new, and still being tried); and
+*Calibrate sync* measures it through OBS itself from a phone or tablet that flashes and beeps in front of the cameras: see
 [Live music, worship, podcasts, panels, theatre, cooking](#live-music-worship-podcasts-panels-theatre-cooking).
 **Recipes made for the show:** *Prep for the show* turns a long recipe into short steps the cook can call out, and you
 choose when the recipe card is on screen: always, at key moments, or only when asked ("show the recipe", "hide the
@@ -172,7 +173,9 @@ let it **follow the speaker**, opening only the microphone that hears them best.
 fast or slow) and mixes them as one sound. **Lip sync** moves the sound against
 the picture, and **Calibrate sync** measures it for you: a phone or tablet flashes and beeps in front of the cameras,
 OBS records a few seconds of the programme, and each camera's sound is measured against its own picture and set to
-match, even a second and a half out. They are on the **Sound** page, with the voice calls.
+match, even a second and a half out. New, and still being tried: the manager also **measures it by itself, with no
+flashes**, from talking or music in the room, a phone by its timing strip and a network camera by its own stream,
+and sets it only when the measure is sure. They are on the **Sound** page, with the voice calls.
 
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
@@ -401,8 +404,8 @@ once that is allowed for it. With a network camera, **Time the network cameras**
 the flashes both see. The Calibrate page at the PC follows along.
 
 **Before the show, one list says what is lined up.** The same page gathers what the manager already knows and says of
-each thing that it is ready, needs doing (and what to do) or cannot be told: each camera's lip sync and whether its
-stream has restarted since it was measured, the programme measured since its sound was last changed, the programme
+each thing that it is ready, needs doing (and what to do) or cannot be told: each camera's lip sync and whether
+anything has moved it since it was measured (the manager measures it again by itself from the room's sound, or at a button), the programme measured since its sound was last changed, the programme
 mix's timing, each network camera timed against a phone and its input volume, each camera's colour match and whether
 its white balance or exposure changed since, whether OBS has each camera's sound with its picture, the camera relay on the manager's release, and any camera that dropped its connection in the last hour, with the reason it gave. On the phone, **Do what
 is due** then takes you from camera to camera: hold the phone in front of each one and tap, and the manager puts that
