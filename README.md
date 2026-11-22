@@ -178,7 +178,8 @@ flashes**, from talking or music in the room, a phone by its timing strip and a 
 and sets it only when the measure is sure. They are on the **Sound** page, with the voice calls. New, and not yet
 tried on real cameras: a **stage beacon**, a spare phone left on a stand facing the cameras, lets the manager check
 every camera's lip sync by itself, even during a show: its screen shades softly and it hisses quietly for twenty
-seconds, a gentle "shhh" that swells in and dies away, nothing like a flash or a beep, and nothing goes on air.
+seconds, a gentle "shhh" that swells in and dies away, nothing like a flash or a beep, and nothing goes on air. The
+beacon phones are managed from the dashboard: made a beacon or a camera again, tested, and watched for battery and heat.
 
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
@@ -414,7 +415,8 @@ mix's timing, each network camera timed against a phone and its input volume, ea
 its white balance or exposure changed since, whether OBS has each camera's sound with its picture, the camera relay on the manager's release, and any camera that dropped its connection in the last hour, with the reason it gave. On the phone, **Do what
 is due** then takes you from camera to camera: hold the phone in front of each one and tap, and the manager puts that
 camera on air with its own microphone and sets its lip sync; a network camera with a phone mounted beside it is timed
-at that phone's stop. When the cameras' colours need matching they are matched by what the cameras see, and each is
+at that phone's stop. When the cameras' colours need matching they are matched by what the cameras see (a network
+camera's own white balance and exposure brought to the phone's first), and each is
 shown on the phone beside the one it is matched to, to keep or leave; it ends by asking where the
 programme's sound should come from: one camera, or every microphone joined in time.
 
