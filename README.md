@@ -180,6 +180,7 @@ tried on real cameras: a **stage beacon**, a spare phone left on a stand facing 
 every camera's lip sync by itself, even during a show: its screen shades softly and it hisses quietly for twenty
 seconds, a gentle "shhh" that swells in and dies away, nothing like a flash or a beep, and nothing goes on air. The
 beacon phones are managed from the dashboard: made a beacon or a camera again, tested, and watched for battery and heat.
+Put the beacon on the room map and it can set a camera's lip sync from nothing, too, allowing for how far away it is.
 
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
