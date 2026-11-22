@@ -161,6 +161,10 @@ still the best picture (they are still talking, or looking down at the work). Wi
 to them just before they turn to the camera, and a glance away no longer cuts away and straight back. The recipe's own
 key shots wait for the host too.
 
+**The programme's sound levelled by itself.** A phone across a room hears a voice quietly. Switched on, the manager
+turns each camera heard in the programme up (or down) in OBS until its loud moments peak near a set level: slowly,
+not while nothing is heard, and with a limiter to catch the peaks.
+
 **Programme sound from one camera.** Every phone's microphone can be in the programme; choose the one that leads, and
 the others join it only while they are lined up with it, measured from the cameras' own streams, so nothing echoes. Or
 let it **follow the speaker**, opening only the microphone that hears them best. New, and still being tried: the
