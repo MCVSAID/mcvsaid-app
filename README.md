@@ -404,7 +404,8 @@ sound** flashes and beeps while the manager measures every camera's lip sync; **
 the manager finds in every camera by itself (no clicking corners), fits each camera's colours and puts the corrections
 in OBS; a network PTZ camera's own white balance and exposure are brought to the phones' first, on the same chart,
 once that is allowed for it. With a network camera, **Time the network cameras** flashes while the manager times it against the phones by
-the flashes both see. The Calibrate page at the PC follows along.
+the flashes both see. The Calibrate page at the PC follows along. A run left half-way (the page closed, the phone
+put away) is picked up where it was or ended from the phone, and never keeps the next one from starting.
 
 **Before the show, one list says what is lined up.** The same page gathers what the manager already knows and says of
 each thing that it is ready, needs doing (and what to do) or cannot be told: each camera's lip sync and whether
