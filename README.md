@@ -178,7 +178,7 @@ flashes**, from talking or music in the room, a phone by its timing strip and a 
 and sets it only when the measure is sure. They are on the **Sound** page, with the voice calls. New, and not yet
 tried on real cameras: a **stage beacon**, a spare phone left on a stand facing the cameras, lets the manager check
 every camera's lip sync by itself, even during a show: its screen shades softly and it hisses quietly for twenty
-seconds, nothing like a flash or a beep, and nothing goes on air.
+seconds, a gentle "shhh" that swells in and dies away, nothing like a flash or a beep, and nothing goes on air.
 
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
