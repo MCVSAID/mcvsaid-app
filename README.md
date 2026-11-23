@@ -341,7 +341,8 @@ drums") and they go on top of the brief, newest first, for the model's next look
 ("Cut to Keys: rated best by the model."). A newer wish about the same thing replaces the older, four at most are in
 force, each lasts 15 minutes unless cleared, and "clear" goes back to the brief. **Again**, under a wish you sent
 earlier, sends it once more without retyping. And when you want two cameras side by side now, not when the model
-agrees, type "split Keys and Drum Cam": that one is a command, and the split is on air at once. On a tablet it opens over the page,
+agrees, type "split Keys and Drum Cam": that one is a command, and the split is on air at once. A pair you want side by side
+whenever both are worth showing can be ticked under **Favoured split screens** on the Director page. On a tablet it opens over the page,
 on a phone it is a sheet from the bottom; it needs Standard or Plus AI, and keeps the show's chat until New show.
 
 ### Search: find the button, or ask how
