@@ -200,6 +200,10 @@ Put the beacon on the room map and it can set a camera's lip sync from nothing, 
 And with the programme mix it can set the mix's own timing before the show, with nobody back on stage: for about
 half a minute one camera is put on air and OBS records, then everything is put back (new: its first tries on real
 cameras found the mix itself about 4 seconds early, which the manager now holds right, and it is to be tried again).
+New, and not yet tried on real cameras: the manager **measures how long OBS really takes to show each camera**, which
+is a second or more beyond its delay settings and moves by itself, and holds the programme's sound and places each
+camera's own file by that; after every recording it checks the edit and the sound against a camera's file and says
+if either is off.
 
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
