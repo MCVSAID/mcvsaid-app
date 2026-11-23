@@ -158,7 +158,7 @@ middle of the Director View's picture and pressing **Set**: no room map is neede
 stop in the Pre-show calibration check, where its timing and colour are set from it, and it can go on air as the
 show's wide shot too.
 
-It's experimental, and we say plainly what has been tried. On a real Tenveo TEVO-X60 (4K at 60 fps, 30x optical
+It's experimental, and we say plainly what has been tried. On a real Tenveo VX30M-Ultra (4K at 60 fps, 30x optical
 zoom): its picture in OBS, its timing against the phones, its white balance and exposure set from the manager, its
 stream kept as a camera file for a few minutes, and aiming, zooming, home and its tracker switched from the Operate
 page. Not yet: the manager aiming the camera by itself while the camera's own tracker runs (in a first try the camera
@@ -268,7 +268,7 @@ optical zoom, NDI and their own AI tracking for well under the price of the long
 | --- | --- | --- | --- | --- |
 | Galaxy S23 on a Hohem iSteady X3 | about $400 | 1/1.56" (50 MP main), 4K at 30 fps | 3x lens and sensor crop | Tested |
 | Tenveo 4K 20x NDI PTZ camera | about $460 | 1/2.8", 4K at 30 fps | 20x optical, continuous | Not yet tried |
-| Tenveo TEVO-X60 | about $1,000 | 1/1.8", 4K at 60 fps | 30x optical, continuous | Partly tested (see [7](#7-bring-a-ptz-camera-the-director-view-tells-it-where-to-look)) |
+| [Tenveo VX30M-Ultra](https://www.tenveo.com/products/tenveo-vx30m-ultra-4k60-ndi-ptz-camera-with-ai-auto-tracking-30x-optical-zoom-sdi-hdmi-usb3-0-poe-for-live-streaming-video-production), the camera MCVSAID is developed with | $999 | 1/1.8", 4K at 60 fps | 30x optical, continuous | Partly tested (see [7](#7-bring-a-ptz-camera-the-director-view-tells-it-where-to-look)) |
 | AVKANS AV-4K-30 | about $1,400 (list $1,900) | 1/1.8", 4K at 60 fps | 30x optical, continuous | Not yet tried |
 | OBSBOT Tail 2 | about $1,200–1,300 | 1/1.5", 4K at 60 fps | 5x optical | Not yet tried |
 | A 4K 12x PTZ camera from PTZOptics or Panasonic (Move 4K, AW-UE20) | about $1,600–2,000 | 1/2.5"–1/2.8" | 12x optical, continuous | Not yet tried |
@@ -279,11 +279,11 @@ own or US retail prices. All are in US dollars, as of November 2026, and they ch
 continuous lens, where a phone moves between fixed lenses and crops in between them. For a phone, "Not yet tried"
 means its zoom lenses have not yet been tried with the app; the Pixel 8 and Galaxy S23 have. For a PTZ camera it means
 MCVSAID has not been run with one: any that sends NDI can be a camera in the show, and control has been tried only on
-the TEVO-X60.
+the VX30M-Ultra.
 
 **Mix them.** A used phone fixed beside a PTZ camera as its Director View tells it where to look, phones on stands
 and gimbals cover the close angles, and the PTZ brings the long zoom from the back of the hall. A three-camera show
-of a TEVO-X60, its Director View phone and one phone on a gimbal comes to about $1,700.
+of a VX30M-Ultra, its Director View phone and one phone on a gimbal comes to about $1,700.
 
 ## How it compares
 
@@ -324,7 +324,7 @@ owners. Corrections are welcome at **hello@mcvsaid.com**.
   break it. Saved targets are for things that stay put: a camera doesn't follow the pot if it's moved.
 - **Delay.** The programme runs a few seconds behind real life, by design, so the director can see each moment first.
 - **Network PTZ cameras.** Any camera that sends NDI can be a camera in the show (over NDI, OBS needs the free NDI runtime and
-  the DistroAV plugin). Controlling one and setting its colour have been tried only on a Tenveo TEVO-X60; the manager
+  the DistroAV plugin). Controlling one and setting its colour have been tried only on a Tenveo VX30M-Ultra; the manager
   aiming it by itself while its own tracker runs doesn't work on the real camera yet, and the Director View hasn't
   been tried with a real PTZ camera and a phone side by side.
 - **Platforms.** Cameras are Android phones or network cameras that send NDI or SRT, output goes through OBS, and MCVSAID is
@@ -354,6 +354,7 @@ owners. Corrections are welcome at **hello@mcvsaid.com**.
 - [PTZOptics Move 4K](https://ptzoptics.com/Move-4K)
 - [Panasonic AW-UE20](https://business.panasonic.co.uk/professional-camera/aw-ue20)
 - [OBSBOT Tail 2](https://www.obsbot.com/store/products/obsbot-tail-2)
+- [Tenveo VX30M-Ultra](https://www.tenveo.com/products/tenveo-vx30m-ultra-4k60-ndi-ptz-camera-with-ai-auto-tracking-30x-optical-zoom-sdi-hdmi-usb3-0-poe-for-live-streaming-video-production)
 - [Tenveo PTZ cameras](https://www.tenveo.com/product/ptz-camera/index.html)
 - [AVKANS AV-4K-30](https://avkans.com/products/avkans-move-4k-60fps-ai-tracking-ndi-camera-av-4k-30)
 - [Panasonic AW-UE150](https://www.adorama.com/pcawue150kpj.html)

@@ -11,7 +11,7 @@ its picture to [OBS](https://obsproject.com/) on a production computer. A manage
 step, watches the health of every phone, matches their colours, and can choose the shots itself with a vision model
 running on the computer's own graphics. Cameras can be mounted out of reach: everything is done from a browser.
 **You choose the cameras:** any recent Android phone, from a used Galaxy S23 to a phone with a 10x lens, phones on
-gimbals, and network PTZ cameras that send NDI or SRT, such as a Tenveo TEVO-X60 with 4K at 60 fps and 30x optical zoom, side
+gimbals, and network PTZ cameras that send NDI or SRT, such as a Tenveo VX30M-Ultra with 4K at 60 fps and 30x optical zoom, side
 by side in one show (see [A network camera beside the phones](#a-network-camera-beside-the-phones)).
 
 It directs **live music, church services, podcasts and talk shows, panels and conferences, theatre and comedy, and
@@ -508,7 +508,7 @@ there; the camera's own tracker holds the shot. You set its control address on i
 nothing is sent to it until you do. Its named shots are the camera's own presets ("show the pot"), and "stop
 tracking" and "close up" work on it. The catch is that the camera picks its own subject within the area it is aimed
 at, so it cannot be pinned to one named person. Where performers keep to their places, a preset for each stage area
-does the job. Tried on a real Tenveo TEVO-X60 so far: aiming, zooming, home, presets and its tracker switched by
+does the job. Tried on a real Tenveo VX30M-Ultra so far: aiming, zooming, home, presets and its tracker switched by
 hand. The manager aiming it by itself while the camera's own tracker runs has passed its tests against a stand-in
 camera only; in a first try the real camera ignored an aim sent while its tracker was on.
 
