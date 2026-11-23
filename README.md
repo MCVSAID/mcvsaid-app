@@ -427,7 +427,7 @@ put away) is picked up where it was or ended from the phone, and never keeps the
 each thing that it is ready, needs doing (and what to do) or cannot be told: each camera's lip sync and whether
 anything has moved it since it was measured (the manager measures it again by itself from the room's sound, or at a button), the programme measured since its sound was last changed, the programme
 mix's timing, each network camera timed against a phone and its input volume, each camera's colour match and whether
-its white balance or exposure changed since, whether OBS has each camera's sound with its picture, the camera relay on the manager's release, and any camera that dropped its connection in the last hour, with the reason it gave. On the phone, the **Pre-show
+its white balance, its exposure or the light on the stage changed since, whether OBS has each camera's sound with its picture, the camera relay on the manager's release, and any camera that dropped its connection in the last hour, with the reason it gave. On the phone, the **Pre-show
 calibration check** offers the stage beacon first when one stands ready: it sets each camera's lip sync and times a
 network camera from where it stands, so that you walk only to the cameras it leaves, then takes you from camera to camera: hold the phone in front of each one and tap, and the manager puts that
 camera on air with its own microphone and sets its lip sync; a network camera with a Director View camera is timed
