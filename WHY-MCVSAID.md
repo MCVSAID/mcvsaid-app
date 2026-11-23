@@ -209,7 +209,7 @@ A hidden timing strip lines every feed up to the frame. **Calibrate sync** lines
 tablet that flashes and beeps in front of the cameras, press Measure, and each camera's sound is set to match its own
 picture, OBS's own delay included. The manager also checks it by itself from talking or music in the room, and a
 **stage beacon**, a spare phone left on a stand facing the cameras, lets it check every camera's lip sync even during
-a show: its screen shades softly and it hisses quietly, nothing like a flash, and nothing goes on air. Programme sound
+a show: two orbs glow softly on its screen and it hisses quietly, nothing like a flash, and nothing goes on air. Programme sound
 can come from one leading microphone, follow whoever is speaking, or join every microphone in time as one mix, and it
 can be levelled by itself, so phone microphones never echo. One page sets white balance and exposure on every phone and
 builds a LUT for each camera. The LUT can come from a colour chart or from matching every camera to one of them on the

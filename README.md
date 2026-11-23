@@ -25,7 +25,7 @@ is its **Director View camera**: whoever the director wants is found in that pic
 should turn, however far back they stand (checked against simulated cameras, not yet a real pair). The same phone times the PTZ against
 the others and gives it its colour reference: see [A network camera beside the phones](#a-network-camera-beside-the-phones).
 **New: lined up before doors open.** The **Pre-show calibration check** on one phone says what is ready, lets a
-**stage beacon** (a spare phone on a stand, shading softly) settle every camera's lip sync it can, and walks you to the
+**stage beacon** (a spare phone on a stand, two orbs glowing softly on its screen) settle every camera's lip sync it can, and walks you to the
 rest. Or press **Do what is due from the stage beacon** on the computer or a tablet, and nobody goes on stage at all:
 the beacon does what it can and lists the rest (tried in tests and the demo, not yet at a show). Colours are matched by what the cameras see, a network PTZ camera's own white balance and exposure included: see
 [Colour that matches from phone to phone](#colour-that-matches-from-phone-to-phone).
@@ -189,9 +189,9 @@ match, even a second and a half out. New, and still being tried: the manager als
 flashes**, from talking or music in the room, a phone by its timing strip and a network camera by its own stream,
 and sets it only when the measure is sure. They are on the **Sound** page, with the voice calls. New, and not yet
 tried on real cameras: a **stage beacon**, a spare phone left on a stand facing the cameras, lets the manager check
-every camera's lip sync by itself, even during a show: its screen shades softly and it hisses quietly for twenty
+every camera's lip sync by itself, even during a show: two orbs glow softly on its screen and it hisses quietly for twenty
 seconds, a gentle "shhh" that swells in and dies away, nothing like a flash or a beep, and nothing goes on air. The
-same soft shading keeps a network (NDI) camera in time with the phones: every quarter of an hour, in a show too, the
+same soft glow keeps a network (NDI) camera in time with the phones: every quarter of an hour, in a show too, the
 manager finds it in both pictures and holds the network camera so the two show the same moment together. In between,
 the times stamped on the network camera's own NDI frames keep it there (new, and not yet tried through a show): the
 manager follows any change in its network's delay from one timing to the next, and its card says so. The
