@@ -514,6 +514,11 @@ does the job. Tried on a real Tenveo VX30M-Ultra so far: aiming, zooming, home, 
 hand. The manager aiming it by itself while the camera's own tracker runs has passed its tests against a stand-in
 camera only; in a first try the real camera ignored an aim sent while its tracker was on.
 
+**One clock for every camera.** The manager serves its computer's clock over NTP on the camera network, and a
+network camera's card has **Keep its clock here**, which points a Tenveo's own clock at it, asked every minute. The
+times every camera writes into its pictures are then on one clock, the one MCVSAID lines the feeds up by, with or
+without the internet. (New: not yet tried on a real camera.)
+
 **The Director View camera.** Mount a phone right beside the PTZ camera, still (not on a gimbal) and showing the
 whole stage, and it becomes the PTZ's **Director View**: the view the director aims it by. The two look from the same
 place, so wherever someone is in the Director View's picture is the way the PTZ turns, however far back they stand,
