@@ -26,7 +26,8 @@ should turn, however far back they stand (checked against simulated cameras, not
 the others and gives it its colour reference: see [A network camera beside the phones](#a-network-camera-beside-the-phones).
 **New: lined up before doors open.** The **Pre-show calibration check** on one phone says what is ready, lets a
 **stage beacon** (a spare phone on a stand, shading softly) settle every camera's lip sync it can, and walks you to the
-rest; colours are matched by what the cameras see, a network PTZ camera's own white balance and exposure included: see
+rest. Or press **Do what is due from the stage beacon** on the computer or a tablet, and nobody goes on stage at all:
+the beacon does what it can and lists the rest (tried in tests and the demo, not yet at a show). Colours are matched by what the cameras see, a network PTZ camera's own white balance and exposure included: see
 [Colour that matches from phone to phone](#colour-that-matches-from-phone-to-phone).
 **Karaoke night.** Guests sign up from their phones with a QR code, the host calls up each singer, and the words
 go onto a screen facing them, lit as they are sung: see [Karaoke night](#karaoke-night-sign-up-from-a-phone-sing-to-the-screen).
