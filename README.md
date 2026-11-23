@@ -194,6 +194,9 @@ same soft shading keeps a network (NDI) camera in time with the phones: every qu
 manager finds it in both pictures and holds the network camera so the two show the same moment together. The
 beacon phones are managed from the dashboard: made a beacon or a camera again, tested, and watched for battery and heat.
 Put the beacon on the room map and it can set a camera's lip sync from nothing, too, allowing for how far away it is.
+And with the programme mix it can set the mix's own timing before the show, with nobody back on stage: for about
+half a minute one camera is put on air and OBS records, then everything is put back (new, and not yet tried on real
+hardware).
 
 **Voice shot calls.** In Cooking and Creator Studio the host can call a shot aloud: "cut to the overhead", "show the
 stove", "wide shot". The director cuts to that camera just as the call reaches the programme, together with any zoom
