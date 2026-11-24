@@ -57,7 +57,8 @@ laptop (see [The production computer](#the-production-computer)).
 This repository holds the **signed builds of the camera app**, under [Releases](../../releases). A phone being set up
 fetches the app from here; the app does nothing by itself until it is paired with an MCVSAID manager.
 
-> The screenshots below are from a demonstration manager with six made-up cameras and drawn pictures, not a real show.
+> The screenshots below are from a demonstration manager with six made-up phones, a made-up network camera and drawn
+> pictures, not a real show.
 
 ### Join the beta
 
@@ -187,8 +188,8 @@ the picture, and **Calibrate sync** measures it for you: a phone or tablet flash
 OBS records a few seconds of the programme, and each camera's sound is measured against its own picture and set to
 match, even a second and a half out. New, and still being tried: the manager also **measures it by itself, with no
 flashes**, from talking or music in the room, a phone by its timing strip and a network camera by its own stream,
-and sets it only when the measure is sure. They are on the **Sound** page, with the voice calls. New, and not yet
-tried on real cameras: a **stage beacon**, a spare phone left on a stand facing the cameras, lets the manager check
+and sets it only when the measure is sure. They are on the **Sound** page, with the voice calls. New, first tried on
+real cameras in November 2026 and not yet through a show: a **stage beacon**, a spare phone left on a stand facing the cameras, lets the manager check
 every camera's lip sync by itself, even during a show: two orbs glow softly on its screen and it hisses quietly for twenty
 seconds, a gentle "shhh" that swells in and dies away, nothing like a flash or a beep, and nothing goes on air. The
 same soft glow keeps a network (NDI) camera in time with the phones: every quarter of an hour, in a show too, the
@@ -199,8 +200,9 @@ beacon phones are managed from the dashboard: made a beacon or a camera again, t
 Put the beacon on the room map and it can set a camera's lip sync from nothing, too, allowing for how far away it is.
 And with the programme mix it can set the mix's own timing before the show, with nobody back on stage: for about
 half a minute one camera is put on air and OBS records, then everything is put back (new: its first tries on real
-cameras found the mix itself about 4 seconds early, which the manager now holds right, and it is to be tried again).
-New, and not yet tried on real cameras: the manager **measures how long OBS really takes to show each camera**, which
+cameras found the mix itself about 4 seconds early, which the manager now holds itself; tried again, the beacon read
+the mix within a few tens of milliseconds and set it). New, and in use on real cameras for a day so far: the manager
+**measures how long OBS really takes to show each camera**, which
 is a second or more beyond its delay settings and moves by itself, and holds the programme's sound and places each
 camera's own file by that; after every recording it checks the edit and the sound against a camera's file and says
 if either is off.
@@ -329,7 +331,7 @@ sit in a fold, closed until you open it. The screenshot above shows the steps un
 Shots are chosen by a **vision model** running locally (any OpenAI-compatible server; llama.cpp with Qwen3-VL 8B here),
 guided by plain-language wishes ("stay on whoever is singing; the drums for fills"). A **look-ahead** holds the
 programme a few seconds behind real life, so the model sees each moment in the phones' own pictures before it airs and
-every cut lands cleanly. The director can also:
+it can pass over an empty or blurred shot before it airs. The director can also:
 
 * **zoom in on a performer and follow them**, leading a walker with room ahead, and never zooming in on nobody: empty
   pictures, boxes no person could fill and scenery the model keeps mistaking for a person are all refused;
@@ -524,7 +526,7 @@ camera only; in a first try the real camera ignored an aim sent while its tracke
 **One clock for every camera.** The manager serves its computer's clock over NTP on the camera network, and a
 network camera's card has **Keep its clock here**, which points a Tenveo's own clock at it, asked every minute. The
 times every camera writes into its pictures are then on one clock, the one MCVSAID lines the feeds up by, with or
-without the internet. (New: not yet tried on a real camera.)
+without the internet. (New: tried on a Tenveo VX30M-Ultra, whose clock, months out, was set right at once.)
 
 **The Director View camera.** Mount a phone right beside the PTZ camera, still (not on a gimbal) and showing the
 whole stage, and it becomes the PTZ's **Director View**: the view the director aims it by. The two look from the same

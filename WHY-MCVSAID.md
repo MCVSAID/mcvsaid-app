@@ -21,7 +21,8 @@ be blurred on the phone itself, before any picture leaves it.
 ## At a glance
 
 - **Multiple dedicated phones, one button:** every camera recording or streaming at once.
-- **No camera operators needed:** a handful of cameras and one computer make a directed multicam show.
+- **No camera operators needed:** a handful of cameras and one computer can make a directed multicam show, run by
+  one person.
 - **Your choice of cameras:** Android phones, phones on gimbals and network PTZ cameras that send NDI or SRT, side by side
   in one show. Change them as better ones get cheaper. See [Camera hardware](#camera-hardware-choose-your-cameras).
 - **Flagship phones at used prices:** a Galaxy S23 with a large sensor and a 3x zoom lens costs about $280 used, and
@@ -37,9 +38,9 @@ be blurred on the phone itself, before any picture leaves it.
   template, with the cameras placed against it.
 - **Faces blurred on the camera itself**, with the computer as a backup that catches the faces a phone misses.
 - **Voices that line up with mouths:** each camera's sound is measured against its picture and set to match, and
-  checked again by itself from the room's sound or a stage beacon left on a stand.
-- **Lined up before doors open:** one Pre-show calibration check says what is ready and walks one person, with one
-  phone, to whatever is left.
+  (new) checked again by itself from the room's sound or a stage beacon left on a stand.
+- **Lined up before doors open:** one list says what is ready, the stage beacon lines up what it can at one press
+  with nobody on stage, and the Pre-show calibration check walks one person, with one phone, to whatever is left.
 - **A teleprompter that listens:** the script on a tablet, the word being said lit as it is said.
 - **Karaoke night, run from the dashboard:** guests sign up from their phones, and the words go on a screen facing
   the singer, lit as they are sung.
@@ -63,12 +64,12 @@ Getting there is just as simple. A factory-reset phone taps its welcome screen s
 signed app and joins the camera network, with no cable needed. From then on it is managed remotely: arm it, restart
 it, update it one camera at a time, and correct its clock. Each phone revives a frozen picture on its own, rejoins
 Wi-Fi, holds its battery short of full, and goes silent while armed. Other phone apps assume someone is holding the
-phone. With MCVSAID you mount the phones once and never touch them again.
+phone. With MCVSAID you mount the phones once and look after them from the dashboard.
 
 ### 2. A director that sees the shot before the audience does
 
 A look-ahead holds the programme a few seconds behind real life. A vision model running on your own computer rates
-every camera from the phones' own pictures, so each cut lands cleanly on air. In the demo, the model rated six cameras
+every camera from the phones' own pictures, so it can pass over an empty or blurred shot before it airs. In the demo, the model rated six cameras
 in about half a second, and every cut was seen 0.7 to 5 seconds before OBS showed it. Audio-only switchers react after
 the fact, and they can't tell an empty or blurry shot from a good one.
 
@@ -78,7 +79,8 @@ the fact, and they can't tell an empty or blurry shot from a good one.
 
 A standing brief sets the intent, for example "stay on whoever is singing; the drums for fills". During the show,
 Scene Chat takes wishes such as "less on the drums". Up to four wishes are active at once, each lasts 15 minutes, and
-the log explains every cut. A host can also **call shots aloud**: say "cut to the overhead" or "show the stove" and
+the log explains every cut. A pair of cameras ticked as a **favoured split screen** goes on air side by side
+whenever both are worth showing, and "split Keys and Drum Cam" puts one on at once. A host can also **call shots aloud**: say "cut to the overhead" or "show the stove" and
 the director cuts to that camera and holds it. That's on by default in Cooking and Creator Studio, where one person
 talks to their own cameras, and off where music or a congregation could set it off by mistake. Speech is recognised on
 the computer, and nothing heard is sent anywhere or kept. A call only a phone heard waits for the computer to hear it
@@ -160,8 +162,9 @@ show's wide shot too.
 
 It's experimental, and we say plainly what has been tried. On a real Tenveo VX30M-Ultra (4K at 60 fps, 30x optical
 zoom): its picture in OBS, its timing against the phones, its white balance and exposure set from the manager, its
-stream kept as a camera file for a few minutes, and aiming, zooming, home and its tracker switched from the Operate
-page. Not yet: the manager aiming the camera by itself while the camera's own tracker runs (in a first try the camera
+stream kept as a camera file for a few minutes, its clock kept by the production computer's over NTP, its timing
+against the phones read from the stage beacon's light, and aiming, zooming, home and its tracker switched from the
+Operate page. Not yet: the manager aiming the camera by itself while the camera's own tracker runs (in a first try the camera
 ignored an aim sent while its tracker was on), and the Director View with a real PTZ camera and a phone side by side,
 which has been checked against simulated cameras only. Other makers' cameras join over NDI; controlling them has not
 been tried.
@@ -203,15 +206,23 @@ operator's page is at `https://operate.mcvsaid.local`.
 
 ![A set for Cooking: a kitchen's floor plan with the template's counter, stove and prep table, the cameras placed round it, and a set made from photos, a floor plan or a template](docs/screenshots/30-set-map.png)
 
-### 11. Frame-accurate sync, lip sync and colour matching across mixed cameras
+### 11. Sync, lip sync and colour matching across mixed cameras
 
-A hidden timing strip lines every feed up to the frame. **Calibrate sync** lines the sound up too: hold a phone or
+A hidden timing strip lines every phone's feed up to the frame; a network camera, which has none, is lined up by what
+its picture and a phone's both show, and the manager serves one clock on the camera network for it to keep.
+**Calibrate sync** lines the sound up too: hold a phone or
 tablet that flashes and beeps in front of the cameras, press Measure, and each camera's sound is set to match its own
 picture, OBS's own delay included. The manager also checks it by itself from talking or music in the room, and a
 **stage beacon**, a spare phone left on a stand facing the cameras, lets it check every camera's lip sync even during
-a show: two orbs glow softly on its screen and it hisses quietly, nothing like a flash, and nothing goes on air. Programme sound
+a show: two orbs glow softly on its screen and it hisses quietly, nothing like a flash, and nothing goes on air.
+**Do what is due from the stage beacon**, one press at the computer or a tablet, does what the beacon can before the
+show, with nobody on stage, and lists what is left. These are new: in their first runs at real cameras the beacon set
+a phone's lip sync to match the flashes, timed a PTZ camera by its light and set the programme mix's timing, but they
+have not yet been through a show, and the manager says how sure each timing is. Programme sound
 can come from one leading microphone, follow whoever is speaking, or join every microphone in time as one mix, and it
-can be levelled by itself, so phone microphones never echo. One page sets white balance and exposure on every phone and
+can be levelled by itself, so phone microphones don't echo. OBS holds each camera a second or more beyond its own
+settings, and that moves, so the manager measures how long OBS really takes to show each one and holds the mix by
+that. One page sets white balance and exposure on every phone and
 builds a LUT for each camera. The LUT can come from a colour chart or from matching every camera to one of them on the
 scene in front of them, and a network PTZ camera's own white balance and exposure are brought to the phones' first.
 Before the show, the **Pre-show calibration check** on one phone says what is lined up, lets the stage beacon settle
@@ -224,8 +235,9 @@ Record and Stop catch the moment you press them, even though the programme runs 
 switched on, each programme recording comes with a file per camera, kept on the computer from the streams as they
 arrive, the cuts as an EDL for Resolve, Premiere or Final Cut, and each camera's LUT; a cooking show's steps come as
 markers where the file shows them. Phones can also record a sharper copy of their own, copied over and verified after
-the show, but recording while streaming runs most phones too hot without a cooler, so try it on your phones first. You can re-cut the AI's show
-instead of living with it.
+the show, but recording while streaming runs most phones too hot without a cooler, so try it on your phones first.
+After each recording the manager checks the edit and the sound against a camera's file and says if either is off. You
+can re-cut the AI's show instead of living with it.
 
 ### 13. Private, local and consent-based
 
@@ -322,6 +334,8 @@ owners. Corrections are welcome at **hello@mcvsaid.com**.
   MT3's built-in AI tracker can be seen from the dashboard, but only started and stopped at the gimbal. Charger plug
   control works with Tapo plugs through their local login, which TP-Link has changed before; a firmware update could
   break it. Saved targets are for things that stay put: a camera doesn't follow the pot if it's moved.
+- **Automatic lip sync is new.** The stage beacon and the checks from the room's sound were first tried on real
+  cameras in November 2026 and have not yet been through a show; Calibrate sync with the flashes is the tried way.
 - **Delay.** The programme runs a few seconds behind real life, by design, so the director can see each moment first.
 - **Network PTZ cameras.** Any camera that sends NDI can be a camera in the show (over NDI, OBS needs the free NDI runtime and
   the DistroAV plugin). Controlling one and setting its colour have been tried only on a Tenveo VX30M-Ultra; the manager
