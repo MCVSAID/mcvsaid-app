@@ -23,7 +23,7 @@ be blurred on the phone itself, before any picture leaves it.
 - **Multiple dedicated phones, one button:** every camera recording or streaming at once.
 - **No camera operators needed:** a handful of cameras and one computer can make a directed multicam show, run by
   one person.
-- **Your choice of cameras:** Android phones, phones on gimbals and network PTZ cameras that send NDI or SRT, side by side
+- **Your choice of cameras:** Android phones, phones on gimbals and network PTZ cameras that send [NDI®](https://ndi.video/) or SRT, side by side
   in one show. Change them as better ones get cheaper. See [Camera hardware](#camera-hardware-choose-your-cameras).
 - **Flagship phones at used prices:** a Galaxy S23 with a large sensor and a 3x zoom lens costs about $280 used, and
   about $400 on a gimbal.
@@ -337,7 +337,7 @@ owners. Corrections are welcome at **hello@mcvsaid.com**.
 - **Automatic lip sync is new.** The stage beacon and the checks from the room's sound were first tried on real
   cameras in November 2026 and have not yet been through a show; Calibrate sync with the flashes is the tried way.
 - **Delay.** The programme runs a few seconds behind real life, by design, so the director can see each moment first.
-- **Network PTZ cameras.** Any camera that sends NDI can be a camera in the show (over NDI, OBS needs the free NDI runtime and
+- **Network PTZ cameras.** Any camera that sends NDI can be a camera in the show (over NDI, OBS needs the free [NDI runtime](https://ndi.video/tools/) and
   the DistroAV plugin). Controlling one and setting its colour have been tried only on a Tenveo VX30M-Ultra; the manager
   aiming it by itself while its own tracker runs doesn't work on the real camera yet, and the Director View hasn't
   been tried with a real PTZ camera and a phone side by side.
@@ -373,3 +373,5 @@ owners. Corrections are welcome at **hello@mcvsaid.com**.
 - [AVKANS AV-4K-30](https://avkans.com/products/avkans-move-4k-60fps-ai-tracking-ndi-camera-av-4k-30)
 - [Panasonic AW-UE150](https://www.adorama.com/pcawue150kpj.html)
 - [Canon CR-N700](https://www.usa.canon.com/shop/p/cr-n700)
+
+*NDI® is a registered trademark of Vizrt NDI AB.*

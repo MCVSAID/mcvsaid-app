@@ -1,6 +1,6 @@
 # MCVSAID — MultiCam Video Stream AI Director
 
-**Turn a handful of Android phones, and network PTZ cameras that send NDI or SRT, into a multi-camera live production, kept in sync, and directed automatically.**
+**Turn a handful of Android phones, and network PTZ cameras that send [NDI®](https://ndi.video/) or SRT, into a multi-camera live production, kept in sync, and directed automatically.**
 
 **[Why MCVSAID?](WHY-MCVSAID.md)** What it does that other phone multicam tools and auto-directors don't, and how it
 compares. **[Try the demo](https://demo.mcvsaid.com/)**: the real dashboard with simulated cameras, in your browser.
@@ -511,7 +511,7 @@ lined up with its picture.
 (New: the camera's stream has been tried on a real camera, the rest not yet.)
 
 Its card shows only what applies: no battery, temperature, lens, recording or app, and none of those counts against
-it. It needs the free NDI runtime and the DistroAV plugin in OBS; without them everything else runs as before and the
+it. It needs the free [NDI runtime](https://ndi.video/tools/) and the DistroAV plugin in OBS; without them everything else runs as before and the
 camera says what is missing.
 
 A network PTZ camera can follow the way the phone cameras do. MCVSAID chooses who it should be following and aims it
@@ -843,3 +843,5 @@ to approach 40 GB (that reading includes OBS's canvas and recording and whatever
 * Nothing is sent from an installation to the project: no usage reporting, crash reporting or footage.
 
 Found a security problem? Please report it privately to **security@mcvsaid.com**, never in a public issue.
+
+*NDI® is a registered trademark of Vizrt NDI AB.*
