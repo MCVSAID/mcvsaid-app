@@ -426,6 +426,12 @@ in front of them, no chart needed. The LUTs go with each recording's camera file
 `https://calibrate.mcvsaid.local` on a tablet: its **colour card** shows a 24-patch chart, an 18% grey, a grey scale
 and colour bars, and its **sync flash** is the one Calibrate sync uses.
 
+**A chart that stays by the stage beacon.** Leave an X-Rite ColorChecker standing beside the beacon and the manager
+finds it in every camera's picture by itself, reads it after each beacon run and every ten minutes, and shows each
+camera's distance from the reference camera on it and whether it has gone darker, warmer or greener. A camera that
+drifts is matched to the reference again (a network PTZ camera's own white balance and exposure first, before the
+show), never while it is on air. A cable or glare across the chart's greys is noticed and said, not fitted on.
+
 **One person calibrates from the stage.** Give whoever sets up a **setup tech** account: it opens Set up ›
 **Calibrate**, and the Operate page's gimbal positions, and nothing else. They walk on stage with a phone, log in on the calibrate page and hold it up. **Calibrate
 sound** flashes and beeps while the manager measures every camera's lip sync; **Calibrate colour** shows a chart that
